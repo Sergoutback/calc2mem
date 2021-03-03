@@ -13,7 +13,8 @@ public class Calculator2 : MonoBehaviour
     public string press_buttons;
     public double equal1;
     public string zero;
-    public string text;
+
+    // public string text;
     public string disp1;
     public string textdel;
     public int lenght;
@@ -28,11 +29,12 @@ public class Calculator2 : MonoBehaviour
     public object TextDisplay_Market { get; private set; }
     
     public void Start()
-    {            
+    {   
+        const string a = "0";
         System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
-        TextDisp.text =("0").ToString();
-        TextDispM1.text ="0";
-        TextDispM2.text ="0";
+        TextDisp.text =  a;
+        TextDispM1.text = a;
+        TextDispM2.text = a;
     }
 
     public void CorrectNumber()
