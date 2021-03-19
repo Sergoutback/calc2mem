@@ -74,7 +74,8 @@ public class Calculator2 : MonoBehaviour
 
     public void On_Click_Point()
     {
-        if ((TextDisp.text.IndexOf(".") == -1) && (TextDisp.text.IndexOf("∞") == -1))
+        // из-за этой херни не ставится вторая запятая. надо подумать, как переделать
+        // if ((TextDisp.text.IndexOf(".") == -1) && (TextDisp.text.IndexOf("∞") == -1))
             TextDisp.text += ".";
     }
     
