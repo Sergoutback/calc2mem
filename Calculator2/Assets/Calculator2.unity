@@ -293,9 +293,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 71738106}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &71738105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,7 +308,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 71738104}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &71738106
 AudioSource:
   m_ObjectHideFlags: 0
@@ -577,9 +592,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 165490560}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: 27e0a410ecde958438f0f53548245ec2, type: 3}
 --- !u!114 &165490559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,7 +607,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 165490558}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &165490560
 AudioSource:
   m_ObjectHideFlags: 0
@@ -861,9 +891,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 177348501}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &177348500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,7 +906,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 177348499}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &177348501
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1223,9 +1268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 205843878}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: 259a6800c65bc534294d8d9664b67b46, type: 3}
 --- !u!114 &205843877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1238,7 +1283,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 205843876}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &205843878
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1453,7 +1513,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.50277776, y: 0.40500003}
   m_AnchorMax: {x: 0.66262966, y: 0.5}
-  m_AnchoredPosition: {x: -1.2400055, y: 0.14398193}
+  m_AnchoredPosition: {x: -1.2399902, y: 0.14398193}
   m_SizeDelta: {x: -1.204071, y: 1.0154419}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &241540882
@@ -1585,9 +1645,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 241540888}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: 27e0a410ecde958438f0f53548245ec2, type: 3}
 --- !u!114 &241540887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1600,7 +1660,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 241540886}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &241540888
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1807,7 +1882,7 @@ RectTransform:
   m_GameObject: {fileID: 271258389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99791986, y: 0.99791986, z: 0.99791986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 995535781}
   m_Father: {fileID: 1662174663}
@@ -1830,9 +1905,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 271258393}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &271258392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1845,7 +1920,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 271258391}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &271258393
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2094,7 +2184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.80259264}
   m_AnchorMax: {x: 1, y: 0.85960186}
-  m_AnchoredPosition: {x: 0.35681152, y: 1.9001465}
+  m_AnchoredPosition: {x: 0.3569336, y: 1.9001465}
   m_SizeDelta: {x: 0.7375488, y: -8.025391}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &314994049
@@ -2404,7 +2494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.19732408}
   m_AnchorMax: {x: 0.66829634, y: 0.29825926}
-  m_AnchoredPosition: {x: -3.2720947, y: 10.491943}
+  m_AnchoredPosition: {x: -3.2720947, y: 10.491699}
   m_SizeDelta: {x: -17.907013, y: -21.088531}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464349179
@@ -2536,9 +2626,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 464349185}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &464349184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2551,7 +2641,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 464349183}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &464349185
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2820,9 +2925,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1697659193}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: 259a6800c65bc534294d8d9664b67b46, type: 3}
 --- !u!114 &477200688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2835,7 +2940,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 477200687}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &477200689
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3759,9 +3879,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 660005743}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: 259a6800c65bc534294d8d9664b67b46, type: 3}
 --- !u!114 &660005742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3774,7 +3894,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 660005741}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &660005743
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3986,7 +4121,7 @@ RectTransform:
   m_GameObject: {fileID: 705145070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99791986, y: 0.99791986, z: 0.99791986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 521861336}
   m_Father: {fileID: 1662174663}
@@ -4009,9 +4144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 705145074}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &705145073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4024,7 +4159,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 705145072}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &705145074
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4566,9 +4716,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 716390651}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: 259a6800c65bc534294d8d9664b67b46, type: 3}
 --- !u!114 &716390650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4581,7 +4731,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 716390649}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &716390651
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4850,9 +5015,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 786523251}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &786523250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4865,7 +5030,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 786523249}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &786523251
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5678,7 +5858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myFx: {fileID: 1048607531}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &1048607530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6209,9 +6389,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1109098130}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &1109098129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6224,7 +6404,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1109098128}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1109098130
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6720,9 +6915,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1178152915}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &1178152914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6735,7 +6930,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1178152913}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1178152915
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7082,9 +7292,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1217668937}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: 6ee942720085d6341ae438ed057957f4, type: 3}
 --- !u!114 &1217668936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7097,7 +7307,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1217668935}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1217668937
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7368,7 +7593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myFx: {fileID: 1217673742}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &1217673741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7743,9 +7968,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1333811014}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &1333811013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7763,12 +7988,12 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: 
+        - m_Target: {fileID: 1333811012}
+          m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -8264,9 +8489,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1421286416}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: c94eecbb158272c4c8dfb031080dd1f9, type: 3}
 --- !u!114 &1421286415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8279,7 +8504,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1421286414}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1421286416
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8626,9 +8866,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1443625588}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: ba488ff899e296d4b835bb50b1c05b36, type: 3}
+  clickFx: {fileID: 8300000, guid: c94eecbb158272c4c8dfb031080dd1f9, type: 3}
 --- !u!114 &1443625587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8641,7 +8881,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1443625586}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1443625588
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8912,7 +9167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myFx: {fileID: 1451447147}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: ba488ff899e296d4b835bb50b1c05b36, type: 3}
+  clickFx: {fileID: 8300000, guid: c94eecbb158272c4c8dfb031080dd1f9, type: 3}
 --- !u!114 &1451447146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9069,7 +9324,7 @@ RectTransform:
   m_GameObject: {fileID: 1460271600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99791986, y: 0.99791986, z: 0.99791986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 190424738}
   m_Father: {fileID: 1662174663}
@@ -9092,9 +9347,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1460271604}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &1460271603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9107,7 +9362,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1460271602}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1460271604
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9493,9 +9763,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1492803431}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: 27e0a410ecde958438f0f53548245ec2, type: 3}
 --- !u!114 &1492803430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9508,7 +9778,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1492803429}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1492803431
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9637,7 +9922,7 @@ RectTransform:
   m_GameObject: {fileID: 1501538448}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99791986, y: 0.99791986, z: 0.99791986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 631221002}
   m_Father: {fileID: 1662174663}
@@ -9660,9 +9945,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1501538452}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &1501538451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9675,7 +9960,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1501538450}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1501538452
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10061,9 +10361,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1526268835}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: 259a6800c65bc534294d8d9664b67b46, type: 3}
 --- !u!114 &1526268834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10076,7 +10376,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1526268833}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1526268835
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10347,7 +10662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myFx: {fileID: 1536109962}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: 6ee942720085d6341ae438ed057957f4, type: 3}
 --- !u!114 &1536109961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10800,9 +11115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1598299633}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: ba488ff899e296d4b835bb50b1c05b36, type: 3}
+  clickFx: {fileID: 8300000, guid: c94eecbb158272c4c8dfb031080dd1f9, type: 3}
 --- !u!114 &1598299632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10815,7 +11130,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1598299631}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1598299633
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10952,7 +11282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.16700001, y: 0.20218518}
   m_AnchorMax: {x: 0.32885188, y: 0.29825926}
-  m_AnchoredPosition: {x: 0.39562988, y: -0.005859375}
+  m_AnchoredPosition: {x: 0.3955078, y: -0.005859375}
   m_SizeDelta: {x: -0.7645569, y: -0.04135132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1605429437
@@ -11086,7 +11416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myFx: {fileID: 1605429443}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &1605429442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11384,7 +11714,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.86600006}
   m_AnchorMax: {x: 1, y: 0.9286945}
-  m_AnchoredPosition: {x: -0.8240967, y: 0}
+  m_AnchoredPosition: {x: -0.82421875, y: 0}
   m_SizeDelta: {x: 0.70458984, y: 0.7116699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1692314872
@@ -11596,9 +11926,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1697659193}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: 6ee942720085d6341ae438ed057957f4, type: 3}
 --- !u!114 &1697659192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11611,7 +11941,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1697659191}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1697659193
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11880,9 +12225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 1768529909}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: 6ee942720085d6341ae438ed057957f4, type: 3}
 --- !u!114 &1768529908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11895,7 +12240,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1768529907}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1768529909
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12578,7 +12938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.16700001, y: 0}
   m_AnchorMax: {x: 0.32885188, y: 0.097231485}
-  m_AnchoredPosition: {x: -0.099975586, y: -0.7998047}
+  m_AnchoredPosition: {x: -0.100097656, y: -0.7998047}
   m_SizeDelta: {x: -1.1365967, y: -1.3991699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2040943110
@@ -12710,9 +13070,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 2040943116}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!114 &2040943115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12725,7 +13085,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2040943114}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &2040943116
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13024,7 +13399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myFx: {fileID: 2070528647}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: bdfc9eb7390227744817dabba175551b, type: 3}
 --- !u!82 &2070528647
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13293,9 +13668,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 2084944712}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 570b83b9613c05946ab548d2f23e8241, type: 3}
+  clickFx: {fileID: 8300000, guid: 259a6800c65bc534294d8d9664b67b46, type: 3}
 --- !u!114 &2084944711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13308,7 +13683,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2084944710}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &2084944712
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13577,9 +13967,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6cc8cd7ab9f842829af85dc919425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 0}
+  myFx: {fileID: 2143848733}
   hoverFx: {fileID: 0}
-  clickFx: {fileID: 8300000, guid: 89af1aa11e091e24a9678baaa3998807, type: 3}
+  clickFx: {fileID: 8300000, guid: c94eecbb158272c4c8dfb031080dd1f9, type: 3}
 --- !u!114 &2143848732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13592,7 +13982,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates: []
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2143848731}
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &2143848733
 AudioSource:
   m_ObjectHideFlags: 0
