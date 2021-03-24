@@ -26,7 +26,7 @@ public class Calculator : MonoBehaviour
     public object TextDisplayM1 { get; private set; }
     public object TextDisplayM2 { get; private set; }
     public object TextDisplay_Market { get; private set; }
-    public int forVibro;
+    public VibroOff forVibroOff;
     public void Start()
     {   
         const string a = "0";
@@ -35,6 +35,8 @@ public class Calculator : MonoBehaviour
         TextDispM1.text = a;
         TextDispM2.text = a;
         Vibration.Init();
+        forVibroOff = GetComponent<VibroOff>();  
+        forVibroOff.SetVibro(enabled);
     }
 
     public void CorrectNumber()
@@ -72,13 +74,13 @@ public class Calculator : MonoBehaviour
 
     public void Vibro()
     {        
-        if (forVibro == 1)
+        if (forVibroOff)
         {
             Vibration.Vibrate(30);   
         }          
         else 
         {
-            Vibration.Vibrate(0);   
+            Vibration.Cancel();     
         }
 
     }

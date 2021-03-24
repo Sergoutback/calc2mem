@@ -193,7 +193,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &71738101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,7 +643,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &165490555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,7 +931,6 @@ GameObject:
   - component: {fileID: 177348500}
   - component: {fileID: 177348499}
   - component: {fileID: 177348502}
-  - component: {fileID: 177348503}
   m_Layer: 5
   m_Name: Button_Point
   m_TagString: Untagged
@@ -985,7 +984,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &177348496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,19 +1242,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   forVibro: 0
---- !u!114 &177348503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177348493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &190424737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,7 +1391,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &205843873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1836,7 +1822,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &241540883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2406,7 +2392,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &271258395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2964,7 +2950,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.19732408}
   m_AnchorMax: {x: 0.66829634, y: 0.29825926}
-  m_AnchoredPosition: {x: -3, y: 42.302765}
+  m_AnchoredPosition: {x: -3, y: 42.30298}
   m_SizeDelta: {x: -27.00763, y: -29.869293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464349179
@@ -2993,7 +2979,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &464349180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3346,7 +3332,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &477200684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4274,7 +4260,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &660005738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4849,7 +4835,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &705145076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5198,7 +5184,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &716390646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5551,7 +5537,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &786523246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6446,7 +6432,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1048607526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7033,7 +7019,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1109098125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7538,7 +7524,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1178152910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7969,7 +7955,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1217668932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8311,7 +8297,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1217673737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8741,7 +8727,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1333811009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9292,7 +9278,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1421286411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9723,7 +9709,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1443625583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10022,7 +10008,6 @@ GameObject:
   - component: {fileID: 1451447146}
   - component: {fileID: 1451447145}
   - component: {fileID: 1451447148}
-  - component: {fileID: 1451447149}
   m_Layer: 5
   m_Name: Button_AC
   m_TagString: Untagged
@@ -10076,7 +10061,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1451447142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10334,19 +10319,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   forVibro: 0
---- !u!114 &1451447149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451447139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1460271600
 GameObject:
   m_ObjectHideFlags: 0
@@ -10568,7 +10540,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1460271606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10845,7 +10817,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1492803426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11347,7 +11319,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1501538454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11526,7 +11498,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1526268830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11879,7 +11851,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1536109957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12378,7 +12350,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1598299628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12720,7 +12692,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1605429438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13275,7 +13247,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1697659188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13628,7 +13600,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &1768529904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14516,7 +14488,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &2040943111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14868,7 +14840,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &2070528642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14989,8 +14961,8 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 2070528641}
-          m_MethodName: StopCoroutine
-          m_Mode: 5
+          m_MethodName: Vibro
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15197,7 +15169,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &2084944707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15550,7 +15522,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
-  forVibro: 0
+  forVibroOff: {fileID: 0}
 --- !u!114 &2143848728
 MonoBehaviour:
   m_ObjectHideFlags: 0
