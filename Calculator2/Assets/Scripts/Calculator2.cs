@@ -124,7 +124,12 @@ public class Calculator2 : MonoBehaviour
 
     public void On_Click_Percent()
     {
-        TextDisp.text += "%";
+        // int number = int.Parse(project.Variables["number"].Value);
+        // int persent = int.Parse(project.Variables["persent"].Value);
+        // return number/100*persent;
+        
+        // TextDisp.text = (double.Parse(TextBox1.Text) * double.Parse(TextBox2.Text) / 100 * double.Parse(TextBox3.Text)).ToString();
+
         //TextDisp.text = Convert.ToDouble(TextDisp.text);
     }
 
