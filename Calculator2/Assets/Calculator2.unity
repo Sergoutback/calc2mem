@@ -181,7 +181,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 8
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -474,7 +474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.012358821, y: 0.7243626}
   m_AnchorMax: {x: 0.16471268, y: 0.9482418}
-  m_AnchoredPosition: {x: -2.1999512, y: -0.2999878}
+  m_AnchoredPosition: {x: -2.199707, y: -0.2999878}
   m_SizeDelta: {x: -1.8222656, y: 0.56207275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108631128
@@ -577,7 +577,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: =
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -876,7 +876,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -1253,7 +1253,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: /
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -1630,7 +1630,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -2146,7 +2146,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
   press_buttons: demo Convert
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -2671,7 +2671,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.19732408}
   m_AnchorMax: {x: 0.66829634, y: 0.29825926}
-  m_AnchoredPosition: {x: -3, y: 42.30081}
+  m_AnchoredPosition: {x: -3, y: 42.30127}
   m_SizeDelta: {x: -27.00763, y: -29.869293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464349179
@@ -2690,7 +2690,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 6
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -2989,7 +2989,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: +
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -3351,7 +3351,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521861335}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -3863,7 +3863,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -4202,6 +4202,7 @@ GameObject:
   - component: {fileID: 705145074}
   - component: {fileID: 705145073}
   - component: {fileID: 705145072}
+  - component: {fileID: 705145079}
   m_Layer: 5
   m_Name: Button_Sound
   m_TagString: Untagged
@@ -4263,6 +4264,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 705145072}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 705145079}
+          m_MethodName: SwitchAudio
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4384,7 +4396,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
   press_buttons: demo Sound
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -4423,7 +4435,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: cdd66e48e263ef647a93d5e73f4b36ca, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -4467,7 +4479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1610c7bba31413245837291118dfca0e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4485,6 +4497,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705145070}
   m_CullTransparentMesh: 0
+--- !u!114 &705145079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705145070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab127572bb955e4aa69c2384f987630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSprite: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSprite: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
 --- !u!1 &707574403
 GameObject:
   m_ObjectHideFlags: 0
@@ -4700,7 +4726,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: '%'
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -4999,7 +5025,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 7
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -5840,7 +5866,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 2
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -6373,7 +6399,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 00
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -6824,7 +6850,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 9
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -7201,7 +7227,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -7500,7 +7526,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 3
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -7877,7 +7903,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 5
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -8398,7 +8424,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -8775,7 +8801,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -9074,7 +9100,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -9512,7 +9538,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
   press_buttons: demo History
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -9746,7 +9772,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -10184,7 +10210,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
   press_buttons: demo Vibro
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -10325,7 +10351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.83800006, y: 0.20218518}
   m_AnchorMax: {x: 1, y: 0.29825926}
-  m_AnchoredPosition: {x: -24.300049, y: 31.199951}
+  m_AnchoredPosition: {x: -24.300049, y: 31.200195}
   m_SizeDelta: {x: -9.347046, y: -6.7430725}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1526268829
@@ -10344,7 +10370,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: '-'
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -10643,7 +10669,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -11080,7 +11106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.20218518}
   m_AnchorMax: {x: 0.16285187, y: 0.29825926}
-  m_AnchoredPosition: {x: 23.199951, y: 31.699951}
+  m_AnchoredPosition: {x: 23.199951, y: 31.700195}
   m_SizeDelta: {x: -8.905792, y: -5.762512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598299627
@@ -11099,7 +11125,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -11398,7 +11424,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 4
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -11910,7 +11936,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -12209,7 +12235,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -13054,7 +13080,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 0
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -13354,7 +13380,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: 1
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -13653,7 +13679,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6706111, y: 0.20218518}
   m_AnchorMax: {x: 0.8325371, y: 0.29825926}
-  m_AnchoredPosition: {x: -14.900024, y: 31.199951}
+  m_AnchoredPosition: {x: -14.900024, y: 31.200195}
   m_SizeDelta: {x: -9.342804, y: -6.7171936}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2084944706
@@ -13672,7 +13698,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
   press_buttons: '*'
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 
@@ -13971,7 +13997,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
   press_buttons: 
-  equal1: 0
+  equal: 0
   zero: 
   disp1: 
   textdel: 

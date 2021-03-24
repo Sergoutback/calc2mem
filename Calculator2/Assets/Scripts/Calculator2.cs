@@ -11,7 +11,7 @@ public class Calculator2 : MonoBehaviour
     public Text TextDispM1;
     public Text TextDispM2;
     public string press_buttons;
-    public double equal1;
+    public double equal;
     public string zero;
 
     // public string text;
@@ -93,8 +93,8 @@ public class Calculator2 : MonoBehaviour
     public void On_Click_Equal()
     {
         DataTable dt = new DataTable();
-        double equal1 = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
-        TextDisp.text = equal1.ToString();
+        double equal = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
+        TextDisp.text = equal.ToString();
     }
 
     public void On_Click_Plus_Minus()
