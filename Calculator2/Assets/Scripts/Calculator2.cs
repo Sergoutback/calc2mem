@@ -67,7 +67,7 @@ public class Calculator2 : MonoBehaviour
     public void On_Click_button()
     {
         CorrectNumber();
-        Handheld.Vibrate();
+        // Handheld.Vibrate();
     }
     
     

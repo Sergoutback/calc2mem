@@ -137,7 +137,9 @@ GameObject:
   - component: {fileID: 71738106}
   - component: {fileID: 71738105}
   - component: {fileID: 71738104}
+  - component: {fileID: 71738108}
   - component: {fileID: 71738107}
+  - component: {fileID: 71738109}
   m_Layer: 5
   m_Name: Button_8
   m_TagString: Untagged
@@ -236,6 +238,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 71738100}
         m_MethodName: On_Click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -440,6 +453,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &71738108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71738098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &71738109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71738098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &108631126
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,6 +575,8 @@ GameObject:
   - component: {fileID: 165490560}
   - component: {fileID: 165490559}
   - component: {fileID: 165490558}
+  - component: {fileID: 165490561}
+  - component: {fileID: 165490562}
   m_Layer: 5
   m_Name: Button_Equal
   m_TagString: Untagged
@@ -632,6 +675,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 165490554}
         m_MethodName: On_Click_Equal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -817,6 +871,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &165490561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165490552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &165490562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165490552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &177348493
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +915,8 @@ GameObject:
   - component: {fileID: 177348501}
   - component: {fileID: 177348500}
   - component: {fileID: 177348499}
+  - component: {fileID: 177348502}
+  - component: {fileID: 177348503}
   m_Layer: 5
   m_Name: Button_Point
   m_TagString: Untagged
@@ -931,6 +1015,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 177348495}
         m_MethodName: On_Click_Point
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1116,6 +1211,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &177348502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177348493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &177348503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177348493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &190424737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,6 +1333,8 @@ GameObject:
   - component: {fileID: 205843878}
   - component: {fileID: 205843877}
   - component: {fileID: 205843876}
+  - component: {fileID: 205843879}
+  - component: {fileID: 205843880}
   m_Layer: 5
   m_Name: Button_Divide
   m_TagString: Untagged
@@ -1308,6 +1433,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 205843872}
         m_MethodName: On_Click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1493,6 +1629,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &205843879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205843870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &205843880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205843870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &212066455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1751,8 @@ GameObject:
   - component: {fileID: 241540888}
   - component: {fileID: 241540887}
   - component: {fileID: 241540886}
+  - component: {fileID: 241540889}
+  - component: {fileID: 241540890}
   m_Layer: 5
   m_Name: Button_MR
   m_TagString: Untagged
@@ -1685,6 +1851,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 241540882}
         m_MethodName: On_Click_MemoryReturn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1870,6 +2047,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &241540889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241540880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &241540890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241540880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &263749485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1964,6 +2169,8 @@ GameObject:
   - component: {fileID: 271258393}
   - component: {fileID: 271258392}
   - component: {fileID: 271258391}
+  - component: {fileID: 271258398}
+  - component: {fileID: 271258399}
   m_Layer: 5
   m_Name: Button_Convert
   m_TagString: Untagged
@@ -2210,6 +2417,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &271258396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2247,6 +2465,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271258389}
   m_CullTransparentMesh: 0
+--- !u!114 &271258398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271258389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &271258399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271258389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &310384942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,7 +2607,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.014851852, y: 0.7877813}
   m_AnchorMax: {x: 0.98912966, y: 0.86700004}
-  m_AnchoredPosition: {x: -3.5998535, y: 2}
+  m_AnchoredPosition: {x: -3.6000977, y: 2}
   m_SizeDelta: {x: -1.2075195, y: 14.823151}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &314994049
@@ -2647,6 +2893,8 @@ GameObject:
   - component: {fileID: 464349185}
   - component: {fileID: 464349184}
   - component: {fileID: 464349183}
+  - component: {fileID: 464349186}
+  - component: {fileID: 464349187}
   m_Layer: 5
   m_Name: Button_6
   m_TagString: Untagged
@@ -2671,7 +2919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.19732408}
   m_AnchorMax: {x: 0.66829634, y: 0.29825926}
-  m_AnchoredPosition: {x: -3, y: 42.30127}
+  m_AnchoredPosition: {x: -3, y: 42.302734}
   m_SizeDelta: {x: -27.00763, y: -29.869293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464349179
@@ -2745,6 +2993,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 464349179}
         m_MethodName: On_Click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2930,6 +3189,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &464349186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464349177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &464349187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464349177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &477200681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2946,6 +3233,8 @@ GameObject:
   - component: {fileID: 477200689}
   - component: {fileID: 477200688}
   - component: {fileID: 477200687}
+  - component: {fileID: 477200690}
+  - component: {fileID: 477200691}
   m_Layer: 5
   m_Name: Button_Plus
   m_TagString: Untagged
@@ -2970,7 +3259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6706111, y: 0}
   m_AnchorMax: {x: 0.8325371, y: 0.19732408}
-  m_AnchoredPosition: {x: -14.300049, y: 46.899902}
+  m_AnchoredPosition: {x: -14.300049, y: 46.90039}
   m_SizeDelta: {x: -8.805603, y: -19.562866}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &477200683
@@ -3044,6 +3333,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 477200683}
         m_MethodName: On_Click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3229,6 +3529,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &477200690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477200681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &477200691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477200681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &488123188
 GameObject:
   m_ObjectHideFlags: 0
@@ -3376,7 +3704,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sound
+  m_Text: 
 --- !u!222 &521861338
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3743,7 +4071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &631221002
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3820,6 +4148,8 @@ GameObject:
   - component: {fileID: 660005743}
   - component: {fileID: 660005742}
   - component: {fileID: 660005741}
+  - component: {fileID: 660005744}
+  - component: {fileID: 660005745}
   m_Layer: 5
   m_Name: Button_Plus_Minus
   m_TagString: Untagged
@@ -3918,6 +4248,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 660005737}
         m_MethodName: On_Click_Plus_Minus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4103,6 +4444,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &660005744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660005735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &660005745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660005735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &693347989
 GameObject:
   m_ObjectHideFlags: 0
@@ -4202,7 +4571,9 @@ GameObject:
   - component: {fileID: 705145074}
   - component: {fileID: 705145073}
   - component: {fileID: 705145072}
+  - component: {fileID: 705145080}
   - component: {fileID: 705145079}
+  - component: {fileID: 705145081}
   m_Layer: 5
   m_Name: Button_Sound
   m_TagString: Untagged
@@ -4395,7 +4766,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
-  press_buttons: demo Sound
+  press_buttons: 
   equal: 0
   zero: 
   disp1: 
@@ -4460,6 +4831,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &705145077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4511,6 +4893,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSprite: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSprite: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+--- !u!114 &705145080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705145070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &705145081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705145070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &707574403
 GameObject:
   m_ObjectHideFlags: 0
@@ -4683,6 +5093,8 @@ GameObject:
   - component: {fileID: 716390651}
   - component: {fileID: 716390650}
   - component: {fileID: 716390649}
+  - component: {fileID: 716390652}
+  - component: {fileID: 716390653}
   m_Layer: 5
   m_Name: Button_Persent
   m_TagString: Untagged
@@ -4781,6 +5193,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 716390645}
         m_MethodName: On_Click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4966,6 +5389,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &716390652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716390643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &716390653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716390643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &786523243
 GameObject:
   m_ObjectHideFlags: 0
@@ -4982,6 +5433,8 @@ GameObject:
   - component: {fileID: 786523251}
   - component: {fileID: 786523250}
   - component: {fileID: 786523249}
+  - component: {fileID: 786523252}
+  - component: {fileID: 786523253}
   m_Layer: 5
   m_Name: Button_7
   m_TagString: Untagged
@@ -5080,6 +5533,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 786523245}
         m_MethodName: On_Click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5265,6 +5729,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &786523252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786523243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &786523253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786523243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &796191336
 GameObject:
   m_ObjectHideFlags: 0
@@ -5823,6 +6315,8 @@ GameObject:
   - component: {fileID: 1048607531}
   - component: {fileID: 1048607530}
   - component: {fileID: 1048607529}
+  - component: {fileID: 1048607532}
+  - component: {fileID: 1048607533}
   m_Layer: 5
   m_Name: Button_2
   m_TagString: Untagged
@@ -5930,6 +6424,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1048607527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6007,6 +6512,17 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: PlayVibrationTime
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0.001
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -6106,6 +6622,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1048607532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048607523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1048607533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048607523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1076044395
 GameObject:
   m_ObjectHideFlags: 0
@@ -6356,6 +6900,8 @@ GameObject:
   - component: {fileID: 1109098130}
   - component: {fileID: 1109098129}
   - component: {fileID: 1109098128}
+  - component: {fileID: 1109098131}
+  - component: {fileID: 1109098132}
   m_Layer: 5
   m_Name: Button_00
   m_TagString: Untagged
@@ -6454,6 +7000,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1109098124}
         m_MethodName: On_Click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6639,6 +7196,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1109098131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109098122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1109098132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109098122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1140793276
 GameObject:
   m_ObjectHideFlags: 0
@@ -6807,6 +7392,8 @@ GameObject:
   - component: {fileID: 1178152915}
   - component: {fileID: 1178152914}
   - component: {fileID: 1178152913}
+  - component: {fileID: 1178152916}
+  - component: {fileID: 1178152917}
   m_Layer: 5
   m_Name: Button_9
   m_TagString: Untagged
@@ -6905,6 +7492,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1178152909}
         m_MethodName: On_Click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7090,6 +7688,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1178152916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178152907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1178152917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178152907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1197257107
 GameObject:
   m_ObjectHideFlags: 0
@@ -7184,6 +7810,8 @@ GameObject:
   - component: {fileID: 1217668937}
   - component: {fileID: 1217668936}
   - component: {fileID: 1217668935}
+  - component: {fileID: 1217668938}
+  - component: {fileID: 1217668939}
   m_Layer: 5
   m_Name: Button_M_Minus2
   m_TagString: Untagged
@@ -7208,7 +7836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6706111, y: 0.5043055}
   m_AnchorMax: {x: 0.8325371, y: 0.5993427}
-  m_AnchoredPosition: {x: -14.900024, y: 4.5999756}
+  m_AnchoredPosition: {x: -14.899902, y: 4.5999756}
   m_SizeDelta: {x: -9.283997, y: -8.230011}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217668931
@@ -7282,6 +7910,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1217668931}
         m_MethodName: On_Click_Memory2Minus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7467,6 +8106,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1217668938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217668929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1217668939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217668929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1217673734
 GameObject:
   m_ObjectHideFlags: 0
@@ -7483,6 +8150,8 @@ GameObject:
   - component: {fileID: 1217673742}
   - component: {fileID: 1217673741}
   - component: {fileID: 1217673740}
+  - component: {fileID: 1217673743}
+  - component: {fileID: 1217673744}
   m_Layer: 5
   m_Name: Button_3
   m_TagString: Untagged
@@ -7590,6 +8259,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1217673738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7667,6 +8347,17 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: PlayVibrationTime
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 3
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -7766,6 +8457,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1217673743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217673734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1217673744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217673734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1277532457
 GameObject:
   m_ObjectHideFlags: 0
@@ -7860,6 +8579,8 @@ GameObject:
   - component: {fileID: 1333811014}
   - component: {fileID: 1333811013}
   - component: {fileID: 1333811012}
+  - component: {fileID: 1333811015}
+  - component: {fileID: 1333811016}
   m_Layer: 5
   m_Name: Button_5
   m_TagString: Untagged
@@ -7967,6 +8688,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1333811010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8039,6 +8771,36 @@ MonoBehaviour:
         - m_Target: {fileID: 1333811012}
           m_MethodName: ClickSound
           m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: PlayVibrationisPressed
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: PlayVibrationisPressed
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8143,6 +8905,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1333811015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333811006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1333811016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333811006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1347463963
 GameObject:
   m_ObjectHideFlags: 0
@@ -8381,6 +9171,8 @@ GameObject:
   - component: {fileID: 1421286416}
   - component: {fileID: 1421286415}
   - component: {fileID: 1421286414}
+  - component: {fileID: 1421286417}
+  - component: {fileID: 1421286418}
   m_Layer: 5
   m_Name: Button_MC2
   m_TagString: Untagged
@@ -8479,6 +9271,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1421286410}
         m_MethodName: On_Click_Memory2Clear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8664,6 +9467,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1421286417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421286408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1421286418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421286408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1429338339
 GameObject:
   m_ObjectHideFlags: 0
@@ -8758,6 +9589,8 @@ GameObject:
   - component: {fileID: 1443625588}
   - component: {fileID: 1443625587}
   - component: {fileID: 1443625586}
+  - component: {fileID: 1443625589}
+  - component: {fileID: 1443625590}
   m_Layer: 5
   m_Name: Button_C
   m_TagString: Untagged
@@ -8856,6 +9689,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1443625582}
         m_MethodName: On_Click_C
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9041,6 +9885,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1443625589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443625580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1443625590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443625580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1451447139
 GameObject:
   m_ObjectHideFlags: 0
@@ -9057,6 +9929,8 @@ GameObject:
   - component: {fileID: 1451447147}
   - component: {fileID: 1451447146}
   - component: {fileID: 1451447145}
+  - component: {fileID: 1451447148}
+  - component: {fileID: 1451447149}
   m_Layer: 5
   m_Name: Button_AC
   m_TagString: Untagged
@@ -9155,6 +10029,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1451447141}
         m_MethodName: On_Click_AC
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9340,6 +10225,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1451447148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451447139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1451447149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451447139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1460271600
 GameObject:
   m_ObjectHideFlags: 0
@@ -9356,6 +10269,8 @@ GameObject:
   - component: {fileID: 1460271604}
   - component: {fileID: 1460271603}
   - component: {fileID: 1460271602}
+  - component: {fileID: 1460271609}
+  - component: {fileID: 1460271610}
   m_Layer: 5
   m_Name: Button_History
   m_TagString: Untagged
@@ -9602,6 +10517,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1460271607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9639,6 +10565,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460271600}
   m_CullTransparentMesh: 0
+--- !u!114 &1460271609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460271600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1460271610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460271600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1461402403
 GameObject:
   m_ObjectHideFlags: 0
@@ -9729,6 +10683,8 @@ GameObject:
   - component: {fileID: 1492803431}
   - component: {fileID: 1492803430}
   - component: {fileID: 1492803429}
+  - component: {fileID: 1492803432}
+  - component: {fileID: 1492803433}
   m_Layer: 5
   m_Name: Button_MR2
   m_TagString: Untagged
@@ -9827,6 +10783,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1492803425}
         m_MethodName: On_Click_Memory2Return
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10012,6 +10979,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1492803432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492803423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1492803433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492803423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1501538448
 GameObject:
   m_ObjectHideFlags: 0
@@ -10028,6 +11023,8 @@ GameObject:
   - component: {fileID: 1501538452}
   - component: {fileID: 1501538451}
   - component: {fileID: 1501538450}
+  - component: {fileID: 1501538457}
+  - component: {fileID: 1501538458}
   m_Layer: 5
   m_Name: Button_Vibro
   m_TagString: Untagged
@@ -10089,6 +11086,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1501538450}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1501538457}
+          m_MethodName: SwitchVibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -10209,7 +11217,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
-  press_buttons: demo Vibro
+  press_buttons: 
   equal: 0
   zero: 
   disp1: 
@@ -10249,7 +11257,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: cdd66e48e263ef647a93d5e73f4b36ca, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -10293,7 +11301,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1610c7bba31413245837291118dfca0e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10311,6 +11319,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501538448}
   m_CullTransparentMesh: 0
+--- !u!114 &1501538457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501538448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1501538458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501538448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1526268827
 GameObject:
   m_ObjectHideFlags: 0
@@ -10327,6 +11363,8 @@ GameObject:
   - component: {fileID: 1526268835}
   - component: {fileID: 1526268834}
   - component: {fileID: 1526268833}
+  - component: {fileID: 1526268836}
+  - component: {fileID: 1526268837}
   m_Layer: 5
   m_Name: Button_Minus
   m_TagString: Untagged
@@ -10425,6 +11463,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1526268829}
         m_MethodName: On_Click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10610,6 +11659,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1526268836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526268827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1526268837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526268827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1536109954
 GameObject:
   m_ObjectHideFlags: 0
@@ -10626,6 +11703,8 @@ GameObject:
   - component: {fileID: 1536109962}
   - component: {fileID: 1536109961}
   - component: {fileID: 1536109960}
+  - component: {fileID: 1536109963}
+  - component: {fileID: 1536109964}
   m_Layer: 5
   m_Name: Button_M_Plus
   m_TagString: Untagged
@@ -10724,6 +11803,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1536109956}
         m_MethodName: On_Click_MemoryPlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10909,6 +11999,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1536109963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536109954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1536109964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536109954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1558496815
 GameObject:
   m_ObjectHideFlags: 0
@@ -11081,6 +12199,8 @@ GameObject:
   - component: {fileID: 1598299633}
   - component: {fileID: 1598299632}
   - component: {fileID: 1598299631}
+  - component: {fileID: 1598299634}
+  - component: {fileID: 1598299635}
   m_Layer: 5
   m_Name: Button_Del
   m_TagString: Untagged
@@ -11106,7 +12226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.20218518}
   m_AnchorMax: {x: 0.16285187, y: 0.29825926}
-  m_AnchoredPosition: {x: 23.199951, y: 31.700195}
+  m_AnchoredPosition: {x: 23.199707, y: 31.700195}
   m_SizeDelta: {x: -8.905792, y: -5.762512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598299627
@@ -11180,6 +12300,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1598299627}
         m_MethodName: On_Click_Del
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11365,6 +12496,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1598299634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598299625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1598299635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598299625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1605429435
 GameObject:
   m_ObjectHideFlags: 0
@@ -11381,6 +12540,8 @@ GameObject:
   - component: {fileID: 1605429443}
   - component: {fileID: 1605429442}
   - component: {fileID: 1605429441}
+  - component: {fileID: 1605429444}
+  - component: {fileID: 1605429445}
   m_Layer: 5
   m_Name: Button_4
   m_TagString: Untagged
@@ -11488,6 +12649,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1605429439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11560,6 +12732,17 @@ MonoBehaviour:
         - m_Target: {fileID: 1605429441}
           m_MethodName: ClickSound
           m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: PlayVibrationisPressed
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11664,6 +12847,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1605429444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605429435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1605429445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605429435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1662174659
 GameObject:
   m_ObjectHideFlags: 0
@@ -11837,7 +13048,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.014851852, y: 0.87600005}
   m_AnchorMax: {x: 0.98912966, y: 0.95617574}
-  m_AnchoredPosition: {x: -4.800049, y: 1}
+  m_AnchoredPosition: {x: -4.800293, y: 1}
   m_SizeDelta: {x: -1.2397461, y: 2.4859009}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1692314872
@@ -11893,6 +13104,8 @@ GameObject:
   - component: {fileID: 1697659193}
   - component: {fileID: 1697659192}
   - component: {fileID: 1697659191}
+  - component: {fileID: 1697659194}
+  - component: {fileID: 1697659195}
   m_Layer: 5
   m_Name: Button_M_Plus2
   m_TagString: Untagged
@@ -11991,6 +13204,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1697659187}
         m_MethodName: On_Click_Memory2Plus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12176,6 +13400,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1697659194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697659185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1697659195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697659185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1768529901
 GameObject:
   m_ObjectHideFlags: 0
@@ -12192,6 +13444,8 @@ GameObject:
   - component: {fileID: 1768529909}
   - component: {fileID: 1768529908}
   - component: {fileID: 1768529907}
+  - component: {fileID: 1768529910}
+  - component: {fileID: 1768529911}
   m_Layer: 5
   m_Name: Button_M_Minus
   m_TagString: Untagged
@@ -12290,6 +13544,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1768529903}
         m_MethodName: On_Click_MemoryMinus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12475,6 +13740,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1768529910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768529901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &1768529911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768529901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1780846789
 GameObject:
   m_ObjectHideFlags: 0
@@ -13037,6 +14330,8 @@ GameObject:
   - component: {fileID: 2040943116}
   - component: {fileID: 2040943115}
   - component: {fileID: 2040943114}
+  - component: {fileID: 2040943117}
+  - component: {fileID: 2040943118}
   m_Layer: 5
   m_Name: Button_0
   m_TagString: Untagged
@@ -13135,6 +14430,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2040943110}
         m_MethodName: On_Click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13320,6 +14626,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2040943117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040943108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &2040943118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040943108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &2070528639
 GameObject:
   m_ObjectHideFlags: 0
@@ -13337,6 +14671,7 @@ GameObject:
   - component: {fileID: 2070528645}
   - component: {fileID: 2070528646}
   - component: {fileID: 2070528648}
+  - component: {fileID: 2070528649}
   m_Layer: 5
   m_Name: Button_1
   m_TagString: Untagged
@@ -13505,6 +14840,17 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
+            m_FloatArgument: 10
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: PlayVibrationStandart
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -13620,25 +14966,49 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &2070528648
-Animator:
-  serializedVersion: 3
+--- !u!114 &2070528648
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070528639}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 48fc136af529f774094fe69cd090898d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 1
+--- !u!114 &2070528649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070528639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2070528648}
+          m_MethodName: PlayVibrationStandart
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2084944704
 GameObject:
   m_ObjectHideFlags: 0
@@ -13655,6 +15025,8 @@ GameObject:
   - component: {fileID: 2084944712}
   - component: {fileID: 2084944711}
   - component: {fileID: 2084944710}
+  - component: {fileID: 2084944713}
+  - component: {fileID: 2084944714}
   m_Layer: 5
   m_Name: Button_Multiply
   m_TagString: Untagged
@@ -13679,7 +15051,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6706111, y: 0.20218518}
   m_AnchorMax: {x: 0.8325371, y: 0.29825926}
-  m_AnchoredPosition: {x: -14.900024, y: 31.200195}
+  m_AnchoredPosition: {x: -14.899902, y: 31.200195}
   m_SizeDelta: {x: -9.342804, y: -6.7171936}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2084944706
@@ -13753,6 +15125,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2084944706}
         m_MethodName: On_Click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13938,6 +15321,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2084944713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084944704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &2084944714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084944704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &2143848725
 GameObject:
   m_ObjectHideFlags: 0
@@ -13954,6 +15365,8 @@ GameObject:
   - component: {fileID: 2143848733}
   - component: {fileID: 2143848732}
   - component: {fileID: 2143848731}
+  - component: {fileID: 2143848734}
+  - component: {fileID: 2143848735}
   m_Layer: 5
   m_Name: Button_MC
   m_TagString: Untagged
@@ -14052,6 +15465,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2143848727}
         m_MethodName: On_Click_MemoryClear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14237,3 +15661,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2143848734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143848725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+  isVibration: 0
+--- !u!114 &2143848735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143848725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
