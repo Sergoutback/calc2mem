@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Data;
 using System;
-
-public class Calculator2 : MonoBehaviour
+public class Calculator : MonoBehaviour
 {   
     public Text TextDisp;
     public Text TextDispM1;
@@ -27,7 +26,7 @@ public class Calculator2 : MonoBehaviour
     public object TextDisplayM1 { get; private set; }
     public object TextDisplayM2 { get; private set; }
     public object TextDisplay_Market { get; private set; }
-    
+    public int forVibro;
     public void Start()
     {   
         const string a = "0";
@@ -35,6 +34,7 @@ public class Calculator2 : MonoBehaviour
         TextDisp.text =  a;
         TextDispM1.text = a;
         TextDispM2.text = a;
+        Vibration.Init();
     }
 
     public void CorrectNumber()
@@ -66,8 +66,21 @@ public class Calculator2 : MonoBehaviour
 
     public void On_Click_button()
     {
-        CorrectNumber();
-        // Handheld.Vibrate();
+        CorrectNumber();                
+    }
+
+
+    public void Vibro()
+    {        
+        if (forVibro == 1)
+        {
+            Vibration.Vibrate(30);   
+        }          
+        else 
+        {
+            Vibration.Vibrate(0);   
+        }
+
     }
     
     

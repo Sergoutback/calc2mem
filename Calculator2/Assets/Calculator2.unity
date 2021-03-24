@@ -193,6 +193,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &71738101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,6 +339,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 71738100}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &71738106
 AudioSource:
   m_ObjectHideFlags: 0
@@ -468,6 +480,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &71738109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,7 +614,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.83800006, y: 0}
   m_AnchorMax: {x: 1, y: 0.19732408}
-  m_AnchoredPosition: {x: -23.900146, y: 45.799805}
+  m_AnchoredPosition: {x: -23.899902, y: 45.799805}
   m_SizeDelta: {x: -9.434967, y: -17.459656}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &165490554
@@ -619,7 +632,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
-  press_buttons: =
+  press_buttons: 
   equal: 0
   zero: 
   disp1: 
@@ -630,6 +643,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &165490555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,17 +689,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 165490554}
         m_MethodName: On_Click_Equal
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -766,6 +769,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 165490558}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 165490554}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -886,6 +900,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &165490562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,6 +985,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &177348496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1015,17 +1031,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 177348495}
         m_MethodName: On_Click_Point
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1106,6 +1111,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 177348499}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 177348495}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1226,6 +1242,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &177348503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1388,6 +1405,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &205843873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1533,6 +1551,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 205843872}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &205843878
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1644,6 +1673,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &205843880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1806,6 +1836,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &241540883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,17 +1882,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 241540882}
         m_MethodName: On_Click_MemoryReturn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1942,6 +1962,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 241540886}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 241540882}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2062,6 +2093,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &241540890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2241,6 +2273,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 271258394}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &271258393
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2363,6 +2406,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &271258395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2480,6 +2524,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &271258399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2527,7 +2572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.012358821, y: 0.7243626}
   m_AnchorMax: {x: 0.16471268, y: 0.9482418}
-  m_AnchoredPosition: {x: -3.4128418, y: -5}
+  m_AnchoredPosition: {x: -3.413086, y: -5}
   m_SizeDelta: {x: -1.7418213, y: -1.5843506}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &310384944
@@ -2919,7 +2964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.19732408}
   m_AnchorMax: {x: 0.66829634, y: 0.29825926}
-  m_AnchoredPosition: {x: -3, y: 42.302734}
+  m_AnchoredPosition: {x: -3, y: 42.302765}
   m_SizeDelta: {x: -27.00763, y: -29.869293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464349179
@@ -2948,6 +2993,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &464349180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3093,6 +3139,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 464349179}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &464349185
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3204,6 +3261,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &464349187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3288,6 +3346,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &477200684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3433,6 +3492,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 477200683}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &477200689
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3544,6 +3614,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &477200691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4203,6 +4274,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &660005738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4248,17 +4320,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 660005737}
         m_MethodName: On_Click_Plus_Minus
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4339,6 +4400,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 660005741}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 660005737}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4459,6 +4531,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &660005745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4597,7 +4670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.32885188, y: 0.5043055}
   m_AnchorMax: {x: 0.49646297, y: 0.5993427}
-  m_AnchoredPosition: {x: -692, y: 4.200012}
+  m_AnchoredPosition: {x: -692, y: 4.199951}
   m_SizeDelta: {x: -21.81778, y: -10.421448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705145072
@@ -4643,8 +4716,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 705145079}
-          m_MethodName: SwitchAudio
+        - m_Target: {fileID: 705145075}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4776,6 +4849,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &705145076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4818,7 +4892,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 705145077}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 705145079}
+        m_MethodName: SwitchAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &705145077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4885,6 +4970,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!1 &707574403
 GameObject:
   m_ObjectHideFlags: 0
@@ -5083,7 +5169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.83800006, y: 0.30245373}
   m_AnchorMax: {x: 1, y: 0.39930558}
-  m_AnchoredPosition: {x: -24.800049, y: 23.5}
+  m_AnchoredPosition: {x: -24.800293, y: 23.5}
   m_SizeDelta: {x: -8.373322, y: -9.210663}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &716390645
@@ -5112,6 +5198,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &716390646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5257,6 +5344,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 716390645}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &716390651
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5368,6 +5466,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &716390653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5452,6 +5551,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &786523246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5597,6 +5697,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 786523245}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &786523251
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5708,6 +5819,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &786523253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5755,7 +5867,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.022426864, y: 0}
   m_AnchorMax: {x: 0.97757316, y: 1}
-  m_AnchoredPosition: {x: 0.19995117, y: 0.029418945}
+  m_AnchoredPosition: {x: 0.19970703, y: 0.029418945}
   m_SizeDelta: {x: 8.636475, y: -0.014343262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &796191338
@@ -6334,6 +6446,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1048607526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6479,9 +6592,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_MethodName: PlayVibrationTime
-          m_Mode: 4
+        - m_Target: {fileID: 1048607525}
+          m_MethodName: Vibro
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6601,6 +6714,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1048607533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6919,6 +7033,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1109098125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7064,6 +7179,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1109098124}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1109098130
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7175,6 +7301,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1109098132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7411,6 +7538,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1178152910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7556,6 +7684,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1178152909}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1178152915
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7667,6 +7806,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1178152917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7714,7 +7854,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.022426378, y: 0}
   m_AnchorMax: {x: 0.98100007, y: 0.9482418}
-  m_AnchoredPosition: {x: -3.3000488, y: 4.299988}
+  m_AnchoredPosition: {x: -3.2998047, y: 4.299988}
   m_SizeDelta: {x: 1.6074219, y: -20.56781}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1197257109
@@ -7829,6 +7969,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1217668932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7874,17 +8015,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1217668931}
         m_MethodName: On_Click_Memory2Minus
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7965,6 +8095,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1217668935}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1217668931}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -8085,6 +8226,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1217668939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8140,7 +8282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.10076852}
   m_AnchorMax: {x: 0.66262966, y: 0.19732408}
-  m_AnchoredPosition: {x: 3, y: 41.199707}
+  m_AnchoredPosition: {x: 3, y: 41.19922}
   m_SizeDelta: {x: -14.997131, y: -9.128326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217673736
@@ -8169,6 +8311,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1217673737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8314,9 +8457,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_MethodName: PlayVibrationTime
-          m_Mode: 4
+        - m_Target: {fileID: 1217673736}
+          m_MethodName: Vibro
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8436,6 +8579,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1217673744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8544,7 +8688,6 @@ GameObject:
   - component: {fileID: 1333811013}
   - component: {fileID: 1333811012}
   - component: {fileID: 1333811015}
-  - component: {fileID: 1333811016}
   m_Layer: 5
   m_Name: Button_5
   m_TagString: Untagged
@@ -8598,6 +8741,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1333811009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8652,8 +8796,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
+      - m_Target: {fileID: 1333811008}
+        m_MethodName: Vibro
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8735,36 +8879,6 @@ MonoBehaviour:
         - m_Target: {fileID: 1333811012}
           m_MethodName: ClickSound
           m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: PlayVibrationisPressed
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: PlayVibrationisPressed
-          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8884,19 +8998,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
---- !u!114 &1333811016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333811006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
+  forVibro: 0
 --- !u!1 &1347463963
 GameObject:
   m_ObjectHideFlags: 0
@@ -9190,6 +9292,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1421286411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9245,7 +9348,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9326,6 +9429,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1421286414}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1421286410}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -9446,6 +9560,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1421286418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9597,7 +9712,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
-  press_buttons: 
+  press_buttons: 0
   equal: 0
   zero: 
   disp1: 
@@ -9608,6 +9723,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1443625583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9662,8 +9778,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
+      - m_Target: {fileID: 1443625580}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9744,6 +9860,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1443625586}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1443625582}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -9864,6 +9991,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1443625590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9937,7 +10065,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  press_buttons: 
+  press_buttons: 0
   equal: 0
   zero: 
   disp1: 
@@ -9948,6 +10076,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1451447142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9993,17 +10122,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1451447141}
         m_MethodName: On_Click_AC
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10084,6 +10202,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1451447145}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1451447141}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -10204,6 +10333,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1451447149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10296,6 +10426,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1460271602}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1460271605}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -10427,6 +10568,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1460271606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10544,6 +10686,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1460271610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10673,7 +10816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.50277776, y: 0.5043055}
   m_AnchorMax: {x: 0.66262966, y: 0.5993427}
-  m_AnchoredPosition: {x: 0, y: 4.200012}
+  m_AnchoredPosition: {x: 0, y: 4.199951}
   m_SizeDelta: {x: -7.7263184, y: -8.912231}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1492803425
@@ -10702,6 +10845,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1492803426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10757,7 +10901,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10838,6 +10982,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1492803429}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1492803425}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -10958,6 +11113,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1492803433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11047,8 +11203,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1501538457}
-          m_MethodName: SwitchVibro
+        - m_Target: {fileID: 1501538453}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -11191,6 +11347,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1501538454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11233,7 +11390,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1501538455}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1501538457}
+        m_MethodName: SwitchVibro
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1501538455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11286,6 +11454,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 26b447b79b059b748b7a13cfc63d4240, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: c4946af157862204b8bf4be6431156e7, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!1 &1526268827
 GameObject:
   m_ObjectHideFlags: 0
@@ -11328,7 +11497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.83800006, y: 0.20218518}
   m_AnchorMax: {x: 1, y: 0.29825926}
-  m_AnchoredPosition: {x: -24.300049, y: 31.200195}
+  m_AnchoredPosition: {x: -24.300293, y: 31.200195}
   m_SizeDelta: {x: -9.347046, y: -6.7430725}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1526268829
@@ -11357,6 +11526,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1526268830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11502,6 +11672,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1526268829}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &1526268835
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11613,6 +11794,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1526268837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11668,7 +11850,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.83800006, y: 0.40500003}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -24.699951, y: 13.900024}
+  m_AnchoredPosition: {x: -24.699707, y: 13.900024}
   m_SizeDelta: {x: -8.312988, y: -7.669586}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1536109956
@@ -11697,6 +11879,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1536109957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11742,17 +11925,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1536109956}
         m_MethodName: On_Click_MemoryPlus
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11833,6 +12005,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1536109960}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1536109956}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -11953,6 +12136,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1536109964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12194,6 +12378,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1598299628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12239,17 +12424,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1598299627}
         m_MethodName: On_Click_Del
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12330,6 +12504,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1598299631}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1598299627}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -12450,6 +12635,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1598299635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12534,6 +12720,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1605429438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12579,17 +12766,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1605429437}
         m_MethodName: On_Click_button
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12679,9 +12855,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_MethodName: PlayVibrationisPressed
-          m_Mode: 6
+        - m_Target: {fileID: 1605429437}
+          m_MethodName: Vibro
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12801,6 +12977,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1605429445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13069,7 +13246,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.83800006, y: 0.5043055}
   m_AnchorMax: {x: 0.9965371, y: 0.5993427}
-  m_AnchoredPosition: {x: -20, y: 5.299988}
+  m_AnchoredPosition: {x: -20, y: 5.300049}
   m_SizeDelta: {x: -1.0855713, y: -9.746826}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1697659187
@@ -13098,6 +13275,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1697659188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13153,7 +13331,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13234,6 +13412,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1697659191}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1697659187}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -13354,6 +13543,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1697659195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13438,6 +13628,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &1768529904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13483,17 +13674,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1768529903}
         m_MethodName: On_Click_MemoryMinus
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13574,6 +13754,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1768529907}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1768529903}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -13694,6 +13885,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &1768529911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13741,7 +13933,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.022426018, y: 0}
   m_AnchorMax: {x: 0.98100007, y: 0.9482418}
-  m_AnchoredPosition: {x: -3.3000488, y: 5.800049}
+  m_AnchoredPosition: {x: -3.300293, y: 5.800049}
   m_SizeDelta: {x: 1.5863037, y: -11.815521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1780846791
@@ -14324,6 +14516,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &2040943111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14469,6 +14662,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2040943110}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &2040943116
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14580,6 +14784,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &2040943118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14634,7 +14839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.16700001, y: 0.10076852}
   m_AnchorMax: {x: 0.32885188, y: 0.19732408}
-  m_AnchoredPosition: {x: 19, y: 41.100098}
+  m_AnchoredPosition: {x: 19, y: 41.09961}
   m_SizeDelta: {x: -8.721588, y: -9.120972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2070528641
@@ -14663,6 +14868,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &2070528642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14771,8 +14977,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2070528648}
-          m_MethodName: PlayVibration
+        - m_Target: {fileID: 2070528646}
+          m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14782,9 +14988,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2070528646}
-          m_MethodName: ClickSound
-          m_Mode: 1
+        - m_Target: {fileID: 2070528641}
+          m_MethodName: StopCoroutine
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14919,6 +15125,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 0}
   disableSpriteVibro: {fileID: 0}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!1 &2084944704
 GameObject:
   m_ObjectHideFlags: 0
@@ -14990,6 +15197,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &2084944707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15135,6 +15343,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2084944706}
+          m_MethodName: Vibro
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &2084944712
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15246,6 +15465,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &2084944714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15330,6 +15550,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  forVibro: 0
 --- !u!114 &2143848728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15375,17 +15596,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2143848727}
         m_MethodName: On_Click_MemoryClear
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15466,6 +15676,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2143848731}
           m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2143848727}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15586,6 +15807,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
+  forVibro: 0
 --- !u!114 &2143848735
 MonoBehaviour:
   m_ObjectHideFlags: 0

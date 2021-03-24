@@ -10,20 +10,25 @@ public class VibroOff : MonoBehaviour
     public bool VibroEnabled { get { return vibroEnabled; } set { SetVibro(value); } }
 
     Image imageVibro;
+    public int forVibro;
     
     void Start()
     {
-        imageVibro = GetComponent<Image>();                      
+        imageVibro = GetComponent<Image>();  
+        Vibration.Init();                    
     }
 
     public void SetVibro(bool enabled)
     {
         if (enabled)
-        {                               
+        {   
+            forVibro = 1;                            
             imageVibro.sprite = enableSpriteVibro;           
         }
         else
-        {                           
+        {  
+            forVibro = 2;    
+            Vibration.Cancel();                       
             imageVibro.sprite = disableSpriteVibro;
         }
         vibroEnabled = enabled;
@@ -32,13 +37,5 @@ public class VibroOff : MonoBehaviour
     public void SwitchVibro()
     {
         VibroEnabled = !VibroEnabled;
-    }
-
-    public void PlayVibration()
-    {
-        if (VibroEnabled == true)
-        {
-            Handheld.Vibrate();   
-        }                    
     }
 }
