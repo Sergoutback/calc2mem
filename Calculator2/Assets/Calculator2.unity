@@ -467,7 +467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &71738109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,7 +885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &165490562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,7 +1225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &177348503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1643,7 +1643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &205843880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2061,7 +2061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &241540890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2479,7 +2479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &271258399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3203,7 +3203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &464349187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3543,7 +3543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &477200691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4458,7 +4458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &660005745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4573,7 +4573,6 @@ GameObject:
   - component: {fileID: 705145072}
   - component: {fileID: 705145080}
   - component: {fileID: 705145079}
-  - component: {fileID: 705145081}
   m_Layer: 5
   m_Name: Button_Sound
   m_TagString: Untagged
@@ -4819,29 +4818,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 705145077}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 705145075}
-        m_MethodName: On_Click_button
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: PlayVibrationStandart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &705145077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4907,20 +4884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
---- !u!114 &705145081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705145070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
+  vibroEnabled: 1
 --- !u!1 &707574403
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,7 +5367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &716390653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5743,7 +5707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &786523253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6636,7 +6600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1048607533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7210,7 +7174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1109098132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7702,7 +7666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1178152917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8120,7 +8084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1217668939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8471,7 +8435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1217673744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8919,7 +8883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1333811016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9481,7 +9445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1421286418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9899,7 +9863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1443625590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10239,7 +10203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1451447149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10579,7 +10543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1460271610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10993,7 +10957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1492803433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11024,7 +10988,6 @@ GameObject:
   - component: {fileID: 1501538451}
   - component: {fileID: 1501538450}
   - component: {fileID: 1501538457}
-  - component: {fileID: 1501538458}
   m_Layer: 5
   m_Name: Button_Vibro
   m_TagString: Untagged
@@ -11084,8 +11047,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1501538450}
-          m_MethodName: ClickSound
+        - m_Target: {fileID: 1501538457}
+          m_MethodName: SwitchVibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -11095,8 +11058,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1501538457}
-          m_MethodName: SwitchVibro
+        - m_Target: {fileID: 1501538450}
+          m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -11257,7 +11220,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: c4946af157862204b8bf4be6431156e7, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -11270,18 +11233,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1501538455}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1501538453}
-        m_MethodName: On_Click_button
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1501538455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11301,7 +11253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 26b447b79b059b748b7a13cfc63d4240, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11331,22 +11283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
-  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
---- !u!114 &1501538458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1501538448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
+  enableSpriteVibro: {fileID: 21300000, guid: 26b447b79b059b748b7a13cfc63d4240, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: c4946af157862204b8bf4be6431156e7, type: 3}
+  vibroEnabled: 1
 --- !u!1 &1526268827
 GameObject:
   m_ObjectHideFlags: 0
@@ -11673,7 +11612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1526268837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12013,7 +11952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1536109964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12510,7 +12449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1598299635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12861,7 +12800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1605429445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13414,7 +13353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1697659195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13754,7 +13693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &1768529911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14640,7 +14579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &2040943118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14669,9 +14608,8 @@ GameObject:
   - component: {fileID: 2070528641}
   - component: {fileID: 2070528647}
   - component: {fileID: 2070528645}
-  - component: {fileID: 2070528646}
   - component: {fileID: 2070528648}
-  - component: {fileID: 2070528649}
+  - component: {fileID: 2070528646}
   m_Layer: 5
   m_Name: Button_1
   m_TagString: Untagged
@@ -14833,19 +14771,19 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2070528646}
-          m_MethodName: ClickSound
+        - m_Target: {fileID: 2070528648}
+          m_MethodName: PlayVibration
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 10
+            m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_MethodName: PlayVibrationStandart
+        - m_Target: {fileID: 2070528646}
+          m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14978,37 +14916,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
-  disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 1
---- !u!114 &2070528649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070528639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2070528648}
-          m_MethodName: PlayVibrationStandart
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  enableSpriteVibro: {fileID: 0}
+  disableSpriteVibro: {fileID: 0}
+  vibroEnabled: 1
 --- !u!1 &2084944704
 GameObject:
   m_ObjectHideFlags: 0
@@ -15335,7 +15245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &2084944714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15675,7 +15585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
-  isVibration: 0
+  vibroEnabled: 1
 --- !u!114 &2143848735
 MonoBehaviour:
   m_ObjectHideFlags: 0
