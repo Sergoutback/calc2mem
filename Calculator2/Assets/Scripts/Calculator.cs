@@ -34,9 +34,24 @@ public class Calculator : MonoBehaviour
         TextDisp.text =  a;
         TextDispM1.text = a;
         TextDispM2.text = a;
-        Vibration.Init();
-        forVibroOff = GetComponent<VibroOff>();  
-        forVibroOff.SetVibro(enabled);
+        Vibration.Init();        
+    }
+
+        public void Update()
+    {   
+        // Найти объект по имени
+        GameObject go = GameObject.Find("Button_Vibro");
+        // взять его компонент где лежит скорость
+        VibroOff vibroOff = go.GetComponent<VibroOff>();
+        // взять переменную скорости
+        bool forVibroOff =  vibroOff.vibroEnabled;
+        Debug.Log(forVibroOff);
+
+        // forVibroOff = GetComponent<VibroOff>();
+        // forVibroOff = VibroOff.Find("Button_Vibro").GetComponent<SetVibro>.forVibro;
+        // Button_Vibro butVibr = Button_Vibro.Find("SetVibro");
+        //  VibroOff forVibroOff = GetComponent<VibroOff>(SetVibro);  
+        // forVibroOff = SetVibro.forVibro;
     }
 
     public void CorrectNumber()
@@ -76,11 +91,13 @@ public class Calculator : MonoBehaviour
     {        
         if (forVibroOff)
         {
-            Vibration.Vibrate(30);   
+            Vibration.Vibrate(50); 
+            Debug.Log("VibrWork");
         }          
         else 
         {
-            Vibration.Cancel();     
+            Vibration.Cancel(); 
+            Debug.Log("NoVibr");    
         }
 
     }

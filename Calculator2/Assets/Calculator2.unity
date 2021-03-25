@@ -2381,7 +2381,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
-  press_buttons: demo Convert
+  press_buttons: Conv
   equal: 0
   zero: 
   disp1: 
@@ -2950,7 +2950,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.19732408}
   m_AnchorMax: {x: 0.66829634, y: 0.29825926}
-  m_AnchoredPosition: {x: -3, y: 42.30298}
+  m_AnchoredPosition: {x: -3, y: 42.303497}
   m_SizeDelta: {x: -27.00763, y: -29.869293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464349179
@@ -7875,7 +7875,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1234567890M1
+  m_Text: 123456789012
 --- !u!222 &1197257110
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10529,7 +10529,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
-  press_buttons: demo History
+  press_buttons: Hist
   equal: 0
   zero: 
   disp1: 
@@ -11426,7 +11426,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 26b447b79b059b748b7a13cfc63d4240, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: c4946af157862204b8bf4be6431156e7, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  forVibro: 1
 --- !u!1 &1526268827
 GameObject:
   m_ObjectHideFlags: 0
@@ -13940,7 +13940,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1234567890M2
+  m_Text: 123456789012
 --- !u!222 &1780846792
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15097,7 +15097,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 0}
   disableSpriteVibro: {fileID: 0}
   vibroEnabled: 1
-  forVibro: 0
+  forVibro: 1
 --- !u!1 &2084944704
 GameObject:
   m_ObjectHideFlags: 0

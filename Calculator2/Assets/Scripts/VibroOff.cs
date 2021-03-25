@@ -9,24 +9,26 @@ public class VibroOff : MonoBehaviour
     public bool vibroEnabled = true;
     public bool VibroEnabled { get { return vibroEnabled; } set { SetVibro(value); } }
 
-    Image imageVibro;
-    public bool forVibro;
+    Image imageVibro;  
     
     void Start()
     {
-        imageVibro = GetComponent<Image>();                        
+        imageVibro = GetComponent<Image>();     
+        Vibration.Init();                           
     }
 
     public void SetVibro(bool enabled)
     {
         if (enabled)
-        {   
-            forVibro = true;                            
+        {  
+            Vibration.Vibrate(50);       
+            Debug.Log("VibrWorkVibroOffscript" );                         
             imageVibro.sprite = enableSpriteVibro;           
         }
         else
-        {  
-            forVibro = false;                                      
+        {         
+            Vibration.Cancel();     
+            Debug.Log("NoVibrVibroOffscript" );                                       
             imageVibro.sprite = disableSpriteVibro;
         }
         vibroEnabled = enabled;        
