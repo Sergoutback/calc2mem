@@ -185,6 +185,7 @@ MonoBehaviour:
   press_buttons: 8
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -480,7 +481,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &71738109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,6 +636,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -900,7 +902,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &165490562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,6 +978,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -1241,7 +1244,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!1 &190424737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,6 +1386,7 @@ MonoBehaviour:
   press_buttons: /
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -1659,7 +1663,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &205843880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,6 +1818,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -2079,7 +2084,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &241540890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2384,6 +2389,7 @@ MonoBehaviour:
   press_buttons: Conv
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -2510,7 +2516,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &271258399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2950,7 +2956,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.19732408}
   m_AnchorMax: {x: 0.66829634, y: 0.29825926}
-  m_AnchoredPosition: {x: -3, y: 42.303497}
+  m_AnchoredPosition: {x: -3, y: 42.303467}
   m_SizeDelta: {x: -27.00763, y: -29.869293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464349179
@@ -2971,6 +2977,7 @@ MonoBehaviour:
   press_buttons: 6
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -3247,7 +3254,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &464349187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3324,6 +3331,7 @@ MonoBehaviour:
   press_buttons: +
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -3600,7 +3608,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &477200691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4252,6 +4260,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -4517,7 +4526,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &660005745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4827,6 +4836,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -4956,7 +4966,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!1 &707574403
 GameObject:
   m_ObjectHideFlags: 0
@@ -5176,6 +5186,7 @@ MonoBehaviour:
   press_buttons: '%'
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -5452,7 +5463,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &716390653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5529,6 +5540,7 @@ MonoBehaviour:
   press_buttons: 7
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -5805,7 +5817,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &786523253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6424,6 +6436,7 @@ MonoBehaviour:
   press_buttons: 2
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -6700,7 +6713,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1048607533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7011,6 +7024,7 @@ MonoBehaviour:
   press_buttons: 00
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -7287,7 +7301,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1109098132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7516,6 +7530,7 @@ MonoBehaviour:
   press_buttons: 9
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -7792,7 +7807,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1178152917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7947,6 +7962,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -8212,7 +8228,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1217668939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8289,6 +8305,7 @@ MonoBehaviour:
   press_buttons: 3
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -8565,7 +8582,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1217673744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8719,6 +8736,7 @@ MonoBehaviour:
   press_buttons: 5
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -8984,73 +9002,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
---- !u!1 &1347463963
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1347463966}
-  - component: {fileID: 1347463965}
-  - component: {fileID: 1347463964}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1347463964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347463963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1347463965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347463963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1347463966
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347463963}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  vibrr: 0
 --- !u!1 &1370994409
 GameObject:
   m_ObjectHideFlags: 0
@@ -9270,6 +9222,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -9546,7 +9499,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1421286418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9701,6 +9654,7 @@ MonoBehaviour:
   press_buttons: 0
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -9977,7 +9931,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1443625590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10053,6 +10007,7 @@ MonoBehaviour:
   press_buttons: 0
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -10318,7 +10273,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!1 &1460271600
 GameObject:
   m_ObjectHideFlags: 0
@@ -10532,6 +10487,7 @@ MonoBehaviour:
   press_buttons: Hist
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -10658,7 +10614,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1460271610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10809,6 +10765,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -11085,7 +11042,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1492803433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11311,6 +11268,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -11426,7 +11384,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 26b447b79b059b748b7a13cfc63d4240, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: c4946af157862204b8bf4be6431156e7, type: 3}
   vibroEnabled: 1
-  forVibro: 1
+  vibrr: 0
 --- !u!1 &1526268827
 GameObject:
   m_ObjectHideFlags: 0
@@ -11490,6 +11448,7 @@ MonoBehaviour:
   press_buttons: '-'
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -11766,7 +11725,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1526268837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11843,6 +11802,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -12108,7 +12068,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1536109964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12342,6 +12302,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -12607,7 +12568,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1598299635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12684,6 +12645,7 @@ MonoBehaviour:
   press_buttons: 4
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -12949,7 +12911,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1605429445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13176,6 +13138,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692314870}
   m_CullTransparentMesh: 0
+--- !u!1 &1692981614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1692981617}
+  - component: {fileID: 1692981616}
+  - component: {fileID: 1692981615}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1692981615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692981614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1692981616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692981614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1692981617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692981614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1697659185
 GameObject:
   m_ObjectHideFlags: 0
@@ -13239,6 +13267,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -13515,7 +13544,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1697659195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13592,6 +13621,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -13857,7 +13887,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &1768529911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14480,6 +14510,7 @@ MonoBehaviour:
   press_buttons: 0
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -14756,7 +14787,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &2040943118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14832,6 +14863,7 @@ MonoBehaviour:
   press_buttons: 1
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -15097,7 +15129,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 0}
   disableSpriteVibro: {fileID: 0}
   vibroEnabled: 1
-  forVibro: 1
+  vibrr: 0
 --- !u!1 &2084944704
 GameObject:
   m_ObjectHideFlags: 0
@@ -15161,6 +15193,7 @@ MonoBehaviour:
   press_buttons: '*'
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -15437,7 +15470,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &2084944714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15514,6 +15547,7 @@ MonoBehaviour:
   press_buttons: 
   equal: 0
   zero: 
+  text: 
   disp1: 
   textdel: 
   lenght: 0
@@ -15779,7 +15813,7 @@ MonoBehaviour:
   enableSpriteVibro: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
-  forVibro: 0
+  vibrr: 0
 --- !u!114 &2143848735
 MonoBehaviour:
   m_ObjectHideFlags: 0

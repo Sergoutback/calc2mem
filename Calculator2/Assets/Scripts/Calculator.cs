@@ -12,8 +12,7 @@ public class Calculator : MonoBehaviour
     public string press_buttons;
     public double equal;
     public string zero;
-
-    // public string text;
+    public string text;
     public string disp1;
     public string textdel;
     public int lenght;
@@ -34,25 +33,34 @@ public class Calculator : MonoBehaviour
         TextDisp.text =  a;
         TextDispM1.text = a;
         TextDispM2.text = a;
-        Vibration.Init();        
-    }
-
-        public void Update()
-    {   
-        // Найти объект по имени
-        GameObject go = GameObject.Find("Button_Vibro");
+        // Vibration.Init();       
+        // forVibroOff = gameObject.GetComponent<vibroOff>().vibrr;
+        // forVibroOff.vibroEnabled;
+            // Найти объект по имени
+        // GameObject go = GameObject.Find("Button_Vibro");
         // взять его компонент где лежит скорость
-        VibroOff vibroOff = go.GetComponent<VibroOff>();
-        // взять переменную скорости
-        bool forVibroOff =  vibroOff.vibroEnabled;
-        Debug.Log(forVibroOff);
-
-        // forVibroOff = GetComponent<VibroOff>();
-        // forVibroOff = VibroOff.Find("Button_Vibro").GetComponent<SetVibro>.forVibro;
-        // Button_Vibro butVibr = Button_Vibro.Find("SetVibro");
-        //  VibroOff forVibroOff = GetComponent<VibroOff>(SetVibro);  
-        // forVibroOff = SetVibro.forVibro;
+        // VibroOff vibroOff = gameObject.GetComponent<VibroOff>();
+        // // взять переменную скорости
+        // bool forVibroOff =  vibroOff.vibrr;   
+        // Debug.Log(forVibroOff);     
     }
+
+    // public void Update()
+    // {   
+    // //     // Найти объект по имени
+    // //     GameObject go = GameObject.Find("Button_Vibro");
+    // //     // взять его компонент где лежит скорость
+    // //     VibroOff vibroOff = go.GetComponent<VibroOff>();
+    // //     // взять переменную скорости
+    // //     bool forVibroOff =  vibroOff.vibroEnabled;
+    // //     // Debug.Log(forVibroOff);
+
+    // //     // forVibroOff = GetComponent<VibroOff>();
+    // //     // forVibroOff = VibroOff.Find("Button_Vibro").GetComponent<SetVibro>.forVibro;
+    // //     // Button_Vibro butVibr = Button_Vibro.Find("SetVibro");
+    // //     //  VibroOff forVibroOff = GetComponent<VibroOff>(SetVibro);  
+    // //     // forVibroOff = SetVibro.forVibro;
+    // }
 
     public void CorrectNumber()
     {
@@ -88,18 +96,23 @@ public class Calculator : MonoBehaviour
 
 
     public void Vibro()
-    {        
-        if (forVibroOff)
+    {                       
+        VibroOff vibroOff = gameObject.GetComponent<VibroOff>();
+        // взять переменную скорости
+        int forVibroOff =  vibroOff.vibrr;   
+        Debug.Log(forVibroOff);     
+
+        if (forVibroOff == 0)
         {
-            Vibration.Vibrate(50); 
-            Debug.Log("VibrWork");
+        Vibration.Init();  
+        Vibration.Vibrate(50); 
+        Debug.Log("VibrWork");
         }          
         else 
         {
-            Vibration.Cancel(); 
+            // Vibration.Cancel(); 
             Debug.Log("NoVibr");    
         }
-
     }
     
     
