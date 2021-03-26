@@ -32,8 +32,7 @@ public class Calculator : MonoBehaviour
         System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
         TextDisp.text =  a;
         TextDispM1.text = a;
-        TextDispM2.text = a;        
-        int forVibroOff =1; 
+        TextDispM2.text = a;               
     }
   
 
@@ -68,7 +67,6 @@ public class Calculator : MonoBehaviour
     {
         CorrectNumber();                
     }
-
 
     public void Vibro()
     {                                      

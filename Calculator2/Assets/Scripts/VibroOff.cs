@@ -15,8 +15,16 @@ public class VibroOff : MonoBehaviour
     void Start()
     {
         imageVibro = GetComponent<Image>();     
+        DefaultVibrr();       
         // Vibration.Init();                           
     }
+
+    public void DefaultVibrr()
+    {
+        if (vibrr ==0)
+            vibrr =1;
+    }
+        
 
     public void SetVibro(bool enabled)
     {

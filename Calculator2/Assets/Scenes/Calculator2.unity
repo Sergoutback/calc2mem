@@ -340,7 +340,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 71738100}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -780,7 +780,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 165490554}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -1122,7 +1122,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 177348495}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -1541,7 +1541,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 205843872}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -1962,7 +1962,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 241540882}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -2264,7 +2264,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 271258394}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -2275,7 +2275,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 536140460}
           m_MethodName: ChangeFromCalcToConverter
           m_Mode: 1
           m_Arguments:
@@ -2967,7 +2967,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.19732408}
   m_AnchorMax: {x: 0.66829634, y: 0.29825926}
-  m_AnchoredPosition: {x: -3, y: 42.30374}
+  m_AnchoredPosition: {x: -3, y: 42.304688}
   m_SizeDelta: {x: -27.00763, y: -29.869293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &464349179
@@ -3143,7 +3143,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 464349179}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -3497,7 +3497,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 477200683}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -4428,7 +4428,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 660005737}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -4735,7 +4735,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 705145075}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -5365,7 +5365,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 716390645}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -5719,7 +5719,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 786523245}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -6615,7 +6615,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1048607525}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -7203,7 +7203,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1109098124}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -7709,7 +7709,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1178152909}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -8130,7 +8130,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1217668931}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -8484,7 +8484,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1217673736}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -8904,8 +8904,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1333811012}
-          m_MethodName: ClickSound
+        - m_Target: {fileID: 1501538453}
+          m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -9401,7 +9401,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1421286410}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -9833,7 +9833,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1443625582}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -10175,7 +10175,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1451447141}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -10386,7 +10386,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1460271605}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -10955,7 +10955,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1492803425}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -11638,7 +11638,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1526268829}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -11981,7 +11981,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1536109956}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -12481,7 +12481,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1598299627}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -12824,7 +12824,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1605429437}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -13457,7 +13457,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1697659187}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -13800,7 +13800,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1768529903}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -14700,7 +14700,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2040943110}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -15383,7 +15383,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2084944706}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -15726,7 +15726,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2143848727}
+        - m_Target: {fileID: 1501538453}
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
