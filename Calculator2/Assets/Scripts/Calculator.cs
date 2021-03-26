@@ -32,35 +32,10 @@ public class Calculator : MonoBehaviour
         System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
         TextDisp.text =  a;
         TextDispM1.text = a;
-        TextDispM2.text = a;
-        // Vibration.Init();       
-        // forVibroOff = gameObject.GetComponent<vibroOff>().vibrr;
-        // forVibroOff.vibroEnabled;
-            // Найти объект по имени
-        // GameObject go = GameObject.Find("Button_Vibro");
-        // взять его компонент где лежит скорость
-        // VibroOff vibroOff = gameObject.GetComponent<VibroOff>();
-        // // взять переменную скорости
-        // bool forVibroOff =  vibroOff.vibrr;   
-        // Debug.Log(forVibroOff);     
+        TextDispM2.text = a;        
+        int forVibroOff =1; 
     }
-
-    // public void Update()
-    // {   
-    // //     // Найти объект по имени
-    // //     GameObject go = GameObject.Find("Button_Vibro");
-    // //     // взять его компонент где лежит скорость
-    // //     VibroOff vibroOff = go.GetComponent<VibroOff>();
-    // //     // взять переменную скорости
-    // //     bool forVibroOff =  vibroOff.vibroEnabled;
-    // //     // Debug.Log(forVibroOff);
-
-    // //     // forVibroOff = GetComponent<VibroOff>();
-    // //     // forVibroOff = VibroOff.Find("Button_Vibro").GetComponent<SetVibro>.forVibro;
-    // //     // Button_Vibro butVibr = Button_Vibro.Find("SetVibro");
-    // //     //  VibroOff forVibroOff = GetComponent<VibroOff>(SetVibro);  
-    // //     // forVibroOff = SetVibro.forVibro;
-    // }
+  
 
     public void CorrectNumber()
     {
@@ -96,9 +71,9 @@ public class Calculator : MonoBehaviour
 
 
     public void Vibro()
-    {                       
+    {                                      
         VibroOff vibroOff = gameObject.GetComponent<VibroOff>();
-        // взять переменную скорости
+        // взять переменную  из скрипта VibroOff
         int forVibroOff =  vibroOff.vibrr;   
         Debug.Log(forVibroOff);     
 
@@ -109,8 +84,7 @@ public class Calculator : MonoBehaviour
         Debug.Log("VibrWork");
         }          
         else 
-        {
-            // Vibration.Cancel(); 
+        {             
             Debug.Log("NoVibr");    
         }
     }
