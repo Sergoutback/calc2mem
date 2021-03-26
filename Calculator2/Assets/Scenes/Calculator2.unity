@@ -139,7 +139,6 @@ GameObject:
   - component: {fileID: 71738104}
   - component: {fileID: 71738108}
   - component: {fileID: 71738107}
-  - component: {fileID: 71738109}
   m_Layer: 5
   m_Name: Button_8
   m_TagString: Untagged
@@ -482,19 +481,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &71738109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71738098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &108631126
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +576,6 @@ GameObject:
   - component: {fileID: 165490559}
   - component: {fileID: 165490558}
   - component: {fileID: 165490561}
-  - component: {fileID: 165490562}
   m_Layer: 5
   m_Name: Button_Equal
   m_TagString: Untagged
@@ -903,19 +888,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &165490562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165490552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &177348493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,7 +1312,6 @@ GameObject:
   - component: {fileID: 205843877}
   - component: {fileID: 205843876}
   - component: {fileID: 205843879}
-  - component: {fileID: 205843880}
   m_Layer: 5
   m_Name: Button_Divide
   m_TagString: Untagged
@@ -1664,19 +1635,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &205843880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205843870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &212066455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,7 +1730,6 @@ GameObject:
   - component: {fileID: 241540887}
   - component: {fileID: 241540886}
   - component: {fileID: 241540889}
-  - component: {fileID: 241540890}
   m_Layer: 5
   m_Name: Button_MR
   m_TagString: Untagged
@@ -2085,19 +2042,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &241540890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 241540880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &263749485
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,7 +2137,6 @@ GameObject:
   - component: {fileID: 271258392}
   - component: {fileID: 271258391}
   - component: {fileID: 271258398}
-  - component: {fileID: 271258399}
   m_Layer: 5
   m_Name: Button_Convert
   m_TagString: Untagged
@@ -2528,19 +2471,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &271258399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 271258389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &310384942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2942,7 +2872,6 @@ GameObject:
   - component: {fileID: 464349184}
   - component: {fileID: 464349183}
   - component: {fileID: 464349186}
-  - component: {fileID: 464349187}
   m_Layer: 5
   m_Name: Button_6
   m_TagString: Untagged
@@ -3266,19 +3195,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &464349187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464349177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &477200681
 GameObject:
   m_ObjectHideFlags: 0
@@ -3296,7 +3212,6 @@ GameObject:
   - component: {fileID: 477200688}
   - component: {fileID: 477200687}
   - component: {fileID: 477200690}
-  - component: {fileID: 477200691}
   m_Layer: 5
   m_Name: Button_Plus
   m_TagString: Untagged
@@ -3620,19 +3535,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &477200691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477200681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &488123188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4238,7 +4140,6 @@ GameObject:
   - component: {fileID: 660005742}
   - component: {fileID: 660005741}
   - component: {fileID: 660005744}
-  - component: {fileID: 660005745}
   m_Layer: 5
   m_Name: Button_Plus_Minus
   m_TagString: Untagged
@@ -4263,7 +4164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.10076852}
   m_AnchorMax: {x: 0.16053705, y: 0.19732408}
-  m_AnchoredPosition: {x: 24.5, y: 41.5}
+  m_AnchoredPosition: {x: 24.5, y: 41.499992}
   m_SizeDelta: {x: -6.342804, y: -9.006531}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &660005737
@@ -4551,19 +4452,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &660005745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660005735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &693347989
 GameObject:
   m_ObjectHideFlags: 0
@@ -5164,7 +5052,6 @@ GameObject:
   - component: {fileID: 716390650}
   - component: {fileID: 716390649}
   - component: {fileID: 716390652}
-  - component: {fileID: 716390653}
   m_Layer: 5
   m_Name: Button_Persent
   m_TagString: Untagged
@@ -5488,19 +5375,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &716390653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716390643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &786523243
 GameObject:
   m_ObjectHideFlags: 0
@@ -5518,7 +5392,6 @@ GameObject:
   - component: {fileID: 786523250}
   - component: {fileID: 786523249}
   - component: {fileID: 786523252}
-  - component: {fileID: 786523253}
   m_Layer: 5
   m_Name: Button_7
   m_TagString: Untagged
@@ -5842,19 +5715,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &786523253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786523243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &796191336
 GameObject:
   m_ObjectHideFlags: 0
@@ -6439,7 +6299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.33533338, y: 0.10076852}
   m_AnchorMax: {x: 0.49646297, y: 0.19732408}
-  m_AnchoredPosition: {x: 10, y: 41.5}
+  m_AnchoredPosition: {x: 10, y: 41.499992}
   m_SizeDelta: {x: -9.17807, y: -9.868805}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048607525
@@ -7002,7 +6862,6 @@ GameObject:
   - component: {fileID: 1109098129}
   - component: {fileID: 1109098128}
   - component: {fileID: 1109098131}
-  - component: {fileID: 1109098132}
   m_Layer: 5
   m_Name: Button_00
   m_TagString: Untagged
@@ -7326,19 +7185,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1109098132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109098122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1140793276
 GameObject:
   m_ObjectHideFlags: 0
@@ -7508,7 +7354,6 @@ GameObject:
   - component: {fileID: 1178152914}
   - component: {fileID: 1178152913}
   - component: {fileID: 1178152916}
-  - component: {fileID: 1178152917}
   m_Layer: 5
   m_Name: Button_9
   m_TagString: Untagged
@@ -7832,19 +7677,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1178152917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178152907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1197257107
 GameObject:
   m_ObjectHideFlags: 0
@@ -7940,7 +7772,6 @@ GameObject:
   - component: {fileID: 1217668936}
   - component: {fileID: 1217668935}
   - component: {fileID: 1217668938}
-  - component: {fileID: 1217668939}
   m_Layer: 5
   m_Name: Button_M_Minus2
   m_TagString: Untagged
@@ -8253,19 +8084,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1217668939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217668929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1217673734
 GameObject:
   m_ObjectHideFlags: 0
@@ -8308,7 +8126,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.10076852}
   m_AnchorMax: {x: 0.66262966, y: 0.19732408}
-  m_AnchoredPosition: {x: 3, y: 41.19922}
+  m_AnchoredPosition: {x: 3, y: 41.19921}
   m_SizeDelta: {x: -14.997131, y: -9.128326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217673736
@@ -8824,7 +8642,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1333811008}
+      - m_Target: {fileID: 1501538453}
         m_MethodName: Vibro
         m_Mode: 1
         m_Arguments:
@@ -9200,7 +9018,6 @@ GameObject:
   - component: {fileID: 1421286415}
   - component: {fileID: 1421286414}
   - component: {fileID: 1421286417}
-  - component: {fileID: 1421286418}
   m_Layer: 5
   m_Name: Button_MC2
   m_TagString: Untagged
@@ -9524,19 +9341,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1421286418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421286408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1429338339
 GameObject:
   m_ObjectHideFlags: 0
@@ -9632,7 +9436,6 @@ GameObject:
   - component: {fileID: 1443625587}
   - component: {fileID: 1443625586}
   - component: {fileID: 1443625589}
-  - component: {fileID: 1443625590}
   m_Layer: 5
   m_Name: Button_C
   m_TagString: Untagged
@@ -9956,19 +9759,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1443625590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443625580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1451447139
 GameObject:
   m_ObjectHideFlags: 0
@@ -10315,7 +10105,6 @@ GameObject:
   - component: {fileID: 1460271603}
   - component: {fileID: 1460271602}
   - component: {fileID: 1460271609}
-  - component: {fileID: 1460271610}
   m_Layer: 5
   m_Name: Button_History
   m_TagString: Untagged
@@ -10650,19 +10439,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1460271610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460271600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1461402403
 GameObject:
   m_ObjectHideFlags: 0
@@ -10754,7 +10530,6 @@ GameObject:
   - component: {fileID: 1492803430}
   - component: {fileID: 1492803429}
   - component: {fileID: 1492803432}
-  - component: {fileID: 1492803433}
   m_Layer: 5
   m_Name: Button_MR2
   m_TagString: Untagged
@@ -11078,19 +10853,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1492803433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492803423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1501538448
 GameObject:
   m_ObjectHideFlags: 0
@@ -11437,7 +11199,6 @@ GameObject:
   - component: {fileID: 1526268834}
   - component: {fileID: 1526268833}
   - component: {fileID: 1526268836}
-  - component: {fileID: 1526268837}
   m_Layer: 5
   m_Name: Button_Minus
   m_TagString: Untagged
@@ -11761,19 +11522,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1526268837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526268827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1536109954
 GameObject:
   m_ObjectHideFlags: 0
@@ -11791,7 +11539,6 @@ GameObject:
   - component: {fileID: 1536109961}
   - component: {fileID: 1536109960}
   - component: {fileID: 1536109963}
-  - component: {fileID: 1536109964}
   m_Layer: 5
   m_Name: Button_M_Plus
   m_TagString: Untagged
@@ -12104,19 +11851,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1536109964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536109954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1558496815
 GameObject:
   m_ObjectHideFlags: 0
@@ -12290,7 +12024,6 @@ GameObject:
   - component: {fileID: 1598299632}
   - component: {fileID: 1598299631}
   - component: {fileID: 1598299634}
-  - component: {fileID: 1598299635}
   m_Layer: 5
   m_Name: Button_Del
   m_TagString: Untagged
@@ -12604,19 +12337,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1598299635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598299625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1605429435
 GameObject:
   m_ObjectHideFlags: 0
@@ -13256,7 +12976,6 @@ GameObject:
   - component: {fileID: 1697659192}
   - component: {fileID: 1697659191}
   - component: {fileID: 1697659194}
-  - component: {fileID: 1697659195}
   m_Layer: 5
   m_Name: Button_M_Plus2
   m_TagString: Untagged
@@ -13580,19 +13299,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1697659195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697659185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1768529901
 GameObject:
   m_ObjectHideFlags: 0
@@ -13610,7 +13316,6 @@ GameObject:
   - component: {fileID: 1768529908}
   - component: {fileID: 1768529907}
   - component: {fileID: 1768529910}
-  - component: {fileID: 1768529911}
   m_Layer: 5
   m_Name: Button_M_Minus
   m_TagString: Untagged
@@ -13923,19 +13628,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &1768529911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768529901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &1780846789
 GameObject:
   m_ObjectHideFlags: 0
@@ -14499,7 +14191,6 @@ GameObject:
   - component: {fileID: 2040943115}
   - component: {fileID: 2040943114}
   - component: {fileID: 2040943117}
-  - component: {fileID: 2040943118}
   m_Layer: 5
   m_Name: Button_0
   m_TagString: Untagged
@@ -14823,19 +14514,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &2040943118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040943108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &2070528639
 GameObject:
   m_ObjectHideFlags: 0
@@ -14877,7 +14555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.16700001, y: 0.10076852}
   m_AnchorMax: {x: 0.32885188, y: 0.19732408}
-  m_AnchoredPosition: {x: 19, y: 41.09961}
+  m_AnchoredPosition: {x: 19, y: 41.0996}
   m_SizeDelta: {x: -8.721588, y: -9.120972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2070528641
@@ -15182,7 +14860,6 @@ GameObject:
   - component: {fileID: 2084944711}
   - component: {fileID: 2084944710}
   - component: {fileID: 2084944713}
-  - component: {fileID: 2084944714}
   m_Layer: 5
   m_Name: Button_Multiply
   m_TagString: Untagged
@@ -15506,19 +15183,6 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &2084944714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084944704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &2143848725
 GameObject:
   m_ObjectHideFlags: 0
@@ -15536,7 +15200,6 @@ GameObject:
   - component: {fileID: 2143848732}
   - component: {fileID: 2143848731}
   - component: {fileID: 2143848734}
-  - component: {fileID: 2143848735}
   m_Layer: 5
   m_Name: Button_MC
   m_TagString: Untagged
@@ -15849,16 +15512,3 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
   vibroEnabled: 1
   vibrr: 0
---- !u!114 &2143848735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143848725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
