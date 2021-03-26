@@ -22,7 +22,7 @@ public class VibroOff : MonoBehaviour
     {
         if (vibroEnabled = enabled)
         {        
-            vibrr = 0;          
+            vibrr = 1;          
             Debug.Log("WORKVibrVibroOffscript" );                         
             imageVibro.sprite = enableSpriteVibro;           
         }

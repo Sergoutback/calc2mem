@@ -102,10 +102,10 @@ public class Calculator : MonoBehaviour
         int forVibroOff =  vibroOff.vibrr;   
         Debug.Log(forVibroOff);     
 
-        if (forVibroOff == 0)
+        if (forVibroOff == 1)
         {
         Vibration.Init();  
-        Vibration.Vibrate(50); 
+        Vibration.Vibrate(30); 
         Debug.Log("VibrWork");
         }          
         else 
