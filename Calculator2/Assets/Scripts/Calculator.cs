@@ -15,7 +15,11 @@ public class Calculator : MonoBehaviour
     public string text;
     public string disp1;
     public string textdel;
+    public string textdelM1;
+    public string textdelM2;
     public int lenght;
+    public int lenghtM1;
+    public int lenghtM2;
     public double m1;
     public double m2;
     public string dispm0;
@@ -135,6 +139,42 @@ public class Calculator : MonoBehaviour
         for (int i = 0; i < lenght; i++)
             {
                 TextDisp.text = TextDisp.text + textdel[i];
+            }
+        
+    }
+
+    public void On_Click_M1Del()
+    {        
+        int lenghtM1 = TextDispM1.text.Length - 1;
+        string textdelM1 = TextDispM1.text;
+        if (lenghtM1 <1)
+            {   
+                TextDispM1.text =("0").ToString();
+            }
+        else
+                TextDispM1.text =("").ToString();
+
+        for (int i = 0; i < lenghtM1; i++)
+            {
+                TextDispM1.text = TextDispM1.text + textdelM1[i];
+            }
+        
+    }
+
+    public void On_Click_M2Del()
+    {        
+        int lenghtM2 = TextDispM2.text.Length - 1;
+        string textdelM2 = TextDispM2.text;
+        if (lenghtM2 <1)
+            {   
+                TextDispM2.text =("0").ToString();
+            }
+        else
+                TextDispM2.text =("").ToString();
+
+        for (int i = 0; i < lenghtM2; i++)
+            {
+                TextDispM2.text = TextDispM2.text + textdelM2[i];
             }
         
     }
