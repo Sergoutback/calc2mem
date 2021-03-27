@@ -31,14 +31,10 @@ public class Calculator : MonoBehaviour
     public object TextDisplay_Market { get; private set; }
     public VibroOff forVibroOff;
     public void Start()
-    {   
-        const string a = "0";
+    {           
         System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
-        TextDisp.text =  a;
-        TextDispM1.text = a;
-        TextDispM2.text = a;               
-    }
-  
+        On_Click_AC();              
+    }  
 
     public void CorrectNumber()
     {
@@ -91,8 +87,6 @@ public class Calculator : MonoBehaviour
         }
     }
     
-    
-
     public void On_Click_Point()
     {
         // из-за этой херни не ставится вторая запятая. надо подумать, как переделать
@@ -139,8 +133,7 @@ public class Calculator : MonoBehaviour
         for (int i = 0; i < lenght; i++)
             {
                 TextDisp.text = TextDisp.text + textdel[i];
-            }
-        
+            }        
     }
 
     public void On_Click_M1Del()
@@ -157,8 +150,7 @@ public class Calculator : MonoBehaviour
         for (int i = 0; i < lenghtM1; i++)
             {
                 TextDispM1.text = TextDispM1.text + textdelM1[i];
-            }
-        
+            }        
     }
 
     public void On_Click_M2Del()
@@ -175,8 +167,7 @@ public class Calculator : MonoBehaviour
         for (int i = 0; i < lenghtM2; i++)
             {
                 TextDispM2.text = TextDispM2.text + textdelM2[i];
-            }
-        
+            }        
     }
 
     public void On_Click_Percent()
