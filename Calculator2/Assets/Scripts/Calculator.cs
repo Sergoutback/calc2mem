@@ -107,9 +107,23 @@ public class Calculator : MonoBehaviour
     }
     public void On_Click_Equal()
     {
-        DataTable dt = new DataTable();
-        double equal = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
-        TextDisp.text = equal.ToString();
+        // if (TextDisp.text[0] == '%')
+        // if (TextDisp.text.Contains ("%")) 
+        // {
+            // Debug.Log("Строка содержит %");
+            // TextDisp.text[0] = (double.Parse(TextBox1.Text) * double.Parse(TextBox2.Text) / 100 * double.Parse(TextBox3.Text)).ToString()
+
+        // number before% = previous number * 0.01 * number near%;:
+        //     число перед % = предыдущее число * 0,01*число возле процентов;
+
+        // }
+
+        // else
+        // {
+            DataTable dt = new DataTable();
+            double equal = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
+            TextDisp.text = equal.ToString();
+        // }       
     }
 
     public void On_Click_Plus_Minus()
