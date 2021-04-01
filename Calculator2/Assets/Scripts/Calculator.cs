@@ -173,16 +173,28 @@ public class Calculator : MonoBehaviour
 
     public void On_Click_Percent()
     {
-        if (TextDisp.text.Contains ("%"))        
-        {
+        // if (TextDisp.text.Contains ("%"))        
+        // {
             // TextDisp.text = TextDisp.text.Remove(-1, 1);
-            String[] textDispArr = new String[(TextDisp.text).Length];
-            String[] textDispArr = new String[(TextDisp.text).Length];
-            // textDispArr.SetValue( "one", 1 );
+            int [] TextDispArr = new int [(TextDisp.text).Length];
+            Debug.Log(TextDispArr);
+
+            double valueBeforePersent = Convert.ToDouble(TextDispArr[TextDispArr.Length - 2]) * 0.01 * Convert.ToDouble(TextDispArr[TextDispArr.Length - 1]);  
+            Debug.Log(valueBeforePersent);
+            TextDisp.text = TextDisp.text.Remove((TextDispArr[TextDispArr.Length - 1]), 1);
+            // string first = TextDispArr.GetValue((TextDispArr - 2);
+            // string varArr =textDispArr.ToCharArray([(TextDisp.text).Length]-2, 2);
+
+
+            // double [] varTextDispArr = new double[2]{(textDispArr[textDispArr.Length-2 ]), (textDispArr[textDispArr.Length-1])};
+            // Debug.Log(varTextDispArr);
+
+            // TextDispArr.SetValue( "one", 1 );
             // Console.WriteLine( "[1]:   {0}", textDispArr.GetValue( ^1 ) );     
-            double beforePersent = Convert.ToDouble(textDispArr[textDispArr.Length - 2]) * 0.01 * Convert.ToDouble(textDispArr[textDispArr.Length - 1]);   
-            TextDisp.text = TextDisp.text +  beforePersent; 
-        }
+
+            // double beforePersent = Convert.ToDouble(textDispArr[textDispArr.Length - 2]) * 0.01 * Convert.ToDouble(textDispArr[textDispArr.Length - 1]);   
+            // TextDisp.text = TextDisp.text +  beforePersent; 
+        // }
         
         // int number = int.Parse(project.Variables["number"].Value);
         // int persent = int.Parse(project.Variables["persent"].Value);

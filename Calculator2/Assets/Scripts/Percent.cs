@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Data;
 using System.Linq;
+
 public class Percent : MonoBehaviour
-{   
+{
     public string ParsePercent(string expression)
     {
         var list = SplitAndKeep(expression, expression.Where(x => x != '%' && !char.IsDigit(x)).ToArray()).ToList();
@@ -45,4 +46,5 @@ public class Percent : MonoBehaviour
             yield return s.Substring(start);
         }
     }
+
 }
