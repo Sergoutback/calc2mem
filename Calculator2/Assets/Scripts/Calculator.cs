@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Data;
+// using System.Index;
 using System;
 public class Calculator : MonoBehaviour
 {   
@@ -30,6 +31,7 @@ public class Calculator : MonoBehaviour
     public object TextDisplayM2 { get; private set; }
     public object TextDisplay_Market { get; private set; }
     public VibroOff forVibroOff;
+
     public void Start()
     {           
         System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
@@ -38,7 +40,6 @@ public class Calculator : MonoBehaviour
 
     public void CorrectNumber()
     {
-
             //ситуация: слева ноль, а после него НЕ запятая, тогда ноль можно удалить
             if (TextDisp.text[0] == '0' && TextDisp.text.IndexOf(".") != 1)
                 {
@@ -106,24 +107,10 @@ public class Calculator : MonoBehaviour
         TextDispM2.text =("0").ToString();
     }
     public void On_Click_Equal()
-    {
-        // if (TextDisp.text[0] == '%')
-        // if (TextDisp.text.Contains ("%")) 
-        // {
-            // Debug.Log("Строка содержит %");
-            // TextDisp.text[0] = (double.Parse(TextBox1.Text) * double.Parse(TextBox2.Text) / 100 * double.Parse(TextBox3.Text)).ToString()
-
-        // number before% = previous number * 0.01 * number near%;:
-        //     число перед % = предыдущее число * 0,01*число возле процентов;
-
-        // }
-
-        // else
-        // {
-            DataTable dt = new DataTable();
-            double equal = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
-            TextDisp.text = equal.ToString();
-        // }       
+    {        
+        DataTable dt = new DataTable();
+        double equal = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
+        TextDisp.text = equal.ToString();             
     }
 
     public void On_Click_Plus_Minus()
@@ -186,6 +173,17 @@ public class Calculator : MonoBehaviour
 
     public void On_Click_Percent()
     {
+        if (TextDisp.text.Contains ("%"))        
+        {
+            // TextDisp.text = TextDisp.text.Remove(-1, 1);
+            String[] textDispArr = new String[(TextDisp.text).Length];
+            String[] textDispArr = new String[(TextDisp.text).Length];
+            // textDispArr.SetValue( "one", 1 );
+            // Console.WriteLine( "[1]:   {0}", textDispArr.GetValue( ^1 ) );     
+            double beforePersent = Convert.ToDouble(textDispArr[textDispArr.Length - 2]) * 0.01 * Convert.ToDouble(textDispArr[textDispArr.Length - 1]);   
+            TextDisp.text = TextDisp.text +  beforePersent; 
+        }
+        
         // int number = int.Parse(project.Variables["number"].Value);
         // int persent = int.Parse(project.Variables["persent"].Value);
         // return number/100*persent;
