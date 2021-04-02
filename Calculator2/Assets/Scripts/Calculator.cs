@@ -176,9 +176,15 @@ public class Calculator : MonoBehaviour
         // if (TextDisp.text.Contains ("%"))        
         // {
             // TextDisp.text = TextDisp.text.Remove(-1, 1);
-            int [] TextDispArr = new int [(TextDisp.text).Length];
-            Debug.Log(TextDispArr);
 
+            //указали длину массива
+            int [] TextDispArr = new int [(TextDisp.text).Length]; 
+            Debug.Log((TextDisp.text).Length);
+            //создали и инициализировали массив 
+            // преобразовали string to array
+            // произвели операции с последними двумя членами масива
+            // создали новый массив с новыми значениями
+            // преобразовали массив в строку
             double valueBeforePersent = Convert.ToDouble(TextDispArr[TextDispArr.Length - 2]) * 0.01 * Convert.ToDouble(TextDispArr[TextDispArr.Length - 1]);  
             Debug.Log(valueBeforePersent);
             TextDisp.text = TextDisp.text.Remove((TextDispArr[TextDispArr.Length - 1]), 1);
