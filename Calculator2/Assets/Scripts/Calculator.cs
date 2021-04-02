@@ -10,11 +10,12 @@ public class Calculator : MonoBehaviour
     public Text TextDisp;
     public Text TextDispM1;
     public Text TextDispM2;
+    public Text TextDispPercent;
     public string press_buttons;
     public double equal;
     public string zero;
     public string text;
-    public string disp1;
+    // public string disp1;
     public string textdel;
     public string textdelM1;
     public string textdelM2;
@@ -26,9 +27,11 @@ public class Calculator : MonoBehaviour
     public string dispm0;
     public string dispm1;
     public string dispm2;
+    public string percentValue;
     public object TextDisplay { get; private set; }
     public object TextDisplayM1 { get; private set; }
     public object TextDisplayM2 { get; private set; }
+    public object TextDisplayPerc { get; private set; }
     public object TextDisplay_Market { get; private set; }
     public VibroOff forVibroOff;
 
@@ -74,7 +77,7 @@ public class Calculator : MonoBehaviour
         VibroOff vibroOff = gameObject.GetComponent<VibroOff>();
         // взять переменную  из скрипта VibroOff
         int forVibroOff =  vibroOff.vibrr;   
-        Debug.Log(forVibroOff);     
+        // Debug.Log(forVibroOff);     
 
         if (forVibroOff == 1)
         {
@@ -177,17 +180,45 @@ public class Calculator : MonoBehaviour
         // {
             // TextDisp.text = TextDisp.text.Remove(-1, 1);
 
-            //указали длину массива
-            int [] TextDispArr = new int [(TextDisp.text).Length]; 
+            // указали длину массива
+            // создали и инициализировали массив 
+            int [] TextDispArrLength = new int [(TextDisp.text).Length]; //{(TextDisp.text).ToString()}; 
+            Debug.Log("длина массива");
             Debug.Log((TextDisp.text).Length);
-            //создали и инициализировали массив 
+
+            // указали разделители
+            char[] delimiterChars = { '+', '-', '*', '/'};
+
+            // разделили массив
+            string [] ValuesTextDispArr = (TextDisp.text).Split(delimiterChars);
+            Debug.Log("значения в массиве");
+            Debug.Log((TextDisp.text).Split(delimiterChars));
+            foreach (var valueTextDispArr in ValuesTextDispArr)
+            {
+                System.Console.WriteLine($"<{valueTextDispArr}>");
+            }
+
+                
             // преобразовали string to array
-            // произвели операции с последними двумя членами масива
-            // создали новый массив с новыми значениями
-            // преобразовали массив в строку
-            double valueBeforePersent = Convert.ToDouble(TextDispArr[TextDispArr.Length - 2]) * 0.01 * Convert.ToDouble(TextDispArr[TextDispArr.Length - 1]);  
-            Debug.Log(valueBeforePersent);
-            TextDisp.text = TextDisp.text.Remove((TextDispArr[TextDispArr.Length - 1]), 1);
+            // char[] ToCharArray (int startIndex, int length);
+            // List<string> TextDispArr = new List<string>((TextDisp.text).ToString()); 
+            // // TextDispArr = (TextDisp.text).ToCharArray (0, (TextDisp.text).Length);
+           
+            // // произвели операции с последними двумя членами масива
+            // // создали новый массив с новыми значениями
+            // // преобразовали массив в строку
+            // string s2 = String.Join ("', '", s1);
+
+            // double valueBeforePersent = Convert.ToDouble(TextDispArr[TextDispArr.Length - 2]) * 0.01 * Convert.ToDouble(TextDispArr[TextDispArr.Length - 1]);  
+            // Debug.Log(Convert.ToDouble(TextDispArr[TextDispArr.Length - 2]) * 0.01 * Convert.ToDouble(TextDispArr[TextDispArr.Length - 1]));
+            // TextDispPercent =;
+            // удаляем символ процентов
+            // TextDisp.text = TextDisp.text.Remove((TextDispArr.Length - 1), 1);
+
+            // percentValue= GetValue(TextDispArr[TextDispArr.Length - 1]);
+
+
+
             // string first = TextDispArr.GetValue((TextDispArr - 2);
             // string varArr =textDispArr.ToCharArray([(TextDisp.text).Length]-2, 2);
 
@@ -232,8 +263,10 @@ public class Calculator : MonoBehaviour
     //MR1 button
     public void On_Click_MemoryReturn()
     {   
-        TextDisp.text += TextDispM1.text;
-        
+        if (TextDisp.text[0] == '0' && (lenght <1))
+        TextDisp.text = TextDispM1.text + (TextDisp.text).Remove(0, 1);
+        else
+        TextDisp.text += TextDispM1.text;        
         return;
     }
     //MClear1 button
@@ -265,9 +298,11 @@ public class Calculator : MonoBehaviour
     //MR2 button
     public void On_Click_Memory2Return()
     {   
-        TextDisp.text += TextDispM2.text;
-        
-        return;
+    if (TextDisp.text[0] == '0' && (lenght <1))
+        TextDisp.text = TextDispM2.text + (TextDisp.text).Remove(0, 1);
+    else
+        TextDisp.text += TextDispM2.text;        
+    return;
     }
     //MClear2 button
     public void On_Click_Memory2Clear()

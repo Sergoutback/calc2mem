@@ -233,7 +233,7 @@ RectTransform:
   m_Children:
   - {fileID: 212066456}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34300002, y: 0.3091574}
   m_AnchorMax: {x: 0.5, y: 0.40314817}
@@ -255,11 +255,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 8
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -271,6 +271,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &71738101
 MonoBehaviour:
@@ -637,6 +638,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108631126}
   m_CullTransparentMesh: 0
+--- !u!1 &126918036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126918037}
+  - component: {fileID: 126918039}
+  - component: {fileID: 126918038}
+  m_Layer: 5
+  m_Name: TextDispPercent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &126918037
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126918036}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 624727199}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.034, y: 0.13540523}
+  m_AnchorMax: {x: 0.96700007, y: 0.8592712}
+  m_AnchoredPosition: {x: -1.6999512, y: 2.100006}
+  m_SizeDelta: {x: 4.378662, y: 4.1191406}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &126918038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126918036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 300
+    m_FontStyle: 1
+    m_BestFit: 1
+    m_MinSize: 0
+    m_MaxSize: 300
+    m_Alignment: 5
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 1234567890
+--- !u!222 &126918039
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126918036}
+  m_CullTransparentMesh: 0
 --- !u!1 &165490552
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +753,7 @@ RectTransform:
   m_Children:
   - {fileID: 263749486}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8283149, y: 0.012851852}
   m_AnchorMax: {x: 0.98912966, y: 0.20519444}
@@ -696,11 +775,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -712,6 +791,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &165490555
 MonoBehaviour:
@@ -1007,7 +1087,7 @@ RectTransform:
   m_Children:
   - {fileID: 1558496816}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.50285184, y: 0.012851852}
   m_AnchorMax: {x: 0.66262966, y: 0.10762038}
@@ -1029,11 +1109,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -1045,6 +1125,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &177348496
 MonoBehaviour:
@@ -1418,7 +1499,7 @@ RectTransform:
   m_Children:
   - {fileID: 1370994410}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.66587037, y: 0.3091574}
   m_AnchorMax: {x: 0.8227223, y: 0.40314817}
@@ -1440,11 +1521,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: /
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -1456,6 +1537,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &205843873
 MonoBehaviour:
@@ -1840,7 +1922,7 @@ RectTransform:
   m_Children:
   - {fileID: 573990626}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.50516665, y: 0.4081295}
   m_AnchorMax: {x: 0.6593889, y: 0.50316674}
@@ -1862,11 +1944,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -1878,6 +1960,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &241540883
 MonoBehaviour:
@@ -2252,7 +2335,7 @@ RectTransform:
   - {fileID: 995535781}
   - {fileID: 1736731200}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17720371, y: 0.5052037}
   m_AnchorMax: {x: 0.33555552, y: 0.5984168}
@@ -2435,11 +2518,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
+  TextDispPercent: {fileID: 0}
   press_buttons: Conv
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -2451,6 +2534,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &271258395
 MonoBehaviour:
@@ -2707,7 +2791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f7acd45837b5fa9489d7b6d1f71f7344, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e26bef11829df26489656a9257d24a23, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2740,11 +2824,11 @@ MonoBehaviour:
   TextDisp: {fileID: 0}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -2756,6 +2840,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!1 &410859380
 GameObject:
@@ -3024,7 +3109,7 @@ RectTransform:
   m_Children:
   - {fileID: 535057425}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.50516665, y: 0.21000001}
   m_AnchorMax: {x: 0.66262966, y: 0.305}
@@ -3046,11 +3131,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 6
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -3062,6 +3147,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &464349180
 MonoBehaviour:
@@ -3368,7 +3454,7 @@ RectTransform:
   m_Children:
   - {fileID: 446822654}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.66829634, y: 0.011861112}
   m_AnchorMax: {x: 0.8227223, y: 0.20519444}
@@ -3390,11 +3476,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: +
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -3406,6 +3492,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &477200684
 MonoBehaviour:
@@ -4012,7 +4099,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c2370e2e3266b9e4ebe1a6c4b35c4f6b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e26bef11829df26489656a9257d24a23, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4045,11 +4132,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -4061,6 +4148,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!1 &573990625
 GameObject:
@@ -4218,6 +4306,115 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601044006}
   m_CullTransparentMesh: 0
+--- !u!1 &624727198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 624727199}
+  - component: {fileID: 624727202}
+  - component: {fileID: 624727201}
+  - component: {fileID: 624727200}
+  m_Layer: 5
+  m_Name: PanelDispPercent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &624727199
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624727198}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 126918037}
+  m_Father: {fileID: 1662174663}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.014851852, y: 0.6086148}
+  m_AnchorMax: {x: 0.98912966, y: 0.6497858}
+  m_AnchoredPosition: {x: -3.999878, y: 0.72265625}
+  m_SizeDelta: {x: -1.9257812, y: -1.4588623}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &624727200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624727198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf76bc52151b1ca4fab9fd5920266336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextDisp: {fileID: 126918038}
+  TextDispM1: {fileID: 0}
+  TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
+  press_buttons: 
+  equal: 0
+  zero: 
+  text: 
+  textdel: 
+  textdelM1: 
+  textdelM2: 
+  lenght: 0
+  lenghtM1: 0
+  lenghtM2: 0
+  m1: 0
+  m2: 0
+  dispm0: 
+  dispm1: 
+  dispm2: 
+  percentValue: 
+  forVibroOff: {fileID: 0}
+--- !u!114 &624727201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624727198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c2370e2e3266b9e4ebe1a6c4b35c4f6b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &624727202
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624727198}
+  m_CullTransparentMesh: 0
 --- !u!1 &631221001
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,7 +4530,7 @@ RectTransform:
   m_Children:
   - {fileID: 1091781042}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.012740741, y: 0.11146297}
   m_AnchorMax: {x: 0.17046297, y: 0.20612036}
@@ -4355,11 +4552,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -4371,6 +4568,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &660005738
 MonoBehaviour:
@@ -4750,7 +4948,7 @@ RectTransform:
   m_Children:
   - {fileID: 521861336}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.013555557, y: 0.507}
   m_AnchorMax: {x: 0.17046297, y: 0.59876853}
@@ -4922,11 +5120,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -4938,6 +5136,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &705145076
 MonoBehaviour:
@@ -5253,7 +5452,7 @@ RectTransform:
   m_Children:
   - {fileID: 1080584908}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8296668, y: 0.3091574}
   m_AnchorMax: {x: 0.9855741, y: 0.40314817}
@@ -5275,11 +5474,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
-  press_buttons: '%'
+  TextDispPercent: {fileID: 0}
+  press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -5291,6 +5490,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &716390646
 MonoBehaviour:
@@ -5336,7 +5536,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 716390645}
-        m_MethodName: On_Click_button
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5347,7 +5547,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 716390645}
-        m_MethodName: On_Click_Percent
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5597,7 +5797,7 @@ RectTransform:
   m_Children:
   - {fileID: 1813722173}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.179, y: 0.3091574}
   m_AnchorMax: {x: 0.33533338, y: 0.40314817}
@@ -5619,11 +5819,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 7
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -5635,6 +5835,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &786523246
 MonoBehaviour:
@@ -6484,7 +6685,7 @@ RectTransform:
   m_Children:
   - {fileID: 809535350}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34300002, y: 0.11146297}
   m_AnchorMax: {x: 0.5, y: 0.20519444}
@@ -6506,11 +6707,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 2
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -6522,6 +6723,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1048607526
 MonoBehaviour:
@@ -6899,7 +7101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1080584908
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7075,7 +7277,7 @@ RectTransform:
   m_Children:
   - {fileID: 1824574122}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34300002, y: 0.012851852}
   m_AnchorMax: {x: 0.5, y: 0.10762038}
@@ -7097,11 +7299,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 00
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -7113,6 +7315,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1109098125
 MonoBehaviour:
@@ -7571,7 +7774,7 @@ RectTransform:
   m_Children:
   - {fileID: 1376071874}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.50516665, y: 0.3091574}
   m_AnchorMax: {x: 0.6593889, y: 0.40314817}
@@ -7593,11 +7796,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 9
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -7609,6 +7812,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1178152910
 MonoBehaviour:
@@ -7993,7 +8197,7 @@ RectTransform:
   m_Children:
   - {fileID: 1798755839}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.66587037, y: 0.507}
   m_AnchorMax: {x: 0.8227223, y: 0.5993427}
@@ -8015,11 +8219,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -8031,6 +8235,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1217668932
 MonoBehaviour:
@@ -8327,7 +8532,7 @@ RectTransform:
   m_Children:
   - {fileID: 601044007}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.50516665, y: 0.11146297}
   m_AnchorMax: {x: 0.6593889, y: 0.20519444}
@@ -8349,11 +8554,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 3
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -8365,6 +8570,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1217673737
 MonoBehaviour:
@@ -8762,7 +8968,7 @@ RectTransform:
   m_Children:
   - {fileID: 1429338340}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34300002, y: 0.21000001}
   m_AnchorMax: {x: 0.5, y: 0.305}
@@ -8784,11 +8990,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 5
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -8800,6 +9006,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1333811009
 MonoBehaviour:
@@ -9251,7 +9458,7 @@ RectTransform:
   m_Children:
   - {fileID: 816317642}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34300002, y: 0.507}
   m_AnchorMax: {x: 0.5, y: 0.5993427}
@@ -9273,11 +9480,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -9289,6 +9496,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1421286411
 MonoBehaviour:
@@ -9673,7 +9881,7 @@ RectTransform:
   m_Children:
   - {fileID: 488123189}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.012740741, y: 0.011231482}
   m_AnchorMax: {x: 0.16935192, y: 0.10762038}
@@ -9695,11 +9903,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 0
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -9711,6 +9919,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1443625583
 MonoBehaviour:
@@ -10017,7 +10226,7 @@ RectTransform:
   m_Children:
   - {fileID: 710411195}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.012740741, y: 0.3091574}
   m_AnchorMax: {x: 0.17046297, y: 0.40314817}
@@ -10039,11 +10248,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
+  TextDispPercent: {fileID: 0}
   press_buttons: 0
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -10055,6 +10264,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1451447142
 MonoBehaviour:
@@ -10351,7 +10561,7 @@ RectTransform:
   - {fileID: 190424738}
   - {fileID: 32198851}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.179, y: 0.4081295}
   m_AnchorMax: {x: 0.33555552, y: 0.501463}
@@ -10534,11 +10744,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
+  TextDispPercent: {fileID: 0}
   press_buttons: Hist
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -10550,6 +10760,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1460271606
 MonoBehaviour:
@@ -10780,7 +10991,7 @@ RectTransform:
   m_Children:
   - {fileID: 1076044396}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.50277776, y: 0.507}
   m_AnchorMax: {x: 0.6593889, y: 0.5993427}
@@ -10802,11 +11013,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -10818,6 +11029,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1492803426
 MonoBehaviour:
@@ -11124,7 +11336,7 @@ RectTransform:
   m_Children:
   - {fileID: 631221002}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.012740741, y: 0.4081295}
   m_AnchorMax: {x: 0.17259265, y: 0.50316674}
@@ -11296,11 +11508,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -11312,6 +11524,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1501538454
 MonoBehaviour:
@@ -11457,7 +11670,7 @@ RectTransform:
   m_Children:
   - {fileID: 707574404}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8283149, y: 0.21000001}
   m_AnchorMax: {x: 0.9855741, y: 0.305}
@@ -11479,11 +11692,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: '-'
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -11495,6 +11708,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1526268830
 MonoBehaviour:
@@ -11801,7 +12015,7 @@ RectTransform:
   m_Children:
   - {fileID: 410859381}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8283149, y: 0.4081295}
   m_AnchorMax: {x: 0.9855741, y: 0.50316674}
@@ -11823,11 +12037,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -11839,6 +12053,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1536109957
 MonoBehaviour:
@@ -12291,7 +12506,7 @@ RectTransform:
   - {fileID: 1277532458}
   - {fileID: 1461402404}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.014851852, y: 0.21000001}
   m_AnchorMax: {x: 0.17046297, y: 0.305}
@@ -12313,11 +12528,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -12329,6 +12544,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1598299628
 MonoBehaviour:
@@ -12625,7 +12841,7 @@ RectTransform:
   m_Children:
   - {fileID: 1046917376}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.179, y: 0.21000001}
   m_AnchorMax: {x: 0.33555552, y: 0.305}
@@ -12647,11 +12863,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 4
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -12663,6 +12879,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1605429438
 MonoBehaviour:
@@ -13029,6 +13246,7 @@ RectTransform:
   - {fileID: 1692314871}
   - {fileID: 314994048}
   - {fileID: 559317004}
+  - {fileID: 624727199}
   - {fileID: 2070528640}
   - {fileID: 1048607524}
   - {fileID: 1217673735}
@@ -13130,7 +13348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f7acd45837b5fa9489d7b6d1f71f7344, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e26bef11829df26489656a9257d24a23, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13163,11 +13381,11 @@ MonoBehaviour:
   TextDisp: {fileID: 0}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -13179,6 +13397,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!1 &1692981614
 GameObject:
@@ -13283,7 +13502,7 @@ RectTransform:
   m_Children:
   - {fileID: 1871821126}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8283149, y: 0.507}
   m_AnchorMax: {x: 0.98912966, y: 0.5993427}
@@ -13305,11 +13524,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 1780846791}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -13321,6 +13540,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1697659188
 MonoBehaviour:
@@ -13701,7 +13921,7 @@ RectTransform:
   m_Children:
   - {fileID: 1569441303}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.66587037, y: 0.4081295}
   m_AnchorMax: {x: 0.8227223, y: 0.50316674}
@@ -13723,11 +13943,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -13739,6 +13959,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1768529904
 MonoBehaviour:
@@ -14580,7 +14801,7 @@ RectTransform:
   m_Children:
   - {fileID: 1140793277}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.179, y: 0.012851852}
   m_AnchorMax: {x: 0.33555552, y: 0.10762038}
@@ -14602,11 +14823,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 0
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -14618,6 +14839,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2040943111
 MonoBehaviour:
@@ -14924,7 +15146,7 @@ RectTransform:
   m_Children:
   - {fileID: 841609649}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.179, y: 0.11146297}
   m_AnchorMax: {x: 0.33555552, y: 0.20519444}
@@ -14946,11 +15168,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 1
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -14962,6 +15184,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2070528642
 MonoBehaviour:
@@ -15257,7 +15480,7 @@ RectTransform:
   m_Children:
   - {fileID: 1929039482}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.66829634, y: 0.21000001}
   m_AnchorMax: {x: 0.8227223, y: 0.305}
@@ -15279,11 +15502,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 0}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: '*'
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -15295,6 +15518,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2084944707
 MonoBehaviour:
@@ -15601,7 +15825,7 @@ RectTransform:
   m_Children:
   - {fileID: 1926257256}
   m_Father: {fileID: 1662174663}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34300002, y: 0.4081295}
   m_AnchorMax: {x: 0.49646297, y: 0.5}
@@ -15623,11 +15847,11 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 0}
+  TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
   zero: 
   text: 
-  disp1: 
   textdel: 
   textdelM1: 
   textdelM2: 
@@ -15639,6 +15863,7 @@ MonoBehaviour:
   dispm0: 
   dispm1: 
   dispm2: 
+  percentValue: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2143848728
 MonoBehaviour:

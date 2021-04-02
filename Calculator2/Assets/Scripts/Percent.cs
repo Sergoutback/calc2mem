@@ -6,9 +6,9 @@ using System.Data;
 using System.Linq;
 
 public class Percent : MonoBehaviour
-{
+{    
     public string ParsePercent(string expression)
-    {
+    {            
         var list = SplitAndKeep(expression, expression.Where(x => x != '%' && !char.IsDigit(x)).ToArray()).ToList();
     
         if (list.Count > 0 && list[0].Contains('%'))
@@ -46,5 +46,4 @@ public class Percent : MonoBehaviour
             yield return s.Substring(start);
         }
     }
-
 }
