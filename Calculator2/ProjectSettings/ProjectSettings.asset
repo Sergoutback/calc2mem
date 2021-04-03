@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Bestappdev
+  companyName: webart2013
   productName: Calculator2Memory
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -42,8 +42,7 @@ PlayerSettings:
   m_SplashScreenLogos:
   - logo: {fileID: 0}
     duration: 2
-  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 57cc89304cb6ad640bf2c182df456bfd,
-    type: 3}
+  m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -67,7 +66,7 @@ PlayerSettings:
   disableDepthAndStencilBuffers: 0
   androidStartInFullscreen: 1
   androidRenderOutsideSafeArea: 1
-  androidUseSwappy: 0
+  androidUseSwappy: 1
   androidBlitType: 0
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
@@ -127,7 +126,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.1
+  bundleVersion: 1.2
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -249,7 +248,7 @@ PlayerSettings:
   templateDefaultScene: Assets/Scenes/SampleScene.unity
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 2
-  androidSplashScreen: {fileID: 2800000, guid: 8c7f1d27a9cb9534db5425580a3f6b9a, type: 3}
+  androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
@@ -270,7 +269,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 57cc89304cb6ad640bf2c182df456bfd, type: 3}
+      m_Icon: {fileID: 2800000, guid: c847365f4df6b724f83ff263582e5422, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -278,51 +277,13 @@ PlayerSettings:
   - m_BuildTarget: Android
     m_Icons:
     - m_Textures:
-      - {fileID: 2800000, guid: 57cc89304cb6ad640bf2c182df456bfd, type: 3}
-      m_Width: 192
-      m_Height: 192
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
+      - {fileID: 2800000, guid: c847365f4df6b724f83ff263582e5422, type: 3}
       - {fileID: 0}
-      m_Width: 144
-      m_Height: 144
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 0}
-      m_Width: 96
-      m_Height: 96
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 0}
-      m_Width: 72
-      m_Height: 72
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 0}
-      m_Width: 48
-      m_Height: 48
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 0}
-      m_Width: 36
-      m_Height: 36
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures:
-      - {fileID: 2800000, guid: 57cc89304cb6ad640bf2c182df456bfd, type: 3}
-      - {fileID: 2800000, guid: 57cc89304cb6ad640bf2c182df456bfd, type: 3}
       m_Width: 432
       m_Height: 432
       m_Kind: 2
       m_SubKind: 
-    - m_Textures:
-      - {fileID: 2800000, guid: 57cc89304cb6ad640bf2c182df456bfd, type: 3}
-      - {fileID: 2800000, guid: 57cc89304cb6ad640bf2c182df456bfd, type: 3}
+    - m_Textures: []
       m_Width: 324
       m_Height: 324
       m_Kind: 2
@@ -348,7 +309,7 @@ PlayerSettings:
       m_Kind: 2
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 57cc89304cb6ad640bf2c182df456bfd, type: 3}
+      - {fileID: 2800000, guid: c847365f4df6b724f83ff263582e5422, type: 3}
       m_Width: 192
       m_Height: 192
       m_Kind: 1
@@ -382,6 +343,42 @@ PlayerSettings:
       m_Width: 36
       m_Height: 36
       m_Kind: 1
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 2800000, guid: c847365f4df6b724f83ff263582e5422, type: 3}
+      m_Width: 192
+      m_Height: 192
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 0}
+      m_Width: 144
+      m_Height: 144
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 0}
+      m_Width: 96
+      m_Height: 96
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 0}
+      m_Width: 72
+      m_Height: 72
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 0}
+      m_Width: 48
+      m_Height: 48
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures:
+      - {fileID: 0}
+      m_Width: 36
+      m_Height: 36
+      m_Kind: 0
       m_SubKind: 
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsJobs: []
@@ -612,7 +609,7 @@ PlayerSettings:
   ps4IncludedModules: []
   ps4attribVROutputEnabled: 0
   monoEnv: 
-  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 8c7f1d27a9cb9534db5425580a3f6b9a,
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: b6d06837ee991a34abeebed800b567cd,
     type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 21300000, guid: 8c7f1d27a9cb9534db5425580a3f6b9a,
     type: 3}
