@@ -253,12 +253,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 8
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -773,12 +772,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -1107,12 +1105,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -1519,12 +1516,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: /
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -1943,11 +1939,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
-  TextDispM2: {fileID: 0}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -2521,7 +2516,6 @@ MonoBehaviour:
   TextDispPercent: {fileID: 0}
   press_buttons: Conv
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -2821,13 +2815,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf76bc52151b1ca4fab9fd5920266336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextDisp: {fileID: 0}
+  TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
-  TextDispM2: {fileID: 0}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -3129,12 +3122,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 6
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -3474,12 +3466,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: +
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -4130,12 +4121,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -4363,7 +4353,6 @@ MonoBehaviour:
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -4550,12 +4539,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -5118,12 +5106,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -5472,12 +5459,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -5817,12 +5803,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 7
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -6705,12 +6690,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 2
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -7297,12 +7281,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 00
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -7794,12 +7777,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 9
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -8217,12 +8199,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -8552,12 +8533,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 3
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -8988,12 +8968,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 5
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -9478,12 +9457,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -9901,12 +9879,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 0
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -10251,7 +10228,6 @@ MonoBehaviour:
   TextDispPercent: {fileID: 0}
   press_buttons: 0
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -10747,7 +10723,6 @@ MonoBehaviour:
   TextDispPercent: {fileID: 0}
   press_buttons: Hist
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -11011,12 +10986,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -11506,12 +11480,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -11690,12 +11663,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: '-'
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -12036,11 +12008,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
-  TextDispM2: {fileID: 0}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -12526,12 +12497,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -12861,12 +12831,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 4
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -13378,13 +13347,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf76bc52151b1ca4fab9fd5920266336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextDisp: {fileID: 0}
-  TextDispM1: {fileID: 0}
+  TextDisp: {fileID: 796191338}
+  TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -13522,12 +13490,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -13844,7 +13811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5676038, y: 0.43500003}
   m_AnchorMax: {x: 0.85600007, y: 0.55749136}
-  m_AnchoredPosition: {x: 0.30000305, y: -0.10000038}
+  m_AnchoredPosition: {x: 0.30000305, y: -0.099998474}
   m_SizeDelta: {x: -1.48172, y: -0.92230225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1736731201
@@ -13942,11 +13909,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
-  TextDispM2: {fileID: 0}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -14821,12 +14787,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 0
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -15166,12 +15131,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 1
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -15500,12 +15464,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: '*'
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 
@@ -15846,11 +15809,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
-  TextDispM2: {fileID: 0}
+  TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 0}
   press_buttons: 
   equal: 0
-  zero: 
   text: 
   textdel: 
   textdelM1: 

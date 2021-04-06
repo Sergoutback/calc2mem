@@ -13,7 +13,7 @@ public class Calculator : MonoBehaviour
     public Text TextDispPercent;
     public string press_buttons;
     public double equal;
-    public string zero;
+    // public string zero;
     public string text;
     // public string disp1;
     public string textdel;
@@ -24,7 +24,7 @@ public class Calculator : MonoBehaviour
     public int lenghtM2;
     public double m1;
     public double m2;
-    public string dispm0;
+    // public string dispm0;
     public string dispm1;
     public string dispm2;
     public string percentValue;
@@ -81,9 +81,9 @@ public class Calculator : MonoBehaviour
 
         if (forVibroOff == 1)
         {
-        Vibration.Init();  
-        Vibration.Vibrate(30); 
-        Debug.Log("VibrWork");
+            Vibration.Init();  
+            Vibration.Vibrate(30); 
+            Debug.Log("VibrWork");
         }          
         else 
         {             
@@ -95,7 +95,7 @@ public class Calculator : MonoBehaviour
     {
         // из-за этой херни не ставится вторая запятая. надо подумать, как переделать
         // if ((TextDisp.text.IndexOf(".") == -1) && (TextDisp.text.IndexOf("∞") == -1))
-            TextDisp.text += ".";
+        TextDisp.text += ".";
     }
     
     public void On_Click_C()
