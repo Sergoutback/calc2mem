@@ -126,7 +126,11 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
+<<<<<<< HEAD
   bundleVersion: 1.2.4
+=======
+  bundleVersion: 1.2.1
+>>>>>>> parent of f1479df (10042021_2209)
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -171,7 +175,11 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier: {}
   buildNumber: {}
+<<<<<<< HEAD
   AndroidBundleVersionCode: 5
+=======
+  AndroidBundleVersionCode: 2
+>>>>>>> parent of f1479df (10042021_2209)
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
