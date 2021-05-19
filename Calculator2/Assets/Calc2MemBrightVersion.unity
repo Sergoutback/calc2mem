@@ -5039,7 +5039,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 87de3c292248b0a42bfd813190b47f27, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -5083,7 +5083,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a5d6bb25c5193634fb68984e5395751a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5113,8 +5113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab127572bb955e4aa69c2384f987630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enableSprite: {fileID: 21300000, guid: a5d6bb25c5193634fb68984e5395751a, type: 3}
-  disableSprite: {fileID: 21300000, guid: 87de3c292248b0a42bfd813190b47f27, type: 3}
+  enableSprite: {fileID: 21300000, guid: 0b3541587791e314b9e4fc8b790825bc, type: 3}
+  disableSprite: {fileID: 21300000, guid: 4d29172490d602548b02330e0d1c409a, type: 3}
 --- !u!114 &705145080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11324,7 +11324,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 800dc4eb373afa143b22af985620e2b1, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: c4946af157862204b8bf4be6431156e7, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -11368,7 +11368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 96f37c7a16a578a4db3ad2a59810097f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 26b447b79b059b748b7a13cfc63d4240, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11398,8 +11398,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2daa8ba9ec92fa8438cbc07c400fb7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enableSpriteVibro: {fileID: 21300000, guid: 96f37c7a16a578a4db3ad2a59810097f, type: 3}
-  disableSpriteVibro: {fileID: 21300000, guid: 800dc4eb373afa143b22af985620e2b1, type: 3}
+  enableSpriteVibro: {fileID: 21300000, guid: 26b447b79b059b748b7a13cfc63d4240, type: 3}
+  disableSpriteVibro: {fileID: 21300000, guid: c4946af157862204b8bf4be6431156e7, type: 3}
   vibroEnabled: 1
   vibrr: 0
 --- !u!1 &1526268827

@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Calculator2.unity
     guid: c0b58ff378630a24c8f49a8205831e6c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Converter.unity
     guid: d33bf47883e91144d97b0c51cfb728ca
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/History.unity
     guid: cff614e9488894a4cacc7dd3be753d13
   m_configObjects: {}
