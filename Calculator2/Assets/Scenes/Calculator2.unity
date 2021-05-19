@@ -255,7 +255,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 8
   equal: 0
   text: 
@@ -773,7 +773,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -1105,7 +1105,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -1515,7 +1515,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: /
   equal: 0
   text: 
@@ -2002,7 +2002,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -2574,7 +2574,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: Conv
   equal: 0
   text: 
@@ -3183,7 +3183,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 6
   equal: 0
   text: 
@@ -3526,7 +3526,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: +
   equal: 0
   text: 
@@ -4596,7 +4596,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -5162,7 +5162,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -5514,8 +5514,8 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
-  press_buttons: 
+  TextDispPercent: {fileID: 126918038}
+  press_buttons: '%'
   equal: 0
   text: 
   textdel: 
@@ -5574,7 +5574,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 716390645}
-        m_MethodName: 
+        m_MethodName: On_Click_Percent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5585,7 +5585,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 716390645}
-        m_MethodName: 
+        m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5857,7 +5857,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 7
   equal: 0
   text: 
@@ -6743,7 +6743,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 2
   equal: 0
   text: 
@@ -7333,7 +7333,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 00
   equal: 0
   text: 
@@ -7828,7 +7828,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 9
   equal: 0
   text: 
@@ -8249,7 +8249,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -8582,7 +8582,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 3
   equal: 0
   text: 
@@ -9016,7 +9016,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 5
   equal: 0
   text: 
@@ -9504,7 +9504,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -9925,7 +9925,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 0
   equal: 0
   text: 
@@ -10268,7 +10268,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 0
   equal: 0
   text: 
@@ -10762,7 +10762,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: Hist
   equal: 0
   text: 
@@ -11029,7 +11029,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -11522,7 +11522,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -11704,7 +11704,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: '-'
   equal: 0
   text: 
@@ -12047,7 +12047,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -12536,7 +12536,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -12869,7 +12869,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 4
   equal: 0
   text: 
@@ -13460,7 +13460,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -13877,7 +13877,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 
@@ -14755,7 +14755,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 0
   equal: 0
   text: 
@@ -15098,7 +15098,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 1
   equal: 0
   text: 
@@ -15430,7 +15430,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: '*'
   equal: 0
   text: 
@@ -15773,7 +15773,7 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
   press_buttons: 
   equal: 0
   text: 

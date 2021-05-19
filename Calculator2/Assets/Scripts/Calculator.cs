@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.Data;
 // using System.Index;
 using System;
+using System.Text.RegularExpressions;
 public class Calculator : MonoBehaviour
 {   
     public Text TextDisp;
@@ -19,15 +20,20 @@ public class Calculator : MonoBehaviour
     public string textdel;
     public string textdelM1;
     public string textdelM2;
-    public int lenght;
-    public int lenghtM1;
-    public int lenghtM2;
+    public double lenght;
+    public double lenghtM1;
+    public double lenghtM2;
     public double m1;
     public double m2;
     // public string dispm0;
     public string dispm1;
     public string dispm2;
     public string percentValue;
+    public string percentInArray;
+    public string[] newArray;
+    public string firstNumber;
+    public string secondNumber;
+    public double solution; 
     public object TextDisplay { get; private set; }
     public object TextDisplayM1 { get; private set; }
     public object TextDisplayM2 { get; private set; }
@@ -101,6 +107,7 @@ public class Calculator : MonoBehaviour
     public void On_Click_C()
     {
         TextDisp.text =("0").ToString();
+        TextDispPercent.text =("0").ToString();
     }
 
     public void On_Click_AC()
@@ -108,12 +115,28 @@ public class Calculator : MonoBehaviour
         TextDisp.text =("0").ToString();
         TextDispM1.text =("0").ToString();
         TextDispM2.text =("0").ToString();
+        TextDispPercent.text =("0").ToString();
     }
     public void On_Click_Equal()
-    {        
-        DataTable dt = new DataTable();
-        double equal = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
-        TextDisp.text = equal.ToString();             
+    {
+        if (TextDisp.text.Contains ("%")) 
+        {
+            string lastArray = TextDisp.text;
+            Regex lastReg = new Regex(@"\w*%$", RegexOptions.IgnoreCase);
+
+            TextDisp.text= lastReg.Replace(TextDisp.text, TextDispPercent.text);
+
+            DataTable dt = new DataTable();
+            double equal = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
+            TextDisp.text = equal.ToString(); 
+            TextDispPercent.text =("0").ToString();
+        }
+        else
+        {        
+            DataTable dt = new DataTable();
+            double equal = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
+            TextDisp.text = equal.ToString();             
+        }
     }
 
     public void On_Click_Plus_Minus()
@@ -125,7 +148,7 @@ public class Calculator : MonoBehaviour
     }
     public void On_Click_Del()
     {        
-        int lenght = TextDisp.text.Length - 1;
+        double lenght = TextDisp.text.Length - 1;
         string textdel = TextDisp.text;
         if (lenght <1)
             {   
@@ -142,7 +165,7 @@ public class Calculator : MonoBehaviour
 
     public void On_Click_M1Del()
     {        
-        int lenghtM1 = TextDispM1.text.Length - 1;
+        double lenghtM1 = TextDispM1.text.Length - 1;
         string textdelM1 = TextDispM1.text;
         if (lenghtM1 <1)
             {   
@@ -159,7 +182,7 @@ public class Calculator : MonoBehaviour
 
     public void On_Click_M2Del()
     {        
-        int lenghtM2 = TextDispM2.text.Length - 1;
+        double lenghtM2 = TextDispM2.text.Length - 1;
         string textdelM2 = TextDispM2.text;
         if (lenghtM2 <1)
             {   
@@ -176,27 +199,41 @@ public class Calculator : MonoBehaviour
 
     public void On_Click_Percent()
     {
+        // Массив тестируемых строк
+        string percentInArray = TextDisp.text;
+
+        // Теперь укажем поиск, не зависимый от регистра
+        Regex myReg = new Regex("[^0-9]", RegexOptions.IgnoreCase);
+
+        string[] newArray = myReg.Split(percentInArray); // массив имен      
+        string firstNumber = Convert.ToString(newArray[newArray.Length-2]);
+        string secondNumber = Convert.ToString(newArray[newArray.Length-1]);
+        double solution = Convert.ToDouble(firstNumber)*Convert.ToDouble(secondNumber)/100;
+        TextDispPercent.text = Convert.ToString(solution);
+        
+    }
+
         // if (TextDisp.text.Contains ("%"))        
         // {
             // TextDisp.text = TextDisp.text.Remove(-1, 1);
 
             // указали длину массива
             // создали и инициализировали массив 
-            int [] TextDispArrLength = new int [(TextDisp.text).Length]; //{(TextDisp.text).ToString()}; 
-            Debug.Log("длина массива");
-            Debug.Log((TextDisp.text).Length);
+            // int [] TextDispArrLength = new int [(TextDisp.text).Length]; //{(TextDisp.text).ToString()}; 
+            // Debug.Log("длина массива");
+            // Debug.Log((TextDisp.text).Length);
 
-            // указали разделители
-            char[] delimiterChars = { '+', '-', '*', '/'};
+            // // указали разделители
+            // char[] delimiterChars = { '+', '-', '*', '/'};
 
-            // разделили массив
-            string [] ValuesTextDispArr = (TextDisp.text).Split(delimiterChars);
-            Debug.Log("значения в массиве");
-            Debug.Log((TextDisp.text).Split(delimiterChars));
-            foreach (var valueTextDispArr in ValuesTextDispArr)
-            {
-                System.Console.WriteLine($"<{valueTextDispArr}>");
-            }
+            // // разделили массив
+            // string [] ValuesTextDispArr = (TextDisp.text).Split(delimiterChars);
+            // Debug.Log("значения в массиве");
+            // Debug.Log((TextDisp.text).Split(delimiterChars));
+            // foreach (var valueTextDispArr in ValuesTextDispArr)
+            // {
+            //     System.Console.WriteLine($"<{valueTextDispArr}>");
+            // }
 
                 
             // преобразовали string to array
@@ -240,7 +277,9 @@ public class Calculator : MonoBehaviour
         // TextDisp.text = (double.Parse(TextBox1.Text) * double.Parse(TextBox2.Text) / 100 * double.Parse(TextBox3.Text)).ToString();
 
         //TextDisp.text = Convert.ToDouble(TextDisp.text);
-    }
+    
+
+
 
      //M1plus button
     public void On_Click_MemoryPlus()
