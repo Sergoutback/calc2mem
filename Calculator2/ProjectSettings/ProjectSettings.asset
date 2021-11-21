@@ -126,7 +126,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.2.17
+  bundleVersion: 1.2.18
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -171,8 +171,8 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier: {}
   buildNumber: {}
-  AndroidBundleVersionCode: 17
-  AndroidMinSdkVersion: 19
+  AndroidBundleVersionCode: 18
+  AndroidMinSdkVersion: 30
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -249,7 +249,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 2
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/Keystore for Android/Myfirst.keystore
+  AndroidKeystoreName: D:/Keystore for Android/Calc2Memory/Myfirst.keystore
   AndroidKeyaliasName: calc2mem
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
