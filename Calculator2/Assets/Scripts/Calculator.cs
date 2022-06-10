@@ -12,6 +12,7 @@ public class Calculator : MonoBehaviour
     public Text TextDispM1;
     public Text TextDispM2;
     public Text TextDispPercent;
+    public Text TextDispCorrect;
     public string press_buttons;
     public double equal;
     // public string zero;
@@ -39,6 +40,7 @@ public class Calculator : MonoBehaviour
     public object TextDisplayM2 { get; private set; }
     public object TextDisplayPerc { get; private set; }
     public object TextDisplay_Market { get; private set; }
+
     public VibroOff forVibroOff;
 
     public void Start()
@@ -102,6 +104,24 @@ public class Calculator : MonoBehaviour
         // из-за этой херни не ставится вторая запятая. надо подумать, как переделать
         // if ((TextDisp.text.IndexOf(".") == -1) && (TextDisp.text.IndexOf("∞") == -1))
         TextDisp.text += ".";
+        //if (TextDisp.text.Contains(".."))
+        //{
+        //    string correctArray = TextDisp.text;
+        //    Regex correctReg = new Regex(@"\w*\.\.$", RegexOptions.IgnoreCase);
+        //    TextDisp.text = correctReg.Replace(TextDisp.text, TextDispCorrect.text);
+        //    TextDisp.text = correctArray.ToString();
+        //    TextDispCorrect.text = (".").ToString();
+        //}
+        
+        //string input = TextDisp.text;
+        //string pattern = @"\.+";
+        //string replacement = @"\.";
+        //string result = Regex.Replace(input, pattern, replacement);
+
+        //Console.WriteLine("Original String: {0}", input);
+        //Console.WriteLine("Replacement String: {0}", result);
+        
+
     }
     
     public void On_Click_C()
@@ -203,7 +223,7 @@ public class Calculator : MonoBehaviour
         string percentInArray = TextDisp.text;
 
         // Теперь укажем поиск, не зависимый от регистра
-        Regex myReg = new Regex("[^0-9]", RegexOptions.IgnoreCase);
+        Regex myReg = new Regex(@"[^0-9]", RegexOptions.IgnoreCase);
 
         string[] newArray = myReg.Split(percentInArray); // массив имен      
         string firstNumber = Convert.ToString(newArray[newArray.Length-2]);
