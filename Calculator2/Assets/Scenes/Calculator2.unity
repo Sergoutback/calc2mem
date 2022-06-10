@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 189783196}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,6 +118,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -173,6 +175,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -256,6 +259,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 8
   equal: 0
   text: 
@@ -270,6 +274,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &71738101
 MonoBehaviour:
@@ -285,6 +294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -315,6 +325,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 71738100}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -326,6 +337,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -351,6 +363,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -406,6 +419,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 71738104}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -417,6 +431,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -610,6 +625,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -688,6 +704,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.5254902, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -774,6 +791,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -788,6 +806,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &165490555
 MonoBehaviour:
@@ -803,6 +826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -833,6 +857,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 165490554}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_Equal
         m_Mode: 1
         m_Arguments:
@@ -858,6 +883,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -913,6 +939,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 165490558}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -924,6 +951,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -1106,6 +1134,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -1120,6 +1149,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &177348496
 MonoBehaviour:
@@ -1135,6 +1169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1165,6 +1200,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 177348495}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_Point
         m_Mode: 1
         m_Arguments:
@@ -1190,6 +1226,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1245,6 +1282,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 177348499}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -1256,6 +1294,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -1378,6 +1417,67 @@ MonoBehaviour:
   disableSpriteVibro: {fileID: 21300000, guid: dc75cd4c8ad3cc44882e7500242d8901, type: 3}
   vibroEnabled: 1
   vibrr: 0
+--- !u!850595691 &189783196
+LightingSettings:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Settings.lighting
+  serializedVersion: 3
+  m_GIWorkflowMode: 1
+  m_EnableBakedLightmaps: 0
+  m_EnableRealtimeLightmaps: 0
+  m_RealtimeEnvironmentLighting: 1
+  m_BounceScale: 1
+  m_AlbedoBoost: 1
+  m_IndirectOutputScale: 1
+  m_UsingShadowmask: 1
+  m_BakeBackend: 1
+  m_LightmapMaxSize: 1024
+  m_BakeResolution: 40
+  m_Padding: 2
+  m_TextureCompression: 1
+  m_AO: 0
+  m_AOMaxDistance: 1
+  m_CompAOExponent: 1
+  m_CompAOExponentDirect: 0
+  m_ExtractAO: 0
+  m_MixedBakeMode: 2
+  m_LightmapsBakeMode: 1
+  m_FilterMode: 1
+  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
+  m_ExportTrainingData: 0
+  m_TrainingDataDestination: TrainingData
+  m_RealtimeResolution: 2
+  m_ForceWhiteAlbedo: 0
+  m_ForceUpdates: 0
+  m_FinalGather: 0
+  m_FinalGatherRayCount: 256
+  m_FinalGatherFiltering: 1
+  m_PVRCulling: 1
+  m_PVRSampling: 1
+  m_PVRDirectSampleCount: 32
+  m_PVRSampleCount: 512
+  m_PVREnvironmentSampleCount: 256
+  m_PVREnvironmentReferencePointCount: 2048
+  m_LightProbeSampleCountMultiplier: 4
+  m_PVRBounces: 2
+  m_PVRMinBounces: 2
+  m_PVREnvironmentMIS: 1
+  m_PVRFilteringMode: 1
+  m_PVRDenoiserTypeDirect: 1
+  m_PVRDenoiserTypeIndirect: 1
+  m_PVRDenoiserTypeAO: 1
+  m_PVRFilterTypeDirect: 0
+  m_PVRFilterTypeIndirect: 0
+  m_PVRFilterTypeAO: 0
+  m_PVRFilteringGaussRadiusDirect: 1
+  m_PVRFilteringGaussRadiusIndirect: 5
+  m_PVRFilteringGaussRadiusAO: 2
+  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+  m_PVRFilteringAtrousPositionSigmaIndirect: 2
+  m_PVRFilteringAtrousPositionSigmaAO: 1
 --- !u!1 &190424737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1530,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1516,6 +1617,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: /
   equal: 0
   text: 
@@ -1530,6 +1632,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &205843873
 MonoBehaviour:
@@ -1545,6 +1652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1575,6 +1683,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 205843872}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -1586,6 +1695,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -1611,6 +1721,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1666,6 +1777,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 205843876}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -1677,6 +1789,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -1851,6 +1964,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2003,6 +2117,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -2017,6 +2132,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &241540883
 MonoBehaviour:
@@ -2032,6 +2152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -2062,6 +2183,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 241540882}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_MemoryReturn
         m_Mode: 1
         m_Arguments:
@@ -2087,6 +2209,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.7254533, g: 0.1462264, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2142,6 +2265,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 241540886}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -2153,6 +2277,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -2327,6 +2452,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2431,6 +2557,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 271258391}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -2442,6 +2569,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -2453,6 +2581,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
           m_MethodName: 
           m_Mode: 1
           m_Arguments:
@@ -2575,6 +2704,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: Conv
   equal: 0
   text: 
@@ -2589,6 +2719,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &271258395
 MonoBehaviour:
@@ -2604,6 +2739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -2634,6 +2770,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 271258394}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_M2Del
         m_Mode: 1
         m_Arguments:
@@ -2645,6 +2782,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -2670,6 +2808,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.26470602, g: 0.25, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2760,6 +2899,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2841,6 +2981,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2878,7 +3019,8 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -2893,6 +3035,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!1 &410859380
 GameObject:
@@ -2946,6 +3093,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3024,6 +3172,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3102,6 +3251,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3184,6 +3334,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 6
   equal: 0
   text: 
@@ -3198,6 +3349,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &464349180
 MonoBehaviour:
@@ -3213,6 +3369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -3243,6 +3400,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 464349179}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -3254,6 +3412,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -3279,6 +3438,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3334,6 +3494,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 464349183}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -3345,6 +3506,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -3527,6 +3689,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: +
   equal: 0
   text: 
@@ -3541,6 +3704,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &477200684
 MonoBehaviour:
@@ -3556,6 +3724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -3586,6 +3755,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 477200683}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -3597,6 +3767,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -3622,6 +3793,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3677,6 +3849,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 477200687}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -3688,6 +3861,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -3862,6 +4036,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3940,6 +4115,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4018,6 +4194,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4143,6 +4320,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4180,7 +4358,8 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -4195,6 +4374,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!1 &573990625
 GameObject:
@@ -4248,6 +4432,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4326,6 +4511,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4388,7 +4574,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.027537039, y: 0.6164386}
   m_AnchorMax: {x: 0.97400004, y: 0.6567807}
-  m_AnchoredPosition: {x: -0.57995605, y: 43.799988}
+  m_AnchoredPosition: {x: -0.57995605, y: 43.80005}
   m_SizeDelta: {x: 0.07409668, y: 89.24014}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &624727200
@@ -4404,9 +4590,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextDisp: {fileID: 126918038}
-  TextDispM1: {fileID: 0}
-  TextDispM2: {fileID: 0}
-  TextDispPercent: {fileID: 0}
+  TextDispM1: {fileID: 1197257109}
+  TextDispM2: {fileID: 1780846791}
+  TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -4421,6 +4608,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &624727201
 MonoBehaviour:
@@ -4437,6 +4629,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0.53333336}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4511,6 +4704,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4597,6 +4791,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -4611,6 +4806,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &660005738
 MonoBehaviour:
@@ -4626,6 +4826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -4656,6 +4857,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 660005737}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_Plus_Minus
         m_Mode: 1
         m_Arguments:
@@ -4681,6 +4883,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4736,6 +4939,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 660005741}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -4747,6 +4951,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -5030,6 +5235,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 705145072}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -5041,6 +5247,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -5163,6 +5370,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -5177,6 +5385,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &705145076
 MonoBehaviour:
@@ -5192,6 +5405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -5222,6 +5436,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 705145079}
+        m_TargetAssemblyTypeName: 
         m_MethodName: SwitchAudio
         m_Mode: 1
         m_Arguments:
@@ -5247,6 +5462,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8679245, g: 0.8661998, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5351,6 +5567,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5429,6 +5646,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5515,6 +5733,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: '%'
   equal: 0
   text: 
@@ -5529,6 +5748,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &716390646
 MonoBehaviour:
@@ -5544,6 +5768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -5574,6 +5799,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 716390645}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_Percent
         m_Mode: 1
         m_Arguments:
@@ -5585,6 +5811,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 716390645}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -5610,6 +5837,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5665,6 +5893,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 716390649}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -5676,6 +5905,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -5858,6 +6088,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 7
   equal: 0
   text: 
@@ -5872,6 +6103,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &786523246
 MonoBehaviour:
@@ -5887,6 +6123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -5917,6 +6154,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 786523245}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -5928,6 +6166,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -5953,6 +6192,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6008,6 +6248,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 786523249}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -6019,6 +6260,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -6193,6 +6435,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6271,6 +6514,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6349,6 +6593,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6427,6 +6672,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6579,6 +6825,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6657,6 +6904,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6744,6 +6992,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 2
   equal: 0
   text: 
@@ -6758,6 +7007,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1048607526
 MonoBehaviour:
@@ -6773,6 +7027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -6803,6 +7058,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1048607525}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -6814,6 +7070,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -6839,6 +7096,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6894,6 +7152,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1048607529}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -6905,6 +7164,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -7092,6 +7352,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7170,6 +7431,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.5254902, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7248,6 +7510,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7334,6 +7597,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 00
   equal: 0
   text: 
@@ -7348,6 +7612,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1109098125
 MonoBehaviour:
@@ -7363,6 +7632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -7393,6 +7663,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1109098124}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -7404,6 +7675,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -7429,6 +7701,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7484,6 +7757,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1109098128}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -7495,6 +7769,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -7669,6 +7944,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7747,6 +8023,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.5254902}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7829,6 +8106,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 9
   equal: 0
   text: 
@@ -7843,6 +8121,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1178152910
 MonoBehaviour:
@@ -7858,6 +8141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -7888,6 +8172,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1178152909}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -7899,6 +8184,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -7924,6 +8210,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7979,6 +8266,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1178152913}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -7990,6 +8278,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -8164,6 +8453,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.53333336, g: 0, b: 0.5176471, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8250,6 +8540,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -8264,6 +8555,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1217668932
 MonoBehaviour:
@@ -8279,6 +8575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -8309,6 +8606,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1217668931}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_Memory2Minus
         m_Mode: 1
         m_Arguments:
@@ -8334,6 +8632,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.26470602, g: 0.25, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8389,6 +8688,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1217668935}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -8400,6 +8700,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -8583,6 +8884,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 3
   equal: 0
   text: 
@@ -8597,6 +8899,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1217673737
 MonoBehaviour:
@@ -8612,6 +8919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -8642,6 +8950,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1217673736}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -8653,6 +8962,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -8678,6 +8988,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8733,6 +9044,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1217673740}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -8744,6 +9056,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -8931,6 +9244,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9017,6 +9331,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 5
   equal: 0
   text: 
@@ -9031,6 +9346,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1333811009
 MonoBehaviour:
@@ -9046,6 +9366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -9076,6 +9397,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1333811008}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -9101,6 +9423,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9156,6 +9479,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -9167,6 +9491,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1333811012}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -9341,6 +9666,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9419,6 +9745,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9505,6 +9832,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -9519,6 +9847,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1421286411
 MonoBehaviour:
@@ -9534,6 +9867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -9564,6 +9898,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1421286410}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_Memory2Clear
         m_Mode: 1
         m_Arguments:
@@ -9575,6 +9910,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -9600,6 +9936,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.26470602, g: 0.25, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9655,6 +9992,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1421286414}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -9666,6 +10004,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -9840,6 +10179,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9926,6 +10266,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 0
   equal: 0
   text: 
@@ -9940,6 +10281,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1443625583
 MonoBehaviour:
@@ -9955,6 +10301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -9985,6 +10332,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1443625582}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_C
         m_Mode: 1
         m_Arguments:
@@ -9996,6 +10344,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1443625580}
+        m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -10021,6 +10370,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.5254902, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10076,6 +10426,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1443625586}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -10087,6 +10438,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -10269,6 +10621,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 0
   equal: 0
   text: 
@@ -10283,6 +10636,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1451447142
 MonoBehaviour:
@@ -10298,6 +10656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -10328,6 +10687,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1451447141}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_AC
         m_Mode: 1
         m_Arguments:
@@ -10353,6 +10713,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.5254902, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10408,6 +10769,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1451447145}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -10419,6 +10781,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -10619,6 +10982,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1460271602}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -10630,6 +10994,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -10641,6 +11006,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
           m_MethodName: 
           m_Mode: 1
           m_Arguments:
@@ -10763,6 +11129,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: Hist
   equal: 0
   text: 
@@ -10777,6 +11144,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1460271606
 MonoBehaviour:
@@ -10792,6 +11164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -10822,6 +11195,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1460271605}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_M1Del
         m_Mode: 1
         m_Arguments:
@@ -10833,6 +11207,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -10858,6 +11233,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.7254533, g: 0.1462264, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10948,6 +11324,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11030,6 +11407,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -11044,6 +11422,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1492803426
 MonoBehaviour:
@@ -11059,6 +11442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -11089,6 +11473,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1492803425}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_Memory2Return
         m_Mode: 1
         m_Arguments:
@@ -11100,6 +11485,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -11125,6 +11511,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.26470602, g: 0.25, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11180,6 +11567,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1492803429}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -11191,6 +11579,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -11390,6 +11779,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -11401,6 +11791,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538450}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -11523,6 +11914,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -11537,6 +11929,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1501538454
 MonoBehaviour:
@@ -11552,6 +11949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -11582,6 +11980,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1501538457}
+        m_TargetAssemblyTypeName: 
         m_MethodName: SwitchVibro
         m_Mode: 1
         m_Arguments:
@@ -11607,6 +12006,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8679245, g: 0.8661998, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11705,6 +12105,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: '-'
   equal: 0
   text: 
@@ -11719,6 +12120,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1526268830
 MonoBehaviour:
@@ -11734,6 +12140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -11764,6 +12171,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1526268829}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -11775,6 +12183,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -11800,6 +12209,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11855,6 +12265,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1526268833}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -11866,6 +12277,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -12048,6 +12460,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -12062,6 +12475,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1536109957
 MonoBehaviour:
@@ -12077,6 +12495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -12107,6 +12526,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1536109956}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_MemoryPlus
         m_Mode: 1
         m_Arguments:
@@ -12132,6 +12552,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.7254533, g: 0.1462264, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12187,6 +12608,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1536109960}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -12198,6 +12620,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -12372,6 +12795,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12450,6 +12874,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12537,6 +12962,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -12551,6 +12977,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1598299628
 MonoBehaviour:
@@ -12566,6 +12997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -12596,6 +13028,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1598299627}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_Del
         m_Mode: 1
         m_Arguments:
@@ -12621,6 +13054,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12676,6 +13110,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1598299631}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -12687,6 +13122,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -12870,6 +13306,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 4
   equal: 0
   text: 
@@ -12884,6 +13321,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1605429438
 MonoBehaviour:
@@ -12899,6 +13341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -12929,6 +13372,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1605429437}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -12954,6 +13398,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13009,6 +13454,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1605429441}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -13020,6 +13466,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -13213,6 +13660,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &1662174662
 Canvas:
   m_ObjectHideFlags: 0
@@ -13348,6 +13796,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13385,7 +13834,8 @@ MonoBehaviour:
   TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
-  TextDispPercent: {fileID: 0}
+  TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -13400,6 +13850,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!1 &1697659185
 GameObject:
@@ -13461,6 +13916,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -13475,6 +13931,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1697659188
 MonoBehaviour:
@@ -13490,6 +13951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -13520,6 +13982,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1697659187}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_Memory2Plus
         m_Mode: 1
         m_Arguments:
@@ -13531,6 +13994,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -13556,6 +14020,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.26470602, g: 0.25, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13611,6 +14076,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1697659191}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -13622,6 +14088,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -13796,6 +14263,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13878,6 +14346,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -13892,6 +14361,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &1768529904
 MonoBehaviour:
@@ -13907,6 +14381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -13937,6 +14412,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1768529903}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_MemoryMinus
         m_Mode: 1
         m_Arguments:
@@ -13962,6 +14438,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.7254533, g: 0.1462264, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14017,6 +14494,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1768529907}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -14028,6 +14506,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -14202,6 +14681,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0.054895077, b: 0.5377358, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14280,6 +14760,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14358,6 +14839,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14436,6 +14918,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14514,6 +14997,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14592,6 +15076,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14670,6 +15155,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8666667, g: 0.8666667, b: 0.8666667, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14756,6 +15242,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 0
   equal: 0
   text: 
@@ -14770,6 +15257,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &2040943111
 MonoBehaviour:
@@ -14785,6 +15277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -14815,6 +15308,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2040943110}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -14826,6 +15320,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -14851,6 +15346,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14906,6 +15402,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2040943114}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -14917,6 +15414,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -15099,6 +15597,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 1
   equal: 0
   text: 
@@ -15113,6 +15612,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &2070528642
 MonoBehaviour:
@@ -15128,6 +15632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -15158,6 +15663,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2070528641}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -15183,6 +15689,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15223,6 +15730,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2070528646}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -15234,6 +15742,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -15431,6 +15940,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: '*'
   equal: 0
   text: 
@@ -15445,6 +15955,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &2084944707
 MonoBehaviour:
@@ -15460,6 +15975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -15490,6 +16006,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2084944706}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
@@ -15501,6 +16018,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayVibrationStandart
         m_Mode: 1
         m_Arguments:
@@ -15526,6 +16044,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15581,6 +16100,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2084944710}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -15592,6 +16112,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:
@@ -15774,6 +16295,7 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
+  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -15788,6 +16310,11 @@ MonoBehaviour:
   dispm1: 
   dispm2: 
   percentValue: 
+  percentInArray: 
+  newArray: []
+  firstNumber: 
+  secondNumber: 
+  solution: 0
   forVibroOff: {fileID: 0}
 --- !u!114 &2143848728
 MonoBehaviour:
@@ -15803,6 +16330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -15833,6 +16361,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2143848727}
+        m_TargetAssemblyTypeName: 
         m_MethodName: On_Click_MemoryClear
         m_Mode: 1
         m_Arguments:
@@ -15858,6 +16387,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.7254533, g: 0.1462264, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15913,6 +16443,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2143848731}
+          m_TargetAssemblyTypeName: 
           m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
@@ -15924,6 +16455,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1501538453}
+          m_TargetAssemblyTypeName: 
           m_MethodName: Vibro
           m_Mode: 1
           m_Arguments:

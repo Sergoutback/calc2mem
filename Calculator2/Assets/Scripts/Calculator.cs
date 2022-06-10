@@ -132,7 +132,7 @@ public class Calculator : MonoBehaviour
 
     public void On_Click_AC()
     {
-        TextDisp.text =("0").ToString();
+        TextDisp.text = ("0").ToString();
         TextDispM1.text =("0").ToString();
         TextDispM2.text =("0").ToString();
         TextDispPercent.text =("0").ToString();
