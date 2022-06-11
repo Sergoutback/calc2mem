@@ -6,13 +6,15 @@ using System.Data;
 // using System.Index;
 using System;
 using System.Text.RegularExpressions;
+using System.Linq;
+
 public class Calculator : MonoBehaviour
 {   
     public Text TextDisp;
     public Text TextDispM1;
     public Text TextDispM2;
     public Text TextDispPercent;
-    public Text TextDispCorrect;
+    //public Text TextDispCorrect;
     public string press_buttons;
     public double equal;
     // public string zero;
@@ -31,15 +33,16 @@ public class Calculator : MonoBehaviour
     public string dispm2;
     public string percentValue;
     public string percentInArray;
+    public string textForPersent;
     public string[] newArray;
     public string firstNumber;
     public string secondNumber;
     public double solution; 
-    public object TextDisplay { get; private set; }
-    public object TextDisplayM1 { get; private set; }
-    public object TextDisplayM2 { get; private set; }
-    public object TextDisplayPerc { get; private set; }
-    public object TextDisplay_Market { get; private set; }
+    //public object TextDisplay { get; private set; }
+    //public object TextDisplayM1 { get; private set; }
+    //public object TextDisplayM2 { get; private set; }
+    //public object TextDisplayPerc { get; private set; }
+    //public object TextDisplay_Market { get; private set; }
 
     public VibroOff forVibroOff;
 
@@ -226,12 +229,62 @@ public class Calculator : MonoBehaviour
         Regex myReg = new Regex(@"[^0-9]", RegexOptions.IgnoreCase);
 
         string[] newArray = myReg.Split(percentInArray); // массив имен      
-        string firstNumber = Convert.ToString(newArray[newArray.Length-2]);
-        string secondNumber = Convert.ToString(newArray[newArray.Length-1]);
-        double solution = Convert.ToDouble(firstNumber)*Convert.ToDouble(secondNumber)/100;
+        string firstNumber = Convert.ToString(newArray[newArray.Length - 2]);
+        string secondNumber = Convert.ToString(newArray[newArray.Length - 1]);
+        double solution = Convert.ToDouble(firstNumber) * Convert.ToDouble(secondNumber) / 100;
         TextDispPercent.text = Convert.ToString(solution);
-        
+
     }
+
+    //{
+    //    string parsePercent;
+    //    textForPersent = TextDisp.text.ToString();
+    //    ParsePercent(textForPersent);
+
+    //    parsePercent = ParsePercent(textForPersent); ;
+    //    TextDispPercent.text = Convert.ToString(parsePercent);
+
+    //    string ParsePercent(string expression)
+    //    {
+    //        var list = SplitAndKeep(expression, expression.Where(x => x != '%' && !char.IsDigit(x)).ToArray()).ToList();
+
+    //        if (list.Count > 0 && list[0].Contains('%'))
+    //        {
+    //            list[0] = list[0].Replace("%", "");
+    //        }
+
+    //        for (int i = 1; i < list.Count; i++)
+    //        {
+    //            if (!char.IsDigit(list[i][0]))
+    //                continue;
+
+    //            if (list[i].Contains('%'))
+    //            {
+    //                list[i] = (int.Parse(list[i - 2]) * int.Parse(list[i].Replace("%", "")) / 100).ToString();
+    //            }
+    //        }
+    //        return string.Join("", list);
+    //    }
+
+    //    static IEnumerable<string> SplitAndKeep(string s, char[] delims)
+    //    {
+    //        int start = 0, index;
+
+    //        while ((index = s.IndexOfAny(delims, start)) != -1)
+    //        {
+    //            if (index - start > 0)
+    //                yield return s.Substring(start, index - start);
+    //            yield return s.Substring(index, 1);
+    //            start = index + 1;
+    //        }
+
+    //        if (start < s.Length)
+    //        {
+    //            yield return s.Substring(start);
+    //        }
+    //    }
+    //}
+
 
         // if (TextDisp.text.Contains ("%"))        
         // {

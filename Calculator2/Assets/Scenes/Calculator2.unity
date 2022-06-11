@@ -259,7 +259,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 8
   equal: 0
   text: 
@@ -275,6 +274,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -791,7 +791,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -807,6 +806,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -1134,7 +1134,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -1150,6 +1149,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -1617,7 +1617,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: /
   equal: 0
   text: 
@@ -1633,6 +1632,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -2117,7 +2117,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -2133,6 +2132,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -2704,7 +2704,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: Conv
   equal: 0
   text: 
@@ -2720,6 +2719,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -3020,7 +3020,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -3036,6 +3035,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -3334,7 +3334,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 6
   equal: 0
   text: 
@@ -3350,6 +3349,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -3689,7 +3689,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: +
   equal: 0
   text: 
@@ -3705,6 +3704,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -4359,7 +4359,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -4375,6 +4374,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -4589,11 +4589,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf76bc52151b1ca4fab9fd5920266336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextDisp: {fileID: 126918038}
+  TextDisp: {fileID: 796191338}
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -4609,6 +4608,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -4791,7 +4791,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -4807,6 +4806,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -5370,7 +5370,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -5386,6 +5385,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -5733,7 +5733,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: '%'
   equal: 0
   text: 
@@ -5749,6 +5748,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -6088,7 +6088,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 7
   equal: 0
   text: 
@@ -6104,6 +6103,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -6992,7 +6992,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 2
   equal: 0
   text: 
@@ -7008,6 +7007,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -7597,7 +7597,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 00
   equal: 0
   text: 
@@ -7613,6 +7612,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -8106,7 +8106,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 9
   equal: 0
   text: 
@@ -8122,6 +8121,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -8540,7 +8540,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -8556,6 +8555,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -8884,7 +8884,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 3
   equal: 0
   text: 
@@ -8900,6 +8899,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -9331,7 +9331,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 5
   equal: 0
   text: 
@@ -9347,6 +9346,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -9832,7 +9832,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -9848,6 +9847,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -10266,7 +10266,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 0
   equal: 0
   text: 
@@ -10282,6 +10281,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -10621,7 +10621,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 0
   equal: 0
   text: 
@@ -10637,6 +10636,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -11129,7 +11129,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: Hist
   equal: 0
   text: 
@@ -11145,6 +11144,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -11407,7 +11407,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -11423,6 +11422,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -11914,7 +11914,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -11930,6 +11929,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -12105,7 +12105,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: '-'
   equal: 0
   text: 
@@ -12121,6 +12120,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -12460,7 +12460,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -12476,6 +12475,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -12962,7 +12962,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -12978,6 +12977,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -13306,7 +13306,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 4
   equal: 0
   text: 
@@ -13322,6 +13321,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -13835,7 +13835,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -13851,6 +13850,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -13916,7 +13916,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -13932,6 +13931,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -14346,7 +14346,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -14362,6 +14361,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -15242,7 +15242,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 0
   equal: 0
   text: 
@@ -15258,6 +15257,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -15597,7 +15597,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 1
   equal: 0
   text: 
@@ -15613,6 +15612,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -15940,7 +15940,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: '*'
   equal: 0
   text: 
@@ -15956,6 +15955,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
@@ -16295,7 +16295,6 @@ MonoBehaviour:
   TextDispM1: {fileID: 1197257109}
   TextDispM2: {fileID: 1780846791}
   TextDispPercent: {fileID: 126918038}
-  TextDispCorrect: {fileID: 0}
   press_buttons: 
   equal: 0
   text: 
@@ -16311,6 +16310,7 @@ MonoBehaviour:
   dispm2: 
   percentValue: 
   percentInArray: 
+  textForPersent: 
   newArray: []
   firstNumber: 
   secondNumber: 
