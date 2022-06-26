@@ -1,19 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class ButtonSounds : MonoBehaviour
+namespace CalculatorUI
 {
-    public AudioSource myFx;
-    public AudioClip hoverFx;
-    public AudioClip clickFx;
 
-    public void HoverSound()
+    public class ButtonSounds : MonoBehaviour
     {
-        myFx.PlayOneShot(hoverFx);
-    }
-    public void ClickSound()
-    {
-        myFx.PlayOneShot(clickFx);
+        public AudioSource myFx;
+        public AudioClip hoverFx;
+        public AudioClip clickFx;
+
+        public void HoverSound()
+        {
+            myFx.PlayOneShot(hoverFx);
+        }
+        public void ClickSound()
+        {
+            myFx.PlayOneShot(clickFx);
+        }
     }
 }
