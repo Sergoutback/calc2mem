@@ -148,14 +148,14 @@ namespace CalculatorUI
             {
                 string lastArray = TextDisp.text;
 
-                Regex myReg = new Regex(@"[^\w+\.\w+]", RegexOptions.IgnoreCase);
+                Regex myReg = new Regex(@"[^\w+\.\D\w+]", RegexOptions.IgnoreCase);
                 string[] newArray = myReg.Split(lastArray); // массив имен      
-                string firstNumber = Convert.ToString(newArray[newArray.Length]);
-                string secondNumber = Convert.ToString(newArray[newArray.Length - 2]);
+                string firstNumber = Convert.ToString(newArray[0]);
+                string secondNumber = Convert.ToString(newArray[1]);
 
-                //secondNumber = TextDispPercent.text; //new Regex(@"[^\w+\.\w+*%$]", RegexOptions.IgnoreCase);
+                secondNumber = TextDispPercent.text; //new Regex(@"[^\w+\.\w+*%$]", RegexOptions.IgnoreCase);
 
-                //TextDisp.text = lastReg.Replace(TextDisp.text, TextDispPercent.text);
+                TextDisp.text = lastReg.Replace(TextDisp.text, TextDispPercent.text);
 
                 DataTable dt = new DataTable();
                 double equal = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
