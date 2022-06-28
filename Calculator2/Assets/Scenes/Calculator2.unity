@@ -279,6 +279,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &71738101
 MonoBehaviour:
@@ -811,6 +814,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &165490555
 MonoBehaviour:
@@ -1154,6 +1160,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &177348496
 MonoBehaviour:
@@ -1637,6 +1646,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &205843873
 MonoBehaviour:
@@ -2137,6 +2149,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &241540883
 MonoBehaviour:
@@ -2724,6 +2739,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &271258395
 MonoBehaviour:
@@ -3040,6 +3058,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!1 &410859380
 GameObject:
@@ -3354,6 +3375,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &464349180
 MonoBehaviour:
@@ -3709,6 +3733,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &477200684
 MonoBehaviour:
@@ -4379,6 +4406,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!1 &573990625
 GameObject:
@@ -4613,6 +4643,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &624727201
 MonoBehaviour:
@@ -4811,6 +4844,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &660005738
 MonoBehaviour:
@@ -5390,6 +5426,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &705145076
 MonoBehaviour:
@@ -5753,6 +5792,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &716390646
 MonoBehaviour:
@@ -5799,8 +5841,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 716390645}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: On_Click_Percent
+        m_TargetAssemblyTypeName: CalculatorUI.Calculator, Assembly-CSharp
+        m_MethodName: On_Click_button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5811,8 +5853,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 716390645}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: On_Click_button
+        m_TargetAssemblyTypeName: CalculatorUI.Calculator, Assembly-CSharp
+        m_MethodName: On_Click_Percent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6108,6 +6150,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &786523246
 MonoBehaviour:
@@ -7012,6 +7057,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1048607526
 MonoBehaviour:
@@ -7617,6 +7665,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1109098125
 MonoBehaviour:
@@ -8126,6 +8177,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1178152910
 MonoBehaviour:
@@ -8560,6 +8614,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1217668932
 MonoBehaviour:
@@ -8904,6 +8961,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1217673737
 MonoBehaviour:
@@ -9351,6 +9411,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1333811009
 MonoBehaviour:
@@ -9852,6 +9915,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1421286411
 MonoBehaviour:
@@ -10286,6 +10352,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1443625583
 MonoBehaviour:
@@ -10641,6 +10710,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1451447142
 MonoBehaviour:
@@ -11149,6 +11221,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1460271606
 MonoBehaviour:
@@ -11427,6 +11502,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1492803426
 MonoBehaviour:
@@ -11934,6 +12012,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1501538454
 MonoBehaviour:
@@ -12125,6 +12206,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1526268830
 MonoBehaviour:
@@ -12480,6 +12564,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1536109957
 MonoBehaviour:
@@ -12982,6 +13069,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1598299628
 MonoBehaviour:
@@ -13326,6 +13416,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1605429438
 MonoBehaviour:
@@ -13855,6 +13948,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!1 &1697659185
 GameObject:
@@ -13936,6 +14032,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1697659188
 MonoBehaviour:
@@ -14366,6 +14465,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1768529904
 MonoBehaviour:
@@ -15262,6 +15364,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2040943111
 MonoBehaviour:
@@ -15617,6 +15722,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2070528642
 MonoBehaviour:
@@ -15960,6 +16068,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2084944707
 MonoBehaviour:
@@ -16315,6 +16426,9 @@ MonoBehaviour:
   firstNumber: 
   secondNumber: 
   solution: 0
+  persentFirstNumber: 
+  persentArifmChar: 
+  persentSecondNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2143848728
 MonoBehaviour:

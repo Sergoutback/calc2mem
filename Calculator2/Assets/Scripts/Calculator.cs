@@ -40,6 +40,11 @@ namespace CalculatorUI
         public string firstNumber;
         public string secondNumber;
         public double solution;
+        public string persentFirstNumber;
+        public string persentArifmChar;
+        public string persentSecondNumber;
+        public string newPersentFirstNumber;
+
         //public object TextDisplay { get; private set; }
         //public object TextDisplayM1 { get; private set; }
         //public object TextDisplayM2 { get; private set; }
@@ -146,16 +151,18 @@ namespace CalculatorUI
         {
             if (TextDisp.text.Contains("%"))
             {
-                string lastArray = TextDisp.text;
+                //On_Click_Percent();
 
-                Regex myReg = new Regex(@"[^\w+\.\D\w+]", RegexOptions.IgnoreCase);
-                string[] newArray = myReg.Split(lastArray); // массив имен      
-                string firstNumber = Convert.ToString(newArray[0]);
-                string secondNumber = Convert.ToString(newArray[1]);
+                newPersentFirstNumber = TextDispPercent.text;
+                string oldTextDispText = TextDisp.text;
 
-                secondNumber = TextDispPercent.text; //new Regex(@"[^\w+\.\w+*%$]", RegexOptions.IgnoreCase);
+                Regex myRegPersent = new Regex(@"^(\d+\.?\d*)(\+|\-|\/|\*){1}(\d+\.?\d*)(\%?)$");
+                string[] newArrayPersent = myRegPersent.Split(oldTextDispText); // массив имен      
+                string persentFirstNumber = Convert.ToString(newArrayPersent[1]);
+                string persentArifmChar = Convert.ToString(newArrayPersent[2]);
+                string persentSecondNumber = Convert.ToString(newArrayPersent[3]);
 
-                TextDisp.text = lastReg.Replace(TextDisp.text, TextDispPercent.text);
+                TextDisp.text = persentFirstNumber + persentArifmChar + newPersentFirstNumber;
 
                 DataTable dt = new DataTable();
                 double equal = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
@@ -234,91 +241,17 @@ namespace CalculatorUI
             string percentInArray = TextDisp.text;
 
             // Теперь укажем поиск, не зависимый от регистра
-            Regex myReg = new Regex(@"[^\w+\.\w+]", RegexOptions.IgnoreCase);
+            Regex myReg = new Regex(@"^(\d+\.?\d*)(\+|\-|\/|\*){1}(\d+\.?\d*)(\%?)$");
             string[] newArray = myReg.Split(percentInArray); // массив имен      
-            string firstNumber = Convert.ToString(newArray[newArray.Length - 2]);
-            string secondNumber = Convert.ToString(newArray[newArray.Length - 1]);
-            double solution = Convert.ToDouble(firstNumber) * Convert.ToDouble(secondNumber) / 100;
+            string persentFirstNumber = Convert.ToString(newArray[1]);
+            string persentArifmChar = Convert.ToString(newArray[2]);
+            string persentSecondNumber = Convert.ToString(newArray[3]);
+            double solution = Convert.ToDouble(persentFirstNumber) * Convert.ToDouble(persentSecondNumber) / 100;
             TextDispPercent.text = Convert.ToString(solution);
 
         }
 
-        //
-        //    string parsePercent;
-        //    textForPersent = TextDisp.text.ToString();
-        //    ParsePercent(textForPersent);
-
-        //    parsePercent = ParsePercent(textForPersent); ;
-        //    TextDispPercent.text = Convert.ToString(parsePercent);
-
-        
-
-
-        // if (TextDisp.text.Contains ("%"))        
-        // {
-        // TextDisp.text = TextDisp.text.Remove(-1, 1);
-
-        // указали длину массива
-        // создали и инициализировали массив 
-        // int [] TextDispArrLength = new int [(TextDisp.text).Length]; //{(TextDisp.text).ToString()}; 
-        // Debug.Log("длина массива");
-        // Debug.Log((TextDisp.text).Length);
-
-        // // указали разделители
-        // char[] delimiterChars = { '+', '-', '*', '/'};
-
-        // // разделили массив
-        // string [] ValuesTextDispArr = (TextDisp.text).Split(delimiterChars);
-        // Debug.Log("значения в массиве");
-        // Debug.Log((TextDisp.text).Split(delimiterChars));
-        // foreach (var valueTextDispArr in ValuesTextDispArr)
-        // {
-        //     System.Console.WriteLine($"<{valueTextDispArr}>");
-        // }
-
-
-        // преобразовали string to array
-        // char[] ToCharArray (int startIndex, int length);
-        // List<string> TextDispArr = new List<string>((TextDisp.text).ToString()); 
-        // // TextDispArr = (TextDisp.text).ToCharArray (0, (TextDisp.text).Length);
-
-        // // произвели операции с последними двумя членами масива
-        // // создали новый массив с новыми значениями
-        // // преобразовали массив в строку
-        // string s2 = String.Join ("', '", s1);
-
-        // double valueBeforePersent = Convert.ToDouble(TextDispArr[TextDispArr.Length - 2]) * 0.01 * Convert.ToDouble(TextDispArr[TextDispArr.Length - 1]);  
-        // Debug.Log(Convert.ToDouble(TextDispArr[TextDispArr.Length - 2]) * 0.01 * Convert.ToDouble(TextDispArr[TextDispArr.Length - 1]));
-        // TextDispPercent =;
-        // удаляем символ процентов
-        // TextDisp.text = TextDisp.text.Remove((TextDispArr.Length - 1), 1);
-
-        // percentValue= GetValue(TextDispArr[TextDispArr.Length - 1]);
-
-
-
-        // string first = TextDispArr.GetValue((TextDispArr - 2);
-        // string varArr =textDispArr.ToCharArray([(TextDisp.text).Length]-2, 2);
-
-
-        // double [] varTextDispArr = new double[2]{(textDispArr[textDispArr.Length-2 ]), (textDispArr[textDispArr.Length-1])};
-        // Debug.Log(varTextDispArr);
-
-        // TextDispArr.SetValue( "one", 1 );
-        // Console.WriteLine( "[1]:   {0}", textDispArr.GetValue( ^1 ) );     
-
-        // double beforePersent = Convert.ToDouble(textDispArr[textDispArr.Length - 2]) * 0.01 * Convert.ToDouble(textDispArr[textDispArr.Length - 1]);   
-        // TextDisp.text = TextDisp.text +  beforePersent; 
-        // }
-
-        // int number = int.Parse(project.Variables["number"].Value);
-        // int persent = int.Parse(project.Variables["persent"].Value);
-        // return number/100*persent;
-
-        // TextDisp.text = (double.Parse(TextBox1.Text) * double.Parse(TextBox2.Text) / 100 * double.Parse(TextBox3.Text)).ToString();
-
-        //TextDisp.text = Convert.ToDouble(TextDisp.text);
-
+       
 
 
 
