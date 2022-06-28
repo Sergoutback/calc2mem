@@ -136,7 +136,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.2.18
+  bundleVersion: 1.2.20
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -156,13 +156,14 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.webart2013.Calculator2Memory
+    Standalone: com.webart2013.Calculator2Memory
   buildNumber:
     Standalone: 0
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
-  AndroidBundleVersionCode: 18
-  AndroidMinSdkVersion: 26
+  AndroidBundleVersionCode: 20
+  AndroidMinSdkVersion: 30
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -248,7 +249,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 2
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/Keystore for Android/Calc2Memory/Myfirst.keystore
+  AndroidKeystoreName: I:/Keystore for Android/Calc2Memory/Myfirst.keystore
   AndroidKeyaliasName: calc2mem
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
@@ -682,7 +683,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Calculator2
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -690,7 +691,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Calculator2
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Calculator2Memory
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
