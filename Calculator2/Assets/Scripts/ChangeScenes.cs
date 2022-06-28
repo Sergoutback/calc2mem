@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScenes : MonoBehaviour
+namespace CalculatorUI
 {
-    public void ChangeFromCalcToHistory()
+    public class ChangeScenes : MonoBehaviour
     {
-        SceneManager.LoadScene(2);
-    }   
-    public void ChangeFromCalcToConverter()
-    {
-        SceneManager.LoadScene(1);
-    }    
-    public void ChangeToCalc()
-    {
-        SceneManager.LoadScene(0);
-    }   
+        public void ChangeFromCalcToHistory()
+        {
+            SceneManager.LoadScene(2);
+        }
+        public void ChangeFromCalcToConverter()
+        {
+            SceneManager.LoadScene(1);
+        }
+        public void ChangeToCalc()
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 }

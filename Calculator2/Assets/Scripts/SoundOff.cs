@@ -1,38 +1,41 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class SoundOff : MonoBehaviour
+namespace CalculatorUI
 {
-    public Sprite enableSprite;
-    public Sprite disableSprite;
-
-    bool audioEnabled = true;
-    public bool AudioEnabled { get { return audioEnabled; } set { SetAudio(value); } }
-
-    Image image;
-
-    void Start()
+    public class SoundOff : MonoBehaviour
     {
-        image = GetComponent<Image>();
-    }
+        public Sprite enableSprite;
+        public Sprite disableSprite;
 
-    void SetAudio(bool enabled)
-    {
-        if (enabled)
+        bool audioEnabled = true;
+        public bool AudioEnabled { get { return audioEnabled; } set { SetAudio(value); } }
+
+        Image image;
+
+        void Start()
         {
-            AudioListener.volume = 1f;
-            image.sprite = enableSprite;
+            image = GetComponent<Image>();
         }
-        else
-        {
-            AudioListener.volume = 0f;
-            image.sprite = disableSprite;
-        }
-        audioEnabled = enabled;
-    }
 
-    public void SwitchAudio()
-    {
-        AudioEnabled = !AudioEnabled;
+        void SetAudio(bool enabled)
+        {
+            if (enabled)
+            {
+                AudioListener.volume = 1f;
+                image.sprite = enableSprite;
+            }
+            else
+            {
+                AudioListener.volume = 0f;
+                image.sprite = disableSprite;
+            }
+            audioEnabled = enabled;
+        }
+
+        public void SwitchAudio()
+        {
+            AudioEnabled = !AudioEnabled;
+        }
     }
 }
