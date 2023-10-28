@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -151,6 +151,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9979198, y: 0.9979198, z: 0.9979198}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1460271601}
   m_RootOrder: 1
@@ -233,6 +234,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 212066456}
   m_Father: {fileID: 1662174663}
@@ -282,6 +284,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &71738101
 MonoBehaviour:
@@ -543,7 +546,7 @@ AudioSource:
     m_RotationOrder: 4
 --- !u!95 &71738107
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -556,10 +559,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &71738108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,6 +609,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1692314871}
   m_RootOrder: 1
@@ -683,6 +689,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 624727199}
   m_RootOrder: 0
@@ -768,6 +775,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 263749486}
   m_Father: {fileID: 1662174663}
@@ -817,6 +825,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &165490555
 MonoBehaviour:
@@ -1114,6 +1123,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1558496816}
   m_Father: {fileID: 1662174663}
@@ -1163,6 +1173,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &177348496
 MonoBehaviour:
@@ -1433,7 +1444,7 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
-  serializedVersion: 3
+  serializedVersion: 6
   m_GIWorkflowMode: 1
   m_EnableBakedLightmaps: 0
   m_EnableRealtimeLightmaps: 0
@@ -1446,7 +1457,7 @@ LightingSettings:
   m_LightmapMaxSize: 1024
   m_BakeResolution: 40
   m_Padding: 2
-  m_TextureCompression: 1
+  m_LightmapCompression: 2
   m_AO: 0
   m_AOMaxDistance: 1
   m_CompAOExponent: 1
@@ -1473,7 +1484,7 @@ LightingSettings:
   m_LightProbeSampleCountMultiplier: 4
   m_PVRBounces: 2
   m_PVRMinBounces: 2
-  m_PVREnvironmentMIS: 1
+  m_PVREnvironmentImportanceSampling: 1
   m_PVRFilteringMode: 1
   m_PVRDenoiserTypeDirect: 1
   m_PVRDenoiserTypeIndirect: 1
@@ -1487,6 +1498,9 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+  m_PVRTiledBaking: 0
+  m_NumRaysToShootPerTexel: -1
+  m_RespectSceneVisibilityWhenBakingGI: 0
 --- !u!1 &190424737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,6 +1529,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1460271601}
   m_RootOrder: 0
@@ -1600,6 +1615,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1370994410}
   m_Father: {fileID: 1662174663}
@@ -1649,6 +1665,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &205843873
 MonoBehaviour:
@@ -1952,6 +1969,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 71738099}
   m_RootOrder: 0
@@ -2033,6 +2051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2065,6 +2084,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -2103,6 +2123,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 573990626}
   m_Father: {fileID: 1662174663}
@@ -2152,6 +2173,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &241540883
 MonoBehaviour:
@@ -2443,6 +2465,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 165490553}
   m_RootOrder: 0
@@ -2528,6 +2551,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 995535781}
   - {fileID: 1736731200}
@@ -2742,6 +2766,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &271258395
 MonoBehaviour:
@@ -2893,6 +2918,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 314994048}
   m_RootOrder: 1
@@ -2973,6 +2999,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1197257108}
   - {fileID: 310384943}
@@ -3061,6 +3088,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!1 &410859380
 GameObject:
@@ -3090,6 +3118,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1536109955}
   m_RootOrder: 0
@@ -3169,6 +3198,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 477200682}
   m_RootOrder: 0
@@ -3248,6 +3278,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1662174663}
   m_RootOrder: 0
@@ -3329,6 +3360,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 535057425}
   m_Father: {fileID: 1662174663}
@@ -3378,6 +3410,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &464349180
 MonoBehaviour:
@@ -3687,6 +3720,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 446822654}
   m_Father: {fileID: 1662174663}
@@ -3736,6 +3770,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &477200684
 MonoBehaviour:
@@ -4039,6 +4074,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1443625581}
   m_RootOrder: 0
@@ -4118,6 +4154,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 705145071}
   m_RootOrder: 0
@@ -4197,6 +4234,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 464349178}
   m_RootOrder: 0
@@ -4275,6 +4313,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -898.9745, y: 778.5919, z: -1825.7395}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 919832617}
   - {fileID: 1662174663}
@@ -4322,6 +4361,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 796191337}
   m_Father: {fileID: 1662174663}
@@ -4409,6 +4449,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!1 &573990625
 GameObject:
@@ -4438,6 +4479,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 241540881}
   m_RootOrder: 0
@@ -4517,6 +4559,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1217673735}
   m_RootOrder: 0
@@ -4597,6 +4640,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 126918037}
   m_Father: {fileID: 1662174663}
@@ -4646,6 +4690,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &624727201
 MonoBehaviour:
@@ -4713,6 +4758,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1501538449}
   m_RootOrder: 0
@@ -4798,6 +4844,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1091781042}
   m_Father: {fileID: 1662174663}
@@ -4847,6 +4894,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &660005738
 MonoBehaviour:
@@ -5127,7 +5175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &693347990
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5150,9 +5198,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -5189,6 +5245,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -5228,6 +5285,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 521861336}
   m_Father: {fileID: 1662174663}
@@ -5429,6 +5487,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &705145076
 MonoBehaviour:
@@ -5582,6 +5641,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1526268828}
   m_RootOrder: 0
@@ -5661,6 +5721,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1451447140}
   m_RootOrder: 0
@@ -5746,6 +5807,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1080584908}
   m_Father: {fileID: 1662174663}
@@ -5795,6 +5857,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &716390646
 MonoBehaviour:
@@ -6104,6 +6167,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1813722173}
   m_Father: {fileID: 1662174663}
@@ -6153,6 +6217,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &786523246
 MonoBehaviour:
@@ -6456,6 +6521,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 559317004}
   m_RootOrder: 0
@@ -6535,6 +6601,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1048607524}
   m_RootOrder: 0
@@ -6614,6 +6681,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1421286409}
   m_RootOrder: 0
@@ -6693,6 +6761,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2070528640}
   m_RootOrder: 0
@@ -6775,9 +6844,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -6814,6 +6891,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 536140459}
   m_RootOrder: 0
@@ -6846,6 +6924,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 271258390}
   m_RootOrder: 0
@@ -6925,6 +7004,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1605429436}
   m_RootOrder: 0
@@ -7011,6 +7091,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 809535350}
   m_Father: {fileID: 1662174663}
@@ -7060,6 +7141,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1048607526
 MonoBehaviour:
@@ -7376,6 +7458,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1492803424}
   m_RootOrder: 0
@@ -7455,6 +7538,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 716390644}
   m_RootOrder: 0
@@ -7534,6 +7618,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 660005736}
   m_RootOrder: 0
@@ -7619,6 +7704,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1824574122}
   m_Father: {fileID: 1662174663}
@@ -7668,6 +7754,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1109098125
 MonoBehaviour:
@@ -7971,6 +8058,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2040943109}
   m_RootOrder: 0
@@ -8050,6 +8138,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: -3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1662174663}
   m_RootOrder: 1
@@ -8131,6 +8220,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1376071874}
   m_Father: {fileID: 1662174663}
@@ -8180,6 +8270,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1178152910
 MonoBehaviour:
@@ -8483,6 +8574,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 314994048}
   m_RootOrder: 0
@@ -8568,6 +8660,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1798755839}
   m_Father: {fileID: 1662174663}
@@ -8617,6 +8710,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1217668932
 MonoBehaviour:
@@ -8915,6 +9009,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 601044007}
   m_Father: {fileID: 1662174663}
@@ -8964,6 +9059,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1217673737
 MonoBehaviour:
@@ -9280,6 +9376,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1598299626}
   m_RootOrder: 0
@@ -9365,6 +9462,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1429338340}
   m_Father: {fileID: 1662174663}
@@ -9414,6 +9512,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1333811009
 MonoBehaviour:
@@ -9705,6 +9804,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 205843871}
   m_RootOrder: 0
@@ -9784,6 +9884,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1178152908}
   m_RootOrder: 0
@@ -9869,6 +9970,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 816317642}
   m_Father: {fileID: 1662174663}
@@ -9918,6 +10020,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1421286411
 MonoBehaviour:
@@ -10221,6 +10324,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1333811007}
   m_RootOrder: 0
@@ -10306,6 +10410,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 488123189}
   m_Father: {fileID: 1662174663}
@@ -10355,6 +10460,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1443625583
 MonoBehaviour:
@@ -10664,6 +10770,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 710411195}
   m_Father: {fileID: 1662174663}
@@ -10713,6 +10820,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1451447142
 MonoBehaviour:
@@ -11010,6 +11118,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 190424738}
   - {fileID: 32198851}
@@ -11224,6 +11333,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1460271606
 MonoBehaviour:
@@ -11375,6 +11485,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1598299626}
   m_RootOrder: 1
@@ -11456,6 +11567,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1076044396}
   m_Father: {fileID: 1662174663}
@@ -11505,6 +11617,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1492803426
 MonoBehaviour:
@@ -11814,6 +11927,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 631221002}
   m_Father: {fileID: 1662174663}
@@ -12015,6 +12129,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1501538454
 MonoBehaviour:
@@ -12160,6 +12275,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 707574404}
   m_Father: {fileID: 1662174663}
@@ -12209,6 +12325,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1526268830
 MonoBehaviour:
@@ -12518,6 +12635,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 410859381}
   m_Father: {fileID: 1662174663}
@@ -12567,6 +12685,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1536109957
 MonoBehaviour:
@@ -12858,6 +12977,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 177348494}
   m_RootOrder: 0
@@ -12937,6 +13057,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1768529902}
   m_RootOrder: 0
@@ -13022,6 +13143,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1277532458}
   - {fileID: 1461402404}
@@ -13072,6 +13194,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1598299628
 MonoBehaviour:
@@ -13370,6 +13493,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1046917376}
   m_Father: {fileID: 1662174663}
@@ -13419,6 +13543,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1605429438
 MonoBehaviour:
@@ -13771,7 +13896,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 2023230347
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -13785,6 +13912,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 454710489}
   - {fileID: 1173109161}
@@ -13863,6 +13991,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1780846790}
   - {fileID: 108631127}
@@ -13951,6 +14080,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!1 &1697659185
 GameObject:
@@ -13986,6 +14116,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1871821126}
   m_Father: {fileID: 1662174663}
@@ -14035,6 +14166,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1697659188
 MonoBehaviour:
@@ -14338,6 +14470,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9979198, y: 0.9979198, z: 0.9979198}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 271258390}
   m_RootOrder: 1
@@ -14419,6 +14552,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1569441303}
   m_Father: {fileID: 1662174663}
@@ -14468,6 +14602,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &1768529904
 MonoBehaviour:
@@ -14759,6 +14894,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1692314871}
   m_RootOrder: 0
@@ -14838,6 +14974,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1217668930}
   m_RootOrder: 0
@@ -14917,6 +15054,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 786523244}
   m_RootOrder: 0
@@ -14996,6 +15134,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1109098123}
   m_RootOrder: 0
@@ -15075,6 +15214,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1697659186}
   m_RootOrder: 0
@@ -15154,6 +15294,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2143848726}
   m_RootOrder: 0
@@ -15233,6 +15374,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2084944705}
   m_RootOrder: 0
@@ -15318,6 +15460,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1140793277}
   m_Father: {fileID: 1662174663}
@@ -15367,6 +15510,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2040943111
 MonoBehaviour:
@@ -15676,6 +15820,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 841609649}
   m_Father: {fileID: 1662174663}
@@ -15725,6 +15870,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2070528642
 MonoBehaviour:
@@ -16022,6 +16168,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1929039482}
   m_Father: {fileID: 1662174663}
@@ -16071,6 +16218,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2084944707
 MonoBehaviour:
@@ -16380,6 +16528,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1926257256}
   m_Father: {fileID: 1662174663}
@@ -16429,6 +16578,7 @@ MonoBehaviour:
   persentFirstNumber: 
   persentArifmChar: 
   persentSecondNumber: 
+  newPersentFirstNumber: 
   forVibroOff: {fileID: 0}
 --- !u!114 &2143848728
 MonoBehaviour:
