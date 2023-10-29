@@ -120,10 +120,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -264, y: -818.9004}
-  m_SizeDelta: {x: -908.72156, y: -2173.121}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 540, y: -1200}
+  m_SizeDelta: {x: 340, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9037705212425179491
 CanvasRenderer:
@@ -206,30 +206,8 @@ MonoBehaviour:
   TextDispM2: {fileID: 0}
   TextDispPercent: {fileID: 0}
   press_buttons: 1
-  equal: 0
-  text: 
-  textdel: 
-  textdelM1: 
-  textdelM2: 
   lenght: 0
-  lenghtM1: 0
-  lenghtM2: 0
-  m1: 0
-  m2: 0
-  dispm1: 
-  dispm2: 
-  percentValue: 
-  percentInArray: 
-  textForPersent: 
-  newArray: []
-  firstNumber: 
-  secondNumber: 
-  solution: 0
-  persentFirstNumber: 
-  persentArifmChar: 
-  persentSecondNumber: 
   newPersentFirstNumber: 
-  forVibroOff: {fileID: 0}
 --- !u!82 &9161824787723956798
 AudioSource:
   m_ObjectHideFlags: 0
