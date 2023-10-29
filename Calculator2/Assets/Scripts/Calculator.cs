@@ -1,12 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Data;
 // using System.Index;
 using System;
 using System.Text.RegularExpressions;
-using System.Linq;
 namespace CalculatorUI
 {
 
@@ -16,42 +13,9 @@ namespace CalculatorUI
         public Text TextDispM1;
         public Text TextDispM2;
         public Text TextDispPercent;
-        //public Text TextDispCorrect;
         public string press_buttons;
-        public double equal;
-        // public string zero;
-        public string text;
-        // public string disp1;
-        public string textdel;
-        public string textdelM1;
-        public string textdelM2;
         public double lenght;
-        public double lenghtM1;
-        public double lenghtM2;
-        public double m1;
-        public double m2;
-        // public string dispm0;
-        public string dispm1;
-        public string dispm2;
-        public string percentValue;
-        public string percentInArray;
-        public string textForPersent;
-        public string[] newArray;
-        public string firstNumber;
-        public string secondNumber;
-        public double solution;
-        public string persentFirstNumber;
-        public string persentArifmChar;
-        public string persentSecondNumber;
         public string newPersentFirstNumber;
-
-        //public object TextDisplay { get; private set; }
-        //public object TextDisplayM1 { get; private set; }
-        //public object TextDisplayM2 { get; private set; }
-        //public object TextDisplayPerc { get; private set; }
-        //public object TextDisplay_Market { get; private set; }
-
-        public VibroOff forVibroOff;
 
         public void Start()
         {
