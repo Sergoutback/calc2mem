@@ -15,7 +15,7 @@ namespace CalculatorUI
 
         void Start()
         {
-            image = GetComponent<Image>();
+            image = GetComponentInChildren<Image>();
         }
 
         void SetAudio(bool enabled)
