@@ -4,18 +4,18 @@ using System.Data;
 // using System.Index;
 using System;
 using System.Text.RegularExpressions;
+
 namespace CalculatorUI
 {
-
     public class Calculator : MonoBehaviour
     {
-        public Text TextDisp;
-        public Text TextDispM1;
-        public Text TextDispM2;
-        public Text TextDispPercent;
-        public string press_buttons;
-        public double lenght;
-        public string newPersentFirstNumber;
+        [SerializeField] private Text TextDisp;
+        [SerializeField] private Text TextDispM1;
+        [SerializeField] private Text TextDispM2;
+        [SerializeField] private Text TextDispPercent;
+        [SerializeField] private string press_buttons;
+        private double lenght;
+        private string newPersentFirstNumber;
 
         public void Start()
         {
@@ -76,62 +76,41 @@ namespace CalculatorUI
         public void On_Click_Point()
         {
             // из-за этой херни не ставится вторая запятая. надо подумать, как переделать
-            // if ((TextDisp.text.IndexOf(".") == -1) && (TextDisp.text.IndexOf("∞") == -1))
             TextDisp.text += ".";
-            //if (TextDisp.text.Contains(".."))
-            //{
-            //    string correctArray = TextDisp.text;
-            //    Regex correctReg = new Regex(@"\w*\.\.$", RegexOptions.IgnoreCase);
-            //    TextDisp.text = correctReg.Replace(TextDisp.text, TextDispCorrect.text);
-            //    TextDisp.text = correctArray.ToString();
-            //    TextDispCorrect.text = (".").ToString();
-            //}
-
-            //string input = TextDisp.text;
-            //string pattern = @"\.+";
-            //string replacement = @"\.";
-            //string result = Regex.Replace(input, pattern, replacement);
-
-            //Console.WriteLine("Original String: {0}", input);
-            //Console.WriteLine("Replacement String: {0}", result);
-
-
         }
 
         public void On_Click_C()
         {
-            TextDisp.text = ("0").ToString();
-            TextDispPercent.text = ("0").ToString();
+            TextDisp.text = "0";
+            TextDispPercent.text = "0";
         }
 
         public void On_Click_AC()
         {
-            TextDisp.text = ("0").ToString();
-            TextDispM1.text = ("0").ToString();
-            TextDispM2.text = ("0").ToString();
-            TextDispPercent.text = ("0").ToString();
+            TextDisp.text = "0";
+            TextDispM1.text = "0";
+            TextDispM2.text = "0";
+            TextDispPercent.text = "0";
         }
+
         public void On_Click_Equal()
         {
             if (TextDisp.text.Contains("%"))
             {
-                //On_Click_Percent();
-
                 newPersentFirstNumber = TextDispPercent.text;
                 string oldTextDispText = TextDisp.text;
 
                 Regex myRegPersent = new Regex(@"^(\d+\.?\d*)(\+|\-|\/|\*){1}(\d+\.?\d*)(\%?)$");
-                string[] newArrayPersent = myRegPersent.Split(oldTextDispText); // массив имен      
+                string[] newArrayPersent = myRegPersent.Split(oldTextDispText);
                 string persentFirstNumber = Convert.ToString(newArrayPersent[1]);
                 string persentArifmChar = Convert.ToString(newArrayPersent[2]);
-                string persentSecondNumber = Convert.ToString(newArrayPersent[3]);
 
                 TextDisp.text = persentFirstNumber + persentArifmChar + newPersentFirstNumber;
 
                 DataTable dt = new DataTable();
                 double equal = Convert.ToDouble(dt.Compute(TextDisp.text, ""));
                 TextDisp.text = equal.ToString();
-                TextDispPercent.text = ("0").ToString();
+                TextDispPercent.text = "0";
             }
             else
             {
@@ -144,20 +123,21 @@ namespace CalculatorUI
         public void On_Click_Plus_Minus()
         {
             if (TextDisp.text[0] == '-')
-                TextDisp.text = (TextDisp.text.Remove(0, 1)).ToString();
+                TextDisp.text = TextDisp.text.Remove(0, 1);
             else
-                TextDisp.text = ("-" + TextDisp.text).ToString();
+                TextDisp.text = ("-" + TextDisp.text);
         }
+
         public void On_Click_Del()
         {
             double lenght = TextDisp.text.Length - 1;
             string textdel = TextDisp.text;
             if (lenght < 1)
             {
-                TextDisp.text = ("0").ToString();
+                TextDisp.text = "0";
             }
             else
-                TextDisp.text = ("").ToString();
+                TextDisp.text = "";
 
             for (int i = 0; i < lenght; i++)
             {
@@ -171,10 +151,11 @@ namespace CalculatorUI
             string textdelM1 = TextDispM1.text;
             if (lenghtM1 < 1)
             {
-                TextDispM1.text = ("0").ToString();
+                TextDispM1.text = "0";
+                ;
             }
             else
-                TextDispM1.text = ("").ToString();
+                TextDispM1.text = "";
 
             for (int i = 0; i < lenghtM1; i++)
             {
@@ -188,10 +169,10 @@ namespace CalculatorUI
             string textdelM2 = TextDispM2.text;
             if (lenghtM2 < 1)
             {
-                TextDispM2.text = ("0").ToString();
+                TextDispM2.text = "0";
             }
             else
-                TextDispM2.text = ("").ToString();
+                TextDispM2.text = "";
 
             for (int i = 0; i < lenghtM2; i++)
             {
@@ -201,10 +182,8 @@ namespace CalculatorUI
 
         public void On_Click_Percent()
         {
-            // Массив тестируемых строк
             string percentInArray = TextDisp.text;
 
-            // Теперь укажем поиск, не зависимый от регистра
             Regex myReg = new Regex(@"^(\d+\.?\d*)(\+|\-|\/|\*){1}(\d+\.?\d*)(\%?)$");
             string[] newArray = myReg.Split(percentInArray); // массив имен      
             string persentFirstNumber = Convert.ToString(newArray[1]);
@@ -212,11 +191,7 @@ namespace CalculatorUI
             string persentSecondNumber = Convert.ToString(newArray[3]);
             double solution = Convert.ToDouble(persentFirstNumber) * Convert.ToDouble(persentSecondNumber) / 100;
             TextDispPercent.text = Convert.ToString(solution);
-
         }
-
-       
-
 
 
         //M1plus button
@@ -225,18 +200,16 @@ namespace CalculatorUI
             double m1 = Convert.ToDouble(TextDispM1.text) + Convert.ToDouble(TextDisp.text);
             string dispm1 = m1.ToString();
             TextDispM1.text = dispm1;
-
-            return;
         }
+
         //M1minus button
         public void On_Click_MemoryMinus()
         {
             double m1 = Convert.ToDouble(TextDispM1.text) - Convert.ToDouble(TextDisp.text);
             string dispm1 = m1.ToString();
             TextDispM1.text = dispm1;
-
-            return;
         }
+
         //MR1 button
         public void On_Click_MemoryReturn()
         {
@@ -244,14 +217,12 @@ namespace CalculatorUI
                 TextDisp.text = TextDispM1.text + (TextDisp.text).Remove(0, 1);
             else
                 TextDisp.text += TextDispM1.text;
-            return;
         }
+
         //MClear1 button
         public void On_Click_MemoryClear()
         {
-            TextDispM1.text = ("0").ToString();
-
-            return;
+            TextDispM1.text = "0";
         }
 
         //M2plus button
@@ -260,18 +231,16 @@ namespace CalculatorUI
             double m2 = Convert.ToDouble(TextDispM2.text) + Convert.ToDouble(TextDisp.text);
             string dispm2 = m2.ToString();
             TextDispM2.text = dispm2;
-
-            return;
         }
+
         //M2minus button
         public void On_Click_Memory2Minus()
         {
             double m2 = Convert.ToDouble(TextDispM2.text) - Convert.ToDouble(TextDisp.text);
             string dispm2 = m2.ToString();
             TextDispM2.text = dispm2;
-
-            return;
         }
+
         //MR2 button
         public void On_Click_Memory2Return()
         {
@@ -279,14 +248,12 @@ namespace CalculatorUI
                 TextDisp.text = TextDispM2.text + (TextDisp.text).Remove(0, 1);
             else
                 TextDisp.text += TextDispM2.text;
-            return;
         }
+
         //MClear2 button
         public void On_Click_Memory2Clear()
         {
-            TextDispM2.text = ("0").ToString();
-
-            return;
+            TextDispM2.text = "0";
         }
     }
 }

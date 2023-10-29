@@ -18,7 +18,6 @@ namespace CalculatorUI
         {
             imageVibro = GetComponentInChildren<Image>();
             DefaultVibrr();
-            // Vibration.Init();                           
         }
 
         public void DefaultVibrr()
